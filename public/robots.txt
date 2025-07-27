@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://fadlanzunima.vercel.app/sitemap.xml
