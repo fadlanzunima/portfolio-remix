@@ -1,15 +1,18 @@
-/** @type {import('@remix-run/dev').AppConfig} */
-export default {
-  ignoredRouteFiles: ["**/.*"],
-  tailwind: true,
-  postcss: true,
-  serverBuildPath: "functions/[[path]].js",
-  publicPath: "/",
-  assetsBuildDirectory: "public/build",
-  serverConditions: ["workerd", "worker", "browser"],
-  serverDependenciesToBundle: "all",
-  serverMainFields: ["browser", "module", "main"],
-  serverMinify: true,
-  serverModuleFormat: "esm",
-  serverPlatform: "neutral",
-};
+import { vitePlugin as remix } from "@remix-run/dev";
+import { defineConfig } from "vite";
+
+export default defineConfig({
+  plugins: [
+    remix({
+      ignoredRouteFiles: ["**/.*"],
+      serverBuildFile: "functions/[[path]].js",
+    }),
+  ],
+  build: {
+    target: "esnext",
+  },
+  ssr: {
+    target: "webworker",
+    noExternal: true,
+  },
+});
