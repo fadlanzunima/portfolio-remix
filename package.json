@@ -15,9 +15,9 @@
   "dependencies": {
     "@emailjs/browser": "^4.4.1",
     "@radix-ui/react-tooltip": "^1.0.7",
-    "@remix-run/node": "^2.17.0",
-    "@remix-run/react": "^2.17.0",
-    "@remix-run/serve": "^2.17.0",
+    "@remix-run/node": "2.8.1",
+    "@remix-run/react": "2.8.1",
+    "@remix-run/serve": "2.8.1",
     "clsx": "^2.0.0",
     "framer-motion": "^10.18.0",
     "isbot": "^4.1.0",
@@ -29,7 +29,7 @@
     "tailwindcss-animate": "^1.0.7"
   },
   "devDependencies": {
-    "@remix-run/dev": "^2.17.0",
+    "@remix-run/dev": "2.8.1",
     "@types/react": "^18.2.45",
     "@types/react-dom": "^18.2.18",
     "autoprefixer": "^10.4.16",

@@ -9,7 +9,7 @@ export default {
   publicPath: "/build/",
   assetsBuildDirectory: "public/build",
   serverConditions: ["workerd", "worker", "browser"],
-  serverDependenciesToBundle: "all",
+  serverDependenciesToBundle: [],
   serverMainFields: ["browser", "module", "main"],
   serverMinify: true,
   serverModuleFormat: "esm",
