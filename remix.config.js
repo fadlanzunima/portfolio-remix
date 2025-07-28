@@ -5,7 +5,7 @@ export default {
   postcss: true,
   serverBuildPath: "functions/[[path]].js",
   publicPath: "/",
-  assetsBuildDirectory: "public/_static",
+  assetsBuildDirectory: "public/build",
   serverConditions: ["workerd", "worker", "browser"],
   serverDependenciesToBundle: "all",
   serverMainFields: ["browser", "module", "main"],

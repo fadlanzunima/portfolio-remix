@@ -8,8 +8,8 @@
     "dev": "remix dev --manual",
     "start": "remix-serve ./build/index.js",
     "typecheck": "tsc",
-    "deploy": "npm run build && wrangler pages publish ./build/client",
-    "pages:deploy": "wrangler pages deploy ./build/client",
+    "deploy": "npm run build && wrangler pages publish ./public --project-name=fadlan-portfolio",
+    "pages:deploy": "wrangler pages deploy ./public --project-name=fadlan-portfolio",
     "cf-typegen": "wrangler types"
   },
   "dependencies": {

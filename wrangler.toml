@@ -1,9 +1,6 @@
 name = "fadlan-portfolio"
 compatibility_date = "2023-12-01"
-pages_build_output_dir = "./build/client"
 
-[env.production]
-name = "fadlan-portfolio"
-
-[env.preview]
-name = "fadlan-portfolio-preview"
+[build]
+command = "npm run build"
+cwd = "."
