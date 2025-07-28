@@ -1,18 +1,17 @@
-import { vitePlugin as remix } from "@remix-run/dev";
-import { defineConfig } from "vite";
-
-export default defineConfig({
-  plugins: [
-    remix({
-      ignoredRouteFiles: ["**/.*"],
-      serverBuildFile: "functions/[[path]].js",
-    }),
-  ],
-  build: {
-    target: "esnext",
-  },
-  ssr: {
-    target: "webworker",
-    noExternal: true,
-  },
-});
+/** @type {import('@remix-run/dev').AppConfig} */
+export default {
+  ignoredRouteFiles: ["**/.*"],
+  // Use the built-in PostCSS and Tailwind support
+  tailwind: true,
+  postcss: true,
+  // Cloudflare Pages configuration
+  serverBuildPath: "functions/[[path]].js",
+  publicPath: "/build/",
+  assetsBuildDirectory: "public/build",
+  serverConditions: ["workerd", "worker", "browser"],
+  serverDependenciesToBundle: "all",
+  serverMainFields: ["browser", "module", "main"],
+  serverMinify: true,
+  serverModuleFormat: "esm",
+  serverPlatform: "neutral",
+};

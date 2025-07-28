@@ -51,7 +51,7 @@ dependencies:
 devDependencies:
   '@remix-run/dev':
     specifier: ^2.17.0
-    version: 2.17.0(@remix-run/react@2.17.0)(@remix-run/serve@2.17.0)(typescript@5.8.3)(vite@5.4.19)
+    version: 2.17.0(@remix-run/react@2.17.0)(@remix-run/serve@2.17.0)(typescript@5.8.3)
   '@types/react':
     specifier: ^18.2.45
     version: 18.3.23
@@ -70,9 +70,6 @@ devDependencies:
   typescript:
     specifier: ^5.1.6
     version: 5.8.3
-  vite:
-    specifier: ^5.4.0
-    version: 5.4.19
 
 packages:
 
@@ -1552,7 +1549,7 @@ packages:
     resolution: {integrity: sha512-HPwpGIzkl28mWyZqG52jiqDJ12waP11Pa1lGoiyUkIEuMLBP0oeK/C89esbXrxsky5we7dfd8U58nm0SgAWpVw==}
     dev: false
 
-  /@remix-run/dev@2.17.0(@remix-run/react@2.17.0)(@remix-run/serve@2.17.0)(typescript@5.8.3)(vite@5.4.19):
+  /@remix-run/dev@2.17.0(@remix-run/react@2.17.0)(@remix-run/serve@2.17.0)(typescript@5.8.3):
     resolution: {integrity: sha512-L2W8PYH3jUvCKlJeUkFMGyOMzUsM0goZg4n0NU69O85TNlB1jgiqSbSMb69xhviphGpwzAoH+D/p3/cUnw4DbQ==}
     engines: {node: '>=18.0.0'}
     hasBin: true
@@ -1629,7 +1626,6 @@ packages:
       tsconfig-paths: 4.2.0
       typescript: 5.8.3
       valibot: 0.41.0(typescript@5.8.3)
-      vite: 5.4.19
       vite-node: 3.2.4
       ws: 7.5.10
     transitivePeerDependencies:
