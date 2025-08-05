@@ -10,6 +10,7 @@
     "typecheck": "tsc",
     "deploy": "pnpm run build && wrangler pages publish ./public --project-name=fadlan-portfolio",
     "pages:deploy": "wrangler pages deploy ./public --project-name=fadlan-portfolio",
+    "deploy:vercel": "vercel --prod",
     "cf-typegen": "wrangler types"
   },
   "dependencies": {
