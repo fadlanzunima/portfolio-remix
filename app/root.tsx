@@ -7,6 +7,7 @@ import {
   ScrollRestoration,
 } from "@remix-run/react";
 import type { LinksFunction, MetaFunction } from "@remix-run/node";
+import { Analytics } from "@vercel/analytics/remix";
 
 import globalStyles from "./styles/globals.css";
 
@@ -30,9 +31,9 @@ export const meta: MetaFunction = () => [
   { charset: "utf-8" },
   { title: "Fadlan Zunima - Frontend Engineer Portfolio" },
   { viewport: "width=device-width,initial-scale=1" },
-  { 
-    name: "description", 
-    content: "Portfolio website of Fadlan Zunima, a skilled Frontend Engineer from Bandung, Indonesia specializing in React, GraphQL, and modern web technologies." 
+  {
+    name: "description",
+    content: "Portfolio website of Fadlan Zunima, a skilled Frontend Engineer from Bandung, Indonesia specializing in React, GraphQL, and modern web technologies."
   },
   { name: "keywords", content: "Frontend Engineer, React, GraphQL, JavaScript, TypeScript, Web Development, UI/UX, Bandung" },
   { name: "author", content: "Fadlan Zunima" },
@@ -53,6 +54,7 @@ export default function App() {
       </head>
       <body className="font-inter antialiased">
         <Outlet />
+        <Analytics />
         <ScrollRestoration />
         <Scripts />
         <LiveReload />
