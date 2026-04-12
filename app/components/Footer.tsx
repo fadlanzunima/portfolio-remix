@@ -21,7 +21,7 @@ export default function Footer() {
   useEffect(() => {
     const savedTheme = localStorage.getItem("theme");
     const prefersDark = window.matchMedia(
-      "(prefers-color-scheme: dark)"
+      "(prefers-color-scheme: dark)",
     ).matches;
 
     if (savedTheme === "dark" || (!savedTheme && prefersDark)) {
@@ -80,7 +80,7 @@ export default function Footer() {
     },
     {
       name: "Email",
-      url: "mailto:fadlan.zunima@example.com",
+      url: "mailto:fadlanzunima@gmail.com",
       icon: FaEnvelope,
       color: "hover:text-red-600",
     },
@@ -200,13 +200,13 @@ export default function Footer() {
                 <div className="flex items-center space-x-3">
                   <FaEnvelope className="text-blue-400 flex-shrink-0" />
                   <a
-                    href="mailto:fadlan.zunima@example.com"
+                    href="mailto:fadlanzunima@gmail.com"
                     className="text-gray-400 hover:text-white transition-colors duration-300 text-sm"
                   >
-                    fadlan.zunima@example.com
+                    fadlanzunima@gmail.com
                   </a>
                 </div>
-                <div className="flex items-center space-x-3">
+                {/*<div className="flex items-center space-x-3">
                   <FaWhatsapp className="text-green-400 flex-shrink-0" />
                   <a
                     href="https://wa.me/6281234567890"
@@ -216,7 +216,7 @@ export default function Footer() {
                   >
                     +62 812-3456-7890
                   </a>
-                </div>
+                </div>*/}
                 <div className="flex items-center space-x-3">
                   <FaGithub className="text-purple-400 flex-shrink-0" />
                   <a

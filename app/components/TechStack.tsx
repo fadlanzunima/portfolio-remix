@@ -1,18 +1,18 @@
 import { motion } from "framer-motion";
 import { FaReact, FaVuejs, FaPhp, FaGitAlt } from "react-icons/fa/index.js";
-import { 
-  SiTailwindcss, 
-  SiGraphql, 
-  SiFlutter, 
-  SiVercel, 
-  SiMysql, 
+import {
+  SiTailwindcss,
+  SiGraphql,
+  SiFlutter,
+  SiVercel,
+  SiMysql,
   SiTypescript,
   SiNextdotjs,
   SiRemix,
   SiNodedotjs,
   SiFigma,
   SiPostman,
-  SiVisualstudiocode
+  SiVisualstudiocode,
 } from "react-icons/si/index.js";
 
 interface Technology {
@@ -32,7 +32,7 @@ export default function TechStack() {
       color: "text-blue-500",
       category: "Frontend",
       experience: "3+ years",
-      description: "Building interactive user interfaces and SPAs"
+      description: "Building interactive user interfaces and SPAs",
     },
     {
       name: "TypeScript",
@@ -40,7 +40,7 @@ export default function TechStack() {
       color: "text-blue-600",
       category: "Language",
       experience: "2+ years",
-      description: "Type-safe JavaScript development"
+      description: "Type-safe JavaScript development",
     },
     {
       name: "Next.js",
@@ -48,7 +48,7 @@ export default function TechStack() {
       color: "text-black dark:text-white",
       category: "Framework",
       experience: "2+ years",
-      description: "Full-stack React framework for production"
+      description: "Full-stack React framework for production",
     },
     {
       name: "Remix",
@@ -56,23 +56,23 @@ export default function TechStack() {
       color: "text-blue-600",
       category: "Framework",
       experience: "1+ year",
-      description: "Modern full-stack web framework"
+      description: "Modern full-stack web framework",
     },
     {
       name: "Vue.js",
       icon: FaVuejs,
       color: "text-green-500",
       category: "Frontend",
-      experience: "2+ years",
-      description: "Progressive framework for building UIs"
+      experience: "5+ years",
+      description: "Progressive framework for building UIs",
     },
     {
       name: "Tailwind CSS",
       icon: SiTailwindcss,
       color: "text-cyan-500",
       category: "Styling",
-      experience: "3+ years",
-      description: "Utility-first CSS framework"
+      experience: "4+ years",
+      description: "Utility-first CSS framework",
     },
     {
       name: "Node.js",
@@ -80,7 +80,7 @@ export default function TechStack() {
       color: "text-green-600",
       category: "Backend",
       experience: "2+ years",
-      description: "JavaScript runtime for server-side development"
+      description: "JavaScript runtime for server-side development",
     },
     {
       name: "GraphQL",
@@ -88,23 +88,23 @@ export default function TechStack() {
       color: "text-pink-500",
       category: "API",
       experience: "1+ year",
-      description: "Query language for APIs"
+      description: "Query language for APIs",
     },
-    {
-      name: "Flutter",
-      icon: SiFlutter,
-      color: "text-blue-400",
-      category: "Mobile",
-      experience: "2+ years",
-      description: "Cross-platform mobile app development"
-    },
+    // {
+    //   name: "Flutter",
+    //   icon: SiFlutter,
+    //   color: "text-blue-400",
+    //   category: "Mobile",
+    //   experience: "2+ years",
+    //   description: "Cross-platform mobile app development"
+    // },
     {
       name: "PHP",
       icon: FaPhp,
       color: "text-purple-600",
       category: "Backend",
-      experience: "3+ years",
-      description: "Server-side scripting language"
+      experience: "5+ years",
+      description: "Server-side scripting language",
     },
     {
       name: "MySQL",
@@ -112,7 +112,7 @@ export default function TechStack() {
       color: "text-orange-500",
       category: "Database",
       experience: "3+ years",
-      description: "Relational database management"
+      description: "Relational database management",
     },
     {
       name: "Git",
@@ -120,7 +120,7 @@ export default function TechStack() {
       color: "text-orange-600",
       category: "Tools",
       experience: "3+ years",
-      description: "Version control system"
+      description: "Version control system",
     },
     {
       name: "Vercel",
@@ -128,7 +128,7 @@ export default function TechStack() {
       color: "text-black dark:text-white",
       category: "Deployment",
       experience: "2+ years",
-      description: "Frontend cloud platform"
+      description: "Frontend cloud platform",
     },
     {
       name: "Figma",
@@ -136,7 +136,7 @@ export default function TechStack() {
       color: "text-purple-500",
       category: "Design",
       experience: "2+ years",
-      description: "UI/UX design and prototyping"
+      description: "UI/UX design and prototyping",
     },
     {
       name: "VS Code",
@@ -144,7 +144,7 @@ export default function TechStack() {
       color: "text-blue-500",
       category: "Tools",
       experience: "3+ years",
-      description: "Code editor and development environment"
+      description: "Code editor and development environment",
     },
     {
       name: "Postman",
@@ -152,8 +152,8 @@ export default function TechStack() {
       color: "text-orange-500",
       category: "Tools",
       experience: "2+ years",
-      description: "API development and testing"
-    }
+      description: "API development and testing",
+    },
   ];
 
   const categories = [
@@ -171,9 +171,9 @@ export default function TechStack() {
       opacity: 1,
       transition: {
         delayChildren: 0.3,
-        staggerChildren: 0.1
-      }
-    }
+        staggerChildren: 0.1,
+      },
+    },
   };
 
   const itemVariants = {
@@ -183,9 +183,9 @@ export default function TechStack() {
       opacity: 1,
       transition: {
         duration: 0.5,
-        ease: "easeOut"
-      }
-    }
+        ease: "easeOut",
+      },
+    },
   };
 
   return (
@@ -212,7 +212,8 @@ export default function TechStack() {
             variants={itemVariants}
             className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto"
           >
-            Technologies and tools I use to bring ideas to life. Hover over each item to learn more about my experience.
+            Technologies and tools I use to bring ideas to life. Hover over each
+            item to learn more about my experience.
           </motion.p>
         </motion.div>
 
@@ -247,23 +248,25 @@ export default function TechStack() {
             <motion.div
               key={tech.name}
               variants={itemVariants}
-              whileHover={{ 
-                scale: 1.1, 
+              whileHover={{
+                scale: 1.1,
                 y: -10,
-                transition: { type: "spring", stiffness: 300 }
+                transition: { type: "spring", stiffness: 300 },
               }}
               className="group relative"
             >
               {/* Tech Card */}
               <div className="flex flex-col items-center p-6 bg-gray-50 dark:bg-gray-800 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 border border-gray-200 dark:border-gray-700 hover:border-blue-300 dark:hover:border-blue-600">
                 {/* Icon */}
-                <tech.icon className={`text-4xl ${tech.color} mb-3 group-hover:scale-110 transition-transform duration-300`} />
-                
+                <tech.icon
+                  className={`text-4xl ${tech.color} mb-3 group-hover:scale-110 transition-transform duration-300`}
+                />
+
                 {/* Name */}
                 <h3 className="text-sm font-semibold text-gray-800 dark:text-white text-center mb-1">
                   {tech.name}
                 </h3>
-                
+
                 {/* Category Badge */}
                 <span className="text-xs text-gray-500 dark:text-gray-400 bg-gray-200 dark:bg-gray-700 px-2 py-1 rounded-full">
                   {tech.category}
@@ -272,9 +275,15 @@ export default function TechStack() {
                 {/* Hover Overlay */}
                 <div className="absolute inset-0 bg-black/80 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-center items-center p-4 text-center">
                   <tech.icon className={`text-3xl ${tech.color} mb-2`} />
-                  <h4 className="text-white font-semibold text-sm mb-1">{tech.name}</h4>
-                  <p className="text-gray-300 text-xs mb-2">{tech.experience}</p>
-                  <p className="text-gray-400 text-xs leading-tight">{tech.description}</p>
+                  <h4 className="text-white font-semibold text-sm mb-1">
+                    {tech.name}
+                  </h4>
+                  <p className="text-gray-300 text-xs mb-2">
+                    {tech.experience}
+                  </p>
+                  <p className="text-gray-400 text-xs leading-tight">
+                    {tech.description}
+                  </p>
                 </div>
               </div>
 
@@ -295,21 +304,39 @@ export default function TechStack() {
           className="mt-16 grid md:grid-cols-3 gap-8"
         >
           <div className="text-center p-6 bg-gradient-to-br from-blue-50 to-cyan-50 dark:from-gray-800 dark:to-gray-700 rounded-2xl">
-            <div className="text-3xl font-bold text-blue-600 dark:text-blue-400 mb-2">16+</div>
-            <div className="text-gray-700 dark:text-gray-300 font-medium">Technologies</div>
-            <div className="text-sm text-gray-500 dark:text-gray-400 mt-1">Frontend & Backend</div>
+            <div className="text-3xl font-bold text-blue-600 dark:text-blue-400 mb-2">
+              12+
+            </div>
+            <div className="text-gray-700 dark:text-gray-300 font-medium">
+              Technologies
+            </div>
+            <div className="text-sm text-gray-500 dark:text-gray-400 mt-1">
+              Frontend & Backend
+            </div>
           </div>
-          
+
           <div className="text-center p-6 bg-gradient-to-br from-purple-50 to-pink-50 dark:from-gray-800 dark:to-gray-700 rounded-2xl">
-            <div className="text-3xl font-bold text-purple-600 dark:text-purple-400 mb-2">3+</div>
-            <div className="text-gray-700 dark:text-gray-300 font-medium">Years Experience</div>
-            <div className="text-sm text-gray-500 dark:text-gray-400 mt-1">Web Development</div>
+            <div className="text-3xl font-bold text-purple-600 dark:text-purple-400 mb-2">
+              5+
+            </div>
+            <div className="text-gray-700 dark:text-gray-300 font-medium">
+              Years Experience
+            </div>
+            <div className="text-sm text-gray-500 dark:text-gray-400 mt-1">
+              Web Development
+            </div>
           </div>
-          
+
           <div className="text-center p-6 bg-gradient-to-br from-green-50 to-emerald-50 dark:from-gray-800 dark:to-gray-700 rounded-2xl">
-            <div className="text-3xl font-bold text-green-600 dark:text-green-400 mb-2">50+</div>
-            <div className="text-gray-700 dark:text-gray-300 font-medium">Projects Built</div>
-            <div className="text-sm text-gray-500 dark:text-gray-400 mt-1">Web & Mobile Apps</div>
+            <div className="text-3xl font-bold text-green-600 dark:text-green-400 mb-2">
+              10+
+            </div>
+            <div className="text-gray-700 dark:text-gray-300 font-medium">
+              Projects Built
+            </div>
+            <div className="text-sm text-gray-500 dark:text-gray-400 mt-1">
+              Web & Mobile Apps
+            </div>
           </div>
         </motion.div>
       </div>

@@ -153,7 +153,7 @@ This portfolio was created by **Fadlan Zunima**, a passionate Frontend Developer
 
 ## 📞 Contact
 
-- 📧 Email: fadlan.zunima@example.com
+- 📧 Email: fadlanzunima@gmail.com
 - 💼 LinkedIn: [fadlanzunima](https://linkedin.com/in/fadlanzunima)
 - 🐱 GitHub: [fadlanzunima](https://github.com/fadlanzunima)
 - 💬 WhatsApp: +62 812-3456-7890

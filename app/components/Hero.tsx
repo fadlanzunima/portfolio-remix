@@ -101,7 +101,7 @@ export default function Hero() {
           </motion.div>
 
           {/* Social Links */}
-          <motion.div
+          {/*<motion.div
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 1.2 }}
@@ -137,7 +137,7 @@ export default function Hero() {
             >
               <FaEnvelope />
             </a>
-          </motion.div>
+          </motion.div>*/}
         </motion.div>
 
         {/* Scroll Indicator */}

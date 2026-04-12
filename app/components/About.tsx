@@ -1,6 +1,14 @@
 import { motion } from "framer-motion";
 import { FaReact, FaVuejs, FaPhp, FaDatabase } from "react-icons/fa/index.js";
-import { SiTailwindcss, SiGraphql, SiFlutter, SiVercel, SiMysql, SiTypescript } from "react-icons/si/index.js";
+import {
+  SiTailwindcss,
+  SiGraphql,
+  SiFlutter,
+  SiVercel,
+  SiMysql,
+  SiTypescript,
+  SiNextdotjs,
+} from "react-icons/si/index.js";
 
 export default function About() {
   const techIcons = [
@@ -9,7 +17,8 @@ export default function About() {
     { Icon: FaVuejs, name: "Vue.js", color: "text-green-500" },
     { Icon: SiTailwindcss, name: "Tailwind CSS", color: "text-cyan-500" },
     { Icon: SiGraphql, name: "GraphQL", color: "text-pink-500" },
-    { Icon: SiFlutter, name: "Flutter", color: "text-blue-400" },
+    { Icon: SiNextdotjs, name: "Next.js", color: "text-gray-900 dark:text-white" },
+    // { Icon: SiFlutter, name: "Flutter", color: "text-blue-400" },
     { Icon: SiVercel, name: "Vercel", color: "text-black dark:text-white" },
     { Icon: FaPhp, name: "PHP", color: "text-purple-600" },
     { Icon: SiMysql, name: "MySQL", color: "text-orange-500" },
@@ -21,9 +30,9 @@ export default function About() {
       opacity: 1,
       transition: {
         delayChildren: 0.3,
-        staggerChildren: 0.1
-      }
-    }
+        staggerChildren: 0.1,
+      },
+    },
   };
 
   const itemVariants = {
@@ -32,9 +41,9 @@ export default function About() {
       y: 0,
       opacity: 1,
       transition: {
-        duration: 0.5
-      }
-    }
+        duration: 0.5,
+      },
+    },
   };
 
   return (
@@ -73,20 +82,27 @@ export default function About() {
                 Frontend Engineer & GraphQL Enthusiast
               </h3>
               <p className="text-gray-600 dark:text-gray-300 leading-relaxed mb-4">
-                Saya adalah seorang Frontend Engineer yang berbasis di Bandung, Indonesia. Dengan pengalaman dalam membangun 
-                aplikasi web modern dan responsif menggunakan React, GraphQL, dan teknologi frontend terkini. 
-                Saya fokus pada pengembangan antarmuka yang tidak hanya indah secara visual, tetapi juga memberikan 
-                pengalaman pengguna yang luar biasa.
+                Saya adalah seorang Frontend Engineer yang berbasis di Bandung,
+                Indonesia. Dengan pengalaman dalam membangun aplikasi web modern
+                dan responsif menggunakan React, GraphQL, dan teknologi frontend
+                terkini. Saya fokus pada pengembangan antarmuka yang tidak hanya
+                indah secara visual, tetapi juga memberikan pengalaman pengguna
+                yang luar biasa.
               </p>
               <p className="text-gray-600 dark:text-gray-300 leading-relaxed mb-4">
-                Saat ini saya sedang memperdalam kemampuan dalam GraphQL dan React.js, dengan passion yang kuat terhadap 
-                detail desain, performa aplikasi, dan implementasi best practices dalam pengembangan web. 
-                Saya selalu antusias mempelajari teknologi baru dan mengikuti tren terkini dalam dunia frontend development.
+                Saat ini saya sedang memperdalam kemampuan dalam GraphQL dan
+                React.js, dengan passion yang kuat terhadap detail desain,
+                performa aplikasi, dan implementasi best practices dalam
+                pengembangan web. Saya selalu antusias mempelajari teknologi
+                baru dan mengikuti tren terkini dalam dunia frontend
+                development.
               </p>
               <p className="text-gray-600 dark:text-gray-300 leading-relaxed">
-                Sebagai remote worker, saya menikmati fleksibilitas dalam bekerja sambil tetap berkolaborasi efektif 
-                dengan tim. Ketika tidak sedang coding, saya gemar mengeksplorasi design patterns, berkontribusi pada 
-                open source, dan berbagi pengetahuan dengan komunitas developer.
+                Sebagai remote worker, saya menikmati fleksibilitas dalam
+                bekerja sambil tetap berkolaborasi efektif dengan tim. Ketika
+                tidak sedang coding, saya gemar mengeksplorasi design patterns,
+                berkontribusi pada open source, dan berbagi pengetahuan dengan
+                komunitas developer.
               </p>
             </div>
 
@@ -96,22 +112,34 @@ export default function About() {
                 whileHover={{ scale: 1.05 }}
                 className="text-center p-4 bg-white dark:bg-gray-800 rounded-xl shadow-md"
               >
-                <div className="text-2xl font-bold text-blue-600 dark:text-blue-400">3+</div>
-                <div className="text-sm text-gray-600 dark:text-gray-400">Years Experience</div>
+                <div className="text-2xl font-bold text-blue-600 dark:text-blue-400">
+                  5+
+                </div>
+                <div className="text-sm text-gray-600 dark:text-gray-400">
+                  Years Experience
+                </div>
               </motion.div>
               <motion.div
                 whileHover={{ scale: 1.05 }}
                 className="text-center p-4 bg-white dark:bg-gray-800 rounded-xl shadow-md"
               >
-                <div className="text-2xl font-bold text-purple-600 dark:text-purple-400">50+</div>
-                <div className="text-sm text-gray-600 dark:text-gray-400">Projects Completed</div>
+                <div className="text-2xl font-bold text-purple-600 dark:text-purple-400">
+                  10+
+                </div>
+                <div className="text-sm text-gray-600 dark:text-gray-400">
+                  Projects Completed
+                </div>
               </motion.div>
               <motion.div
                 whileHover={{ scale: 1.05 }}
                 className="text-center p-4 bg-white dark:bg-gray-800 rounded-xl shadow-md"
               >
-                <div className="text-2xl font-bold text-green-600 dark:text-green-400">25+</div>
-                <div className="text-sm text-gray-600 dark:text-gray-400">Happy Clients</div>
+                <div className="text-2xl font-bold text-green-600 dark:text-green-400">
+                  5+
+                </div>
+                <div className="text-sm text-gray-600 dark:text-gray-400">
+                  Happy Clients
+                </div>
               </motion.div>
             </div>
           </motion.div>
@@ -128,7 +156,7 @@ export default function About() {
               <h3 className="text-2xl font-bold mb-8 text-center text-gray-800 dark:text-white">
                 Technologies I Work With
               </h3>
-              
+
               <div className="grid grid-cols-3 gap-6">
                 {techIcons.map(({ Icon, name, color }, index) => (
                   <motion.div
@@ -140,12 +168,14 @@ export default function About() {
                       duration: 0.5,
                       delay: index * 0.1,
                       type: "spring",
-                      stiffness: 100
+                      stiffness: 100,
                     }}
                     whileHover={{ scale: 1.1, y: -5 }}
                     className="flex flex-col items-center p-4 bg-white dark:bg-gray-700 rounded-xl shadow-md hover:shadow-lg transition-all duration-300 group"
                   >
-                    <Icon className={`text-4xl ${color} mb-2 group-hover:scale-110 transition-transform duration-300`} />
+                    <Icon
+                      className={`text-4xl ${color} mb-2 group-hover:scale-110 transition-transform duration-300`}
+                    />
                     <span className="text-sm font-medium text-gray-700 dark:text-gray-300 text-center">
                       {name}
                     </span>
