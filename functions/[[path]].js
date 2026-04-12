@@ -1,4 +1,470 @@
-var Tt=Object.defineProperty;var G=(e,d)=>{for(var i in d)Tt(e,i,{get:d[i],enumerable:!0})};var B={};G(B,{default:()=>it});import{PassThrough as et}from"node:stream";import{createReadableStreamFromReadable as rt}from"@remix-run/node";import{RemixServer as at}from"@remix-run/react";import*as C from"isbot";import{renderToPipeableStream as ot}from"react-dom/server";import{jsx as nt}from"react/jsx-runtime";var D=5e3;function it(e,d,i,r,t){return jt(e.headers.get("user-agent"))?Ct(e,d,i,r):Pt(e,d,i,r)}function jt(e){return e?"isbot"in C&&typeof C.isbot=="function"?C.isbot(e):"default"in C&&typeof C.default=="function"?C.default(e):!1:!1}function Ct(e,d,i,r){return new Promise((t,u)=>{let h=!1,{pipe:S,abort:k}=ot(nt(at,{context:r,url:e.url,abortDelay:D}),{onAllReady(){h=!0;let l=new et,s=rt(l);i.set("Content-Type","text/html"),t(new Response(s,{headers:i,status:d})),S(l)},onShellError(l){u(l)},onError(l){d=500,h&&console.error(l)}});setTimeout(k,D)})}function Pt(e,d,i,r){return new Promise((t,u)=>{let h=!1,{pipe:S,abort:k}=ot(nt(at,{context:r,url:e.url,abortDelay:D}),{onShellReady(){h=!0;let l=new et,s=rt(l);i.set("Content-Type","text/html"),t(new Response(s,{headers:i,status:d})),S(l)},onShellError(l){u(l)},onError(l){d=500,h&&console.error(l)}});setTimeout(k,D)})}var _={};G(_,{default:()=>st,links:()=>Ut,meta:()=>Gt});import{Links as Et,LiveReload as Rt,Meta as Mt,Outlet as Vt,Scripts as At,ScrollRestoration as Dt}from"@remix-run/react";var dt="/build/_assets/globals-ZBRASNTB.css";import{jsx as E,jsxs as H}from"react/jsx-runtime";var Ut=()=>[{rel:"stylesheet",href:dt},{rel:"preconnect",href:"https://fonts.googleapis.com"},{rel:"preconnect",href:"https://fonts.gstatic.com",crossOrigin:"anonymous"},{rel:"stylesheet",href:"https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"},{rel:"icon",type:"image/svg+xml",href:"/favicon.svg"},{rel:"icon",type:"image/x-icon",href:"/favicon.ico"},{rel:"icon",type:"image/png",sizes:"32x32",href:"/favicon-32x32.png"},{rel:"icon",type:"image/png",sizes:"16x16",href:"/favicon-16x16.png"},{rel:"apple-touch-icon",sizes:"180x180",href:"/apple-touch-icon.png"}],Gt=()=>[{charset:"utf-8"},{title:"Fadlan Zunima - Frontend Engineer Portfolio"},{viewport:"width=device-width,initial-scale=1"},{name:"description",content:"Portfolio website of Fadlan Zunima, a skilled Frontend Engineer from Bandung, Indonesia specializing in React, GraphQL, and modern web technologies."},{name:"keywords",content:"Frontend Engineer, React, GraphQL, JavaScript, TypeScript, Web Development, UI/UX, Bandung"},{name:"author",content:"Fadlan Zunima"},{property:"og:title",content:"Fadlan Zunima - Frontend Engineer Portfolio"},{property:"og:description",content:"Portfolio showcasing modern web applications and frontend engineering expertise from Bandung, Indonesia."},{property:"og:type",content:"website"},{name:"twitter:card",content:"summary_large_image"},{name:"twitter:title",content:"Fadlan Zunima - Frontend Engineer Portfolio"},{name:"twitter:description",content:"Portfolio showcasing modern web applications and frontend engineering expertise from Bandung, Indonesia."}];function st(){return H("html",{lang:"en",className:"scroll-smooth",children:[H("head",{children:[E(Mt,{}),E(Et,{})]}),H("body",{className:"font-inter antialiased",children:[E(Vt,{}),E(Dt,{}),E(At,{}),E(Rt,{})]})]})}var K={};G(K,{default:()=>It,meta:()=>qe});import{motion as P}from"framer-motion";import{FaArrowDown as Bt,FaGithub as Ht,FaLinkedin as _t,FaEnvelope as Yt,FaInstagram as qt}from"react-icons/fa/index.js";import{jsx as b,jsxs as R}from"react/jsx-runtime";function Y(){let e=d=>{let i=document.getElementById(d);i&&i.scrollIntoView({behavior:"smooth"})};return R("section",{className:"min-h-screen flex items-center justify-center relative overflow-hidden bg-gradient-to-br from-blue-50 via-indigo-50 to-purple-50 dark:from-gray-900 dark:via-blue-900 dark:to-indigo-900",children:[R("div",{className:"absolute inset-0",children:[b("div",{className:"absolute top-20 left-20 w-72 h-72 bg-blue-300 rounded-full mix-blend-multiply filter blur-xl opacity-20 animate-blob"}),b("div",{className:"absolute top-40 right-20 w-72 h-72 bg-yellow-300 rounded-full mix-blend-multiply filter blur-xl opacity-20 animate-blob animation-delay-2000"}),b("div",{className:"absolute -bottom-8 left-40 w-72 h-72 bg-pink-300 rounded-full mix-blend-multiply filter blur-xl opacity-20 animate-blob animation-delay-4000"})]}),R("div",{className:"relative z-10 text-center px-6 max-w-4xl mx-auto",children:[R(P.div,{initial:{opacity:0,y:30},animate:{opacity:1,y:0},transition:{duration:.8},className:"bg-white/10 backdrop-blur-md rounded-3xl p-8 md:p-12 border border-white/20 shadow-2xl",children:[b(P.div,{initial:{scale:0},animate:{scale:1},transition:{delay:.2,type:"spring",stiffness:100},className:"w-32 h-32 mx-auto mb-8 rounded-full bg-gradient-to-r from-blue-500 to-purple-600 p-1",children:b("img",{src:"https://avatars.githubusercontent.com/u/22295679?v=4",alt:"Fadlan Zunima Profile",className:"w-full h-full rounded-full object-cover"})}),b(P.h1,{initial:{opacity:0},animate:{opacity:1},transition:{delay:.4},className:"text-4xl md:text-6xl font-bold mb-4 bg-gradient-to-r from-gray-900 to-gray-600 dark:from-white dark:to-gray-300 bg-clip-text text-transparent",children:"Fadlan Zunima"}),b(P.p,{initial:{opacity:0},animate:{opacity:1},transition:{delay:.6},className:"text-xl md:text-2xl mb-8 text-gray-700 dark:text-gray-300 font-medium",children:"Frontend Engineer"}),b(P.p,{initial:{opacity:0},animate:{opacity:1},transition:{delay:.8},className:"text-lg mb-8 text-gray-600 dark:text-gray-400 max-w-2xl mx-auto leading-relaxed",children:"Experienced Frontend Developer based in Bandung, Indonesia with 5+ years of experience building scalable and high performance web applications. Skilled in Vue.js, React.js, and Next.js, with a focus on UI/UX design, state management, and API integration. Passionate about creating responsive and efficient web solutions."}),R(P.div,{initial:{opacity:0,y:20},animate:{opacity:1,y:0},transition:{delay:1},className:"flex flex-col sm:flex-row gap-4 justify-center mb-8",children:[b("button",{onClick:()=>e("projects"),className:"px-8 py-3 bg-gradient-to-r from-blue-600 to-purple-600 text-white rounded-full font-semibold hover:from-blue-700 hover:to-purple-700 transition-all duration-300 transform hover:scale-105 hover:shadow-lg",children:"View Work"}),b("button",{onClick:()=>e("contact"),className:"px-8 py-3 bg-white/20 backdrop-blur-sm text-gray-800 dark:text-white border border-white/30 rounded-full font-semibold hover:bg-white/30 transition-all duration-300 transform hover:scale-105",children:"Contact Me"})]}),R(P.div,{initial:{opacity:0},animate:{opacity:1},transition:{delay:1.2},className:"flex justify-center space-x-6",children:[b("a",{href:"https://github.com/fadlanzunima",target:"_blank",rel:"noopener noreferrer",className:"text-2xl text-gray-600 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-400 transition-colors duration-300",children:b(Ht,{})}),b("a",{href:"https://linkedin.com/in/fadlanzunima",target:"_blank",rel:"noopener noreferrer",className:"text-2xl text-gray-600 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-400 transition-colors duration-300",children:b(_t,{})}),b("a",{href:"https://instagram.com/fdlnzunima",target:"_blank",rel:"noopener noreferrer",className:"text-2xl text-gray-600 dark:text-gray-400 hover:text-pink-600 dark:hover:text-pink-400 transition-colors duration-300",children:b(qt,{})}),b("a",{href:"mailto:fadlan.zunima@example.com",className:"text-2xl text-gray-600 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-400 transition-colors duration-300",children:b(Yt,{})})]})]}),b(P.div,{initial:{opacity:0},animate:{opacity:1},transition:{delay:1.5},className:"absolute bottom-8 left-1/2 transform -translate-x-1/2",children:b("button",{onClick:()=>e("about"),className:"text-gray-600 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-400 transition-colors duration-300 animate-bounce",children:b(Bt,{className:"text-2xl"})})})]}),b("style",{children:`
+var __defProp = Object.defineProperty;
+var __export = (target, all) => {
+  for (var name in all)
+    __defProp(target, name, { get: all[name], enumerable: !0 });
+};
+
+// node_modules/.pnpm/@remix-run+dev@2.8.1_@remix_0231befe999451c2f48d098c7b86698c/node_modules/@remix-run/dev/dist/config/defaults/entry.server.node.tsx
+var entry_server_node_exports = {};
+__export(entry_server_node_exports, {
+  default: () => handleRequest
+});
+import { PassThrough } from "node:stream";
+import { createReadableStreamFromReadable } from "@remix-run/node";
+import { RemixServer } from "@remix-run/react";
+import * as isbotModule from "isbot";
+import { renderToPipeableStream } from "react-dom/server";
+import { jsxDEV } from "react/jsx-dev-runtime";
+var ABORT_DELAY = 5e3;
+function handleRequest(request, responseStatusCode, responseHeaders, remixContext, loadContext) {
+  return isBotRequest(request.headers.get("user-agent")) ? handleBotRequest(
+    request,
+    responseStatusCode,
+    responseHeaders,
+    remixContext
+  ) : handleBrowserRequest(
+    request,
+    responseStatusCode,
+    responseHeaders,
+    remixContext
+  );
+}
+function isBotRequest(userAgent) {
+  return userAgent ? "isbot" in isbotModule && typeof isbotModule.isbot == "function" ? isbotModule.isbot(userAgent) : "default" in isbotModule && typeof isbotModule.default == "function" ? isbotModule.default(userAgent) : !1 : !1;
+}
+function handleBotRequest(request, responseStatusCode, responseHeaders, remixContext) {
+  return new Promise((resolve, reject) => {
+    let shellRendered = !1, { pipe, abort } = renderToPipeableStream(
+      /* @__PURE__ */ jsxDEV(
+        RemixServer,
+        {
+          context: remixContext,
+          url: request.url,
+          abortDelay: ABORT_DELAY
+        },
+        void 0,
+        !1,
+        {
+          fileName: "node_modules/.pnpm/@remix-run+dev@2.8.1_@remix_0231befe999451c2f48d098c7b86698c/node_modules/@remix-run/dev/dist/config/defaults/entry.server.node.tsx",
+          lineNumber: 63,
+          columnNumber: 7
+        },
+        this
+      ),
+      {
+        onAllReady() {
+          shellRendered = !0;
+          let body = new PassThrough(), stream = createReadableStreamFromReadable(body);
+          responseHeaders.set("Content-Type", "text/html"), resolve(
+            new Response(stream, {
+              headers: responseHeaders,
+              status: responseStatusCode
+            })
+          ), pipe(body);
+        },
+        onShellError(error) {
+          reject(error);
+        },
+        onError(error) {
+          responseStatusCode = 500, shellRendered && console.error(error);
+        }
+      }
+    );
+    setTimeout(abort, ABORT_DELAY);
+  });
+}
+function handleBrowserRequest(request, responseStatusCode, responseHeaders, remixContext) {
+  return new Promise((resolve, reject) => {
+    let shellRendered = !1, { pipe, abort } = renderToPipeableStream(
+      /* @__PURE__ */ jsxDEV(
+        RemixServer,
+        {
+          context: remixContext,
+          url: request.url,
+          abortDelay: ABORT_DELAY
+        },
+        void 0,
+        !1,
+        {
+          fileName: "node_modules/.pnpm/@remix-run+dev@2.8.1_@remix_0231befe999451c2f48d098c7b86698c/node_modules/@remix-run/dev/dist/config/defaults/entry.server.node.tsx",
+          lineNumber: 113,
+          columnNumber: 7
+        },
+        this
+      ),
+      {
+        onShellReady() {
+          shellRendered = !0;
+          let body = new PassThrough(), stream = createReadableStreamFromReadable(body);
+          responseHeaders.set("Content-Type", "text/html"), resolve(
+            new Response(stream, {
+              headers: responseHeaders,
+              status: responseStatusCode
+            })
+          ), pipe(body);
+        },
+        onShellError(error) {
+          reject(error);
+        },
+        onError(error) {
+          responseStatusCode = 500, shellRendered && console.error(error);
+        }
+      }
+    );
+    setTimeout(abort, ABORT_DELAY);
+  });
+}
+
+// app/root.tsx
+var root_exports = {};
+__export(root_exports, {
+  default: () => App,
+  links: () => links,
+  meta: () => meta
+});
+import {
+  Links,
+  LiveReload,
+  Meta,
+  Outlet,
+  Scripts,
+  ScrollRestoration
+} from "@remix-run/react";
+import { Analytics } from "@vercel/analytics/remix";
+
+// app/styles/globals.css
+var globals_default = "/build/_assets/globals-6FXAHAM2.css";
+
+// app/root.tsx
+import { jsxDEV as jsxDEV2 } from "react/jsx-dev-runtime";
+var links = () => [
+  { rel: "stylesheet", href: globals_default },
+  { rel: "preconnect", href: "https://fonts.googleapis.com" },
+  { rel: "preconnect", href: "https://fonts.gstatic.com", crossOrigin: "anonymous" },
+  {
+    rel: "stylesheet",
+    href: "https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+  },
+  // Favicon links
+  { rel: "icon", type: "image/svg+xml", href: "/favicon.svg" },
+  { rel: "icon", type: "image/x-icon", href: "/favicon.ico" },
+  { rel: "icon", type: "image/png", sizes: "32x32", href: "/favicon-32x32.png" },
+  { rel: "icon", type: "image/png", sizes: "16x16", href: "/favicon-16x16.png" },
+  { rel: "apple-touch-icon", sizes: "180x180", href: "/apple-touch-icon.png" }
+], meta = () => [
+  { charset: "utf-8" },
+  { title: "Fadlan Zunima - Frontend Engineer Portfolio" },
+  { viewport: "width=device-width,initial-scale=1" },
+  {
+    name: "description",
+    content: "Portfolio website of Fadlan Zunima, a skilled Frontend Engineer from Bandung, Indonesia specializing in React, GraphQL, and modern web technologies."
+  },
+  { name: "keywords", content: "Frontend Engineer, React, GraphQL, JavaScript, TypeScript, Web Development, UI/UX, Bandung" },
+  { name: "author", content: "Fadlan Zunima" },
+  { property: "og:title", content: "Fadlan Zunima - Frontend Engineer Portfolio" },
+  { property: "og:description", content: "Portfolio showcasing modern web applications and frontend engineering expertise from Bandung, Indonesia." },
+  { property: "og:type", content: "website" },
+  { name: "twitter:card", content: "summary_large_image" },
+  { name: "twitter:title", content: "Fadlan Zunima - Frontend Engineer Portfolio" },
+  { name: "twitter:description", content: "Portfolio showcasing modern web applications and frontend engineering expertise from Bandung, Indonesia." }
+];
+function App() {
+  return /* @__PURE__ */ jsxDEV2("html", { lang: "en", className: "scroll-smooth", children: [
+    /* @__PURE__ */ jsxDEV2("head", { children: [
+      /* @__PURE__ */ jsxDEV2(Meta, {}, void 0, !1, {
+        fileName: "app/root.tsx",
+        lineNumber: 52,
+        columnNumber: 9
+      }, this),
+      /* @__PURE__ */ jsxDEV2(Links, {}, void 0, !1, {
+        fileName: "app/root.tsx",
+        lineNumber: 53,
+        columnNumber: 9
+      }, this)
+    ] }, void 0, !0, {
+      fileName: "app/root.tsx",
+      lineNumber: 51,
+      columnNumber: 7
+    }, this),
+    /* @__PURE__ */ jsxDEV2("body", { className: "font-inter antialiased", children: [
+      /* @__PURE__ */ jsxDEV2(Outlet, {}, void 0, !1, {
+        fileName: "app/root.tsx",
+        lineNumber: 56,
+        columnNumber: 9
+      }, this),
+      /* @__PURE__ */ jsxDEV2(Analytics, {}, void 0, !1, {
+        fileName: "app/root.tsx",
+        lineNumber: 57,
+        columnNumber: 9
+      }, this),
+      /* @__PURE__ */ jsxDEV2(ScrollRestoration, {}, void 0, !1, {
+        fileName: "app/root.tsx",
+        lineNumber: 58,
+        columnNumber: 9
+      }, this),
+      /* @__PURE__ */ jsxDEV2(Scripts, {}, void 0, !1, {
+        fileName: "app/root.tsx",
+        lineNumber: 59,
+        columnNumber: 9
+      }, this),
+      /* @__PURE__ */ jsxDEV2(LiveReload, {}, void 0, !1, {
+        fileName: "app/root.tsx",
+        lineNumber: 60,
+        columnNumber: 9
+      }, this)
+    ] }, void 0, !0, {
+      fileName: "app/root.tsx",
+      lineNumber: 55,
+      columnNumber: 7
+    }, this)
+  ] }, void 0, !0, {
+    fileName: "app/root.tsx",
+    lineNumber: 50,
+    columnNumber: 5
+  }, this);
+}
+
+// app/routes/_index.tsx
+var index_exports = {};
+__export(index_exports, {
+  default: () => Index,
+  meta: () => meta2
+});
+
+// app/components/Hero.tsx
+import { motion } from "framer-motion";
+import {
+  FaArrowDown
+} from "react-icons/fa/index.js";
+import { jsxDEV as jsxDEV3 } from "react/jsx-dev-runtime";
+function Hero() {
+  let scrollToSection = (sectionId) => {
+    let element = document.getElementById(sectionId);
+    element && element.scrollIntoView({ behavior: "smooth" });
+  };
+  return /* @__PURE__ */ jsxDEV3("section", { className: "min-h-screen flex items-center justify-center relative overflow-hidden bg-gradient-to-br from-blue-50 via-indigo-50 to-purple-50 dark:from-gray-900 dark:via-blue-900 dark:to-indigo-900", children: [
+    /* @__PURE__ */ jsxDEV3("div", { className: "absolute inset-0", children: [
+      /* @__PURE__ */ jsxDEV3("div", { className: "absolute top-20 left-20 w-72 h-72 bg-blue-300 rounded-full mix-blend-multiply filter blur-xl opacity-20 animate-blob" }, void 0, !1, {
+        fileName: "app/components/Hero.tsx",
+        lineNumber: 22,
+        columnNumber: 9
+      }, this),
+      /* @__PURE__ */ jsxDEV3("div", { className: "absolute top-40 right-20 w-72 h-72 bg-yellow-300 rounded-full mix-blend-multiply filter blur-xl opacity-20 animate-blob animation-delay-2000" }, void 0, !1, {
+        fileName: "app/components/Hero.tsx",
+        lineNumber: 23,
+        columnNumber: 9
+      }, this),
+      /* @__PURE__ */ jsxDEV3("div", { className: "absolute -bottom-8 left-40 w-72 h-72 bg-pink-300 rounded-full mix-blend-multiply filter blur-xl opacity-20 animate-blob animation-delay-4000" }, void 0, !1, {
+        fileName: "app/components/Hero.tsx",
+        lineNumber: 24,
+        columnNumber: 9
+      }, this)
+    ] }, void 0, !0, {
+      fileName: "app/components/Hero.tsx",
+      lineNumber: 21,
+      columnNumber: 7
+    }, this),
+    /* @__PURE__ */ jsxDEV3("div", { className: "relative z-10 text-center px-6 max-w-4xl mx-auto", children: [
+      /* @__PURE__ */ jsxDEV3(
+        motion.div,
+        {
+          initial: { opacity: 0, y: 30 },
+          animate: { opacity: 1, y: 0 },
+          transition: { duration: 0.8 },
+          className: "bg-white/10 backdrop-blur-md rounded-3xl p-8 md:p-12 border border-white/20 shadow-2xl",
+          children: [
+            /* @__PURE__ */ jsxDEV3(
+              motion.div,
+              {
+                initial: { scale: 0 },
+                animate: { scale: 1 },
+                transition: { delay: 0.2, type: "spring", stiffness: 100 },
+                className: "w-32 h-32 mx-auto mb-8 rounded-full bg-gradient-to-r from-blue-500 to-purple-600 p-1",
+                children: /* @__PURE__ */ jsxDEV3(
+                  "img",
+                  {
+                    src: "https://avatars.githubusercontent.com/u/22295679?v=4",
+                    alt: "Fadlan Zunima Profile",
+                    className: "w-full h-full rounded-full object-cover"
+                  },
+                  void 0,
+                  !1,
+                  {
+                    fileName: "app/components/Hero.tsx",
+                    lineNumber: 43,
+                    columnNumber: 13
+                  },
+                  this
+                )
+              },
+              void 0,
+              !1,
+              {
+                fileName: "app/components/Hero.tsx",
+                lineNumber: 37,
+                columnNumber: 11
+              },
+              this
+            ),
+            /* @__PURE__ */ jsxDEV3(
+              motion.h1,
+              {
+                initial: { opacity: 0 },
+                animate: { opacity: 1 },
+                transition: { delay: 0.4 },
+                className: "text-4xl md:text-6xl font-bold mb-4 bg-gradient-to-r from-gray-900 to-gray-600 dark:from-white dark:to-gray-300 bg-clip-text text-transparent",
+                children: "Fadlan Zunima"
+              },
+              void 0,
+              !1,
+              {
+                fileName: "app/components/Hero.tsx",
+                lineNumber: 51,
+                columnNumber: 11
+              },
+              this
+            ),
+            /* @__PURE__ */ jsxDEV3(
+              motion.p,
+              {
+                initial: { opacity: 0 },
+                animate: { opacity: 1 },
+                transition: { delay: 0.6 },
+                className: "text-xl md:text-2xl mb-8 text-gray-700 dark:text-gray-300 font-medium",
+                children: "Frontend Engineer"
+              },
+              void 0,
+              !1,
+              {
+                fileName: "app/components/Hero.tsx",
+                lineNumber: 60,
+                columnNumber: 11
+              },
+              this
+            ),
+            /* @__PURE__ */ jsxDEV3(
+              motion.p,
+              {
+                initial: { opacity: 0 },
+                animate: { opacity: 1 },
+                transition: { delay: 0.8 },
+                className: "text-lg mb-8 text-gray-600 dark:text-gray-400 max-w-2xl mx-auto leading-relaxed",
+                children: "Experienced Frontend Developer based in Bandung, Indonesia with 5+ years of experience building scalable and high performance web applications. Skilled in Vue.js, React.js, and Next.js, with a focus on UI/UX design, state management, and API integration. Passionate about creating responsive and efficient web solutions."
+              },
+              void 0,
+              !1,
+              {
+                fileName: "app/components/Hero.tsx",
+                lineNumber: 69,
+                columnNumber: 11
+              },
+              this
+            ),
+            /* @__PURE__ */ jsxDEV3(
+              motion.div,
+              {
+                initial: { opacity: 0, y: 20 },
+                animate: { opacity: 1, y: 0 },
+                transition: { delay: 1 },
+                className: "flex flex-col sm:flex-row gap-4 justify-center mb-8",
+                children: [
+                  /* @__PURE__ */ jsxDEV3(
+                    "button",
+                    {
+                      onClick: () => scrollToSection("projects"),
+                      className: "px-8 py-3 bg-gradient-to-r from-blue-600 to-purple-600 text-white rounded-full font-semibold hover:from-blue-700 hover:to-purple-700 transition-all duration-300 transform hover:scale-105 hover:shadow-lg",
+                      children: "View Work"
+                    },
+                    void 0,
+                    !1,
+                    {
+                      fileName: "app/components/Hero.tsx",
+                      lineNumber: 89,
+                      columnNumber: 13
+                    },
+                    this
+                  ),
+                  /* @__PURE__ */ jsxDEV3(
+                    "button",
+                    {
+                      onClick: () => scrollToSection("contact"),
+                      className: "px-8 py-3 bg-white/20 backdrop-blur-sm text-gray-800 dark:text-white border border-white/30 rounded-full font-semibold hover:bg-white/30 transition-all duration-300 transform hover:scale-105",
+                      children: "Contact Me"
+                    },
+                    void 0,
+                    !1,
+                    {
+                      fileName: "app/components/Hero.tsx",
+                      lineNumber: 95,
+                      columnNumber: 13
+                    },
+                    this
+                  )
+                ]
+              },
+              void 0,
+              !0,
+              {
+                fileName: "app/components/Hero.tsx",
+                lineNumber: 83,
+                columnNumber: 11
+              },
+              this
+            )
+          ]
+        },
+        void 0,
+        !0,
+        {
+          fileName: "app/components/Hero.tsx",
+          lineNumber: 30,
+          columnNumber: 9
+        },
+        this
+      ),
+      /* @__PURE__ */ jsxDEV3(
+        motion.div,
+        {
+          initial: { opacity: 0 },
+          animate: { opacity: 1 },
+          transition: { delay: 1.5 },
+          className: "absolute bottom-8 left-1/2 transform -translate-x-1/2",
+          children: /* @__PURE__ */ jsxDEV3(
+            "button",
+            {
+              onClick: () => scrollToSection("about"),
+              className: "text-gray-600 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-400 transition-colors duration-300 animate-bounce",
+              children: /* @__PURE__ */ jsxDEV3(FaArrowDown, { className: "text-2xl" }, void 0, !1, {
+                fileName: "app/components/Hero.tsx",
+                lineNumber: 154,
+                columnNumber: 13
+              }, this)
+            },
+            void 0,
+            !1,
+            {
+              fileName: "app/components/Hero.tsx",
+              lineNumber: 150,
+              columnNumber: 11
+            },
+            this
+          )
+        },
+        void 0,
+        !1,
+        {
+          fileName: "app/components/Hero.tsx",
+          lineNumber: 144,
+          columnNumber: 9
+        },
+        this
+      )
+    ] }, void 0, !0, {
+      fileName: "app/components/Hero.tsx",
+      lineNumber: 28,
+      columnNumber: 7
+    }, this),
+    /* @__PURE__ */ jsxDEV3("style", { children: `
         @keyframes blob {
           0% {
             transform: translate(0px, 0px) scale(1);
@@ -22,7 +488,852 @@ var Tt=Object.defineProperty;var G=(e,d)=>{for(var i in d)Tt(e,i,{get:d[i],enume
         .animation-delay-4000 {
           animation-delay: 4s;
         }
-      `})]})}import{motion as z}from"framer-motion";import{FaReact as Qt,FaVuejs as $t,FaPhp as Wt}from"react-icons/fa/index.js";import{SiTailwindcss as Zt,SiGraphql as Xt,SiFlutter as Ot,SiVercel as Jt,SiMysql as Kt,SiTypescript as te}from"react-icons/si/index.js";import{jsx as w,jsxs as F}from"react/jsx-runtime";function q(){let e=[{Icon:Qt,name:"React",color:"text-blue-500"},{Icon:te,name:"TypeScript",color:"text-blue-600"},{Icon:$t,name:"Vue.js",color:"text-green-500"},{Icon:Zt,name:"Tailwind CSS",color:"text-cyan-500"},{Icon:Xt,name:"GraphQL",color:"text-pink-500"},{Icon:Ot,name:"Flutter",color:"text-blue-400"},{Icon:Jt,name:"Vercel",color:"text-black dark:text-white"},{Icon:Wt,name:"PHP",color:"text-purple-600"},{Icon:Kt,name:"MySQL",color:"text-orange-500"}],d={hidden:{opacity:0},visible:{opacity:1,transition:{delayChildren:.3,staggerChildren:.1}}},i={hidden:{y:20,opacity:0},visible:{y:0,opacity:1,transition:{duration:.5}}};return w("section",{id:"about",className:"py-20 bg-white dark:bg-gray-900",children:F("div",{className:"max-w-6xl mx-auto px-6",children:[F(z.div,{initial:"hidden",whileInView:"visible",viewport:{once:!0,amount:.3},variants:d,className:"text-center mb-16",children:[w(z.h2,{variants:i,className:"text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent",children:"About Me"}),w(z.div,{variants:i,className:"w-24 h-1 bg-gradient-to-r from-blue-600 to-purple-600 mx-auto mb-8"})]}),F("div",{className:"grid lg:grid-cols-2 gap-12 items-center",children:[F(z.div,{initial:{opacity:0,x:-50},whileInView:{opacity:1,x:0},viewport:{once:!0},transition:{duration:.8},className:"space-y-6",children:[F("div",{className:"bg-gradient-to-br from-blue-50 to-indigo-50 dark:from-gray-800 dark:to-gray-700 rounded-2xl p-8 shadow-lg",children:[w("h3",{className:"text-2xl font-bold mb-4 text-gray-800 dark:text-white",children:"Frontend Engineer & GraphQL Enthusiast"}),w("p",{className:"text-gray-600 dark:text-gray-300 leading-relaxed mb-4",children:"Saya adalah seorang Frontend Engineer yang berbasis di Bandung, Indonesia. Dengan pengalaman dalam membangun aplikasi web modern dan responsif menggunakan React, GraphQL, dan teknologi frontend terkini. Saya fokus pada pengembangan antarmuka yang tidak hanya indah secara visual, tetapi juga memberikan pengalaman pengguna yang luar biasa."}),w("p",{className:"text-gray-600 dark:text-gray-300 leading-relaxed mb-4",children:"Saat ini saya sedang memperdalam kemampuan dalam GraphQL dan React.js, dengan passion yang kuat terhadap detail desain, performa aplikasi, dan implementasi best practices dalam pengembangan web. Saya selalu antusias mempelajari teknologi baru dan mengikuti tren terkini dalam dunia frontend development."}),w("p",{className:"text-gray-600 dark:text-gray-300 leading-relaxed",children:"Sebagai remote worker, saya menikmati fleksibilitas dalam bekerja sambil tetap berkolaborasi efektif dengan tim. Ketika tidak sedang coding, saya gemar mengeksplorasi design patterns, berkontribusi pada open source, dan berbagi pengetahuan dengan komunitas developer."})]}),F("div",{className:"grid grid-cols-3 gap-4",children:[F(z.div,{whileHover:{scale:1.05},className:"text-center p-4 bg-white dark:bg-gray-800 rounded-xl shadow-md",children:[w("div",{className:"text-2xl font-bold text-blue-600 dark:text-blue-400",children:"3+"}),w("div",{className:"text-sm text-gray-600 dark:text-gray-400",children:"Years Experience"})]}),F(z.div,{whileHover:{scale:1.05},className:"text-center p-4 bg-white dark:bg-gray-800 rounded-xl shadow-md",children:[w("div",{className:"text-2xl font-bold text-purple-600 dark:text-purple-400",children:"50+"}),w("div",{className:"text-sm text-gray-600 dark:text-gray-400",children:"Projects Completed"})]}),F(z.div,{whileHover:{scale:1.05},className:"text-center p-4 bg-white dark:bg-gray-800 rounded-xl shadow-md",children:[w("div",{className:"text-2xl font-bold text-green-600 dark:text-green-400",children:"25+"}),w("div",{className:"text-sm text-gray-600 dark:text-gray-400",children:"Happy Clients"})]})]})]}),w(z.div,{initial:{opacity:0,x:50},whileInView:{opacity:1,x:0},viewport:{once:!0},transition:{duration:.8},className:"relative",children:F("div",{className:"bg-gradient-to-br from-blue-50 to-purple-50 dark:from-gray-800 dark:to-gray-700 rounded-2xl p-8 shadow-lg",children:[w("h3",{className:"text-2xl font-bold mb-8 text-center text-gray-800 dark:text-white",children:"Technologies I Work With"}),w("div",{className:"grid grid-cols-3 gap-6",children:e.map(({Icon:r,name:t,color:u},h)=>F(z.div,{initial:{opacity:0,scale:0},whileInView:{opacity:1,scale:1},viewport:{once:!0},transition:{duration:.5,delay:h*.1,type:"spring",stiffness:100},whileHover:{scale:1.1,y:-5},className:"flex flex-col items-center p-4 bg-white dark:bg-gray-700 rounded-xl shadow-md hover:shadow-lg transition-all duration-300 group",children:[w(r,{className:`text-4xl ${u} mb-2 group-hover:scale-110 transition-transform duration-300`}),w("span",{className:"text-sm font-medium text-gray-700 dark:text-gray-300 text-center",children:t})]},t))}),w("div",{className:"absolute -top-4 -right-4 w-20 h-20 bg-gradient-to-r from-blue-500 to-purple-500 rounded-full opacity-20 blur-xl"}),w("div",{className:"absolute -bottom-4 -left-4 w-16 h-16 bg-gradient-to-r from-pink-500 to-yellow-500 rounded-full opacity-20 blur-xl"})]})})]})]})})}import{motion as M}from"framer-motion";import{FaGithub as Q,FaExternalLinkAlt as lt,FaReact as $,FaVuejs as ct,FaPhp as ee,FaAngular as re,FaAtom as ae}from"react-icons/fa/index.js";import{SiTailwindcss as U,SiTypescript as V,SiNextdotjs as gt,SiRemix as oe,SiMysql as ie,SiGraphql as mt,SiLaravel as ne,SiNuxtdotjs as de,SiPrisma as pt,SiMongodb as se}from"react-icons/si/index.js";import{jsx as c,jsxs as f}from"react/jsx-runtime";function W(){let e=[{id:1,title:"Ticketing Event Platform - darisini.com",description:"Ongoing development since 2021 - Front-end web application for darisini.com ticketing platform. Ensuring seamless user experience with integrated data management and responsive design.",image:"https://images.unsplash.com/photo-1492684223066-81342ee5ff30?w=500&h=300&fit=crop",technologies:[{name:"Next.js",icon:gt,color:"text-black dark:text-white"},{name:"React",icon:$,color:"text-blue-500"},{name:"Tailwind",icon:U,color:"text-cyan-500"},{name:"TypeScript",icon:V,color:"text-blue-600"}],githubUrl:"https://github.com/fadlanzunima",liveUrl:"https://darisini.com",featured:!0},{id:2,title:"Archive Document Web Application",description:"2024 - Full-stack application with MySQL database for document archiving. Designed and structured database entities using Eloquent ORM for efficiency and scalability.",image:"https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=500&h=300&fit=crop",technologies:[{name:"Laravel",icon:ne,color:"text-red-500"},{name:"MySQL",icon:ie,color:"text-orange-500"},{name:"PHP",icon:ee,color:"text-purple-600"},{name:"Prisma",icon:pt,color:"text-gray-700 dark:text-gray-300"}],githubUrl:"https://github.com/fadlanzunima",liveUrl:"#",featured:!0},{id:3,title:"Landing Page Donation - donasi.darisini.com",description:"2023 - Built and deployed responsive front-end web application for donation platform. Designed fully responsive layout ensuring seamless user experience across all devices.",image:"https://images.unsplash.com/photo-1532629345422-7515f3d16bb6?w=500&h=300&fit=crop",technologies:[{name:"Next.js",icon:gt,color:"text-black dark:text-white"},{name:"Tailwind",icon:U,color:"text-cyan-500"},{name:"React",icon:$,color:"text-blue-500"},{name:"TypeScript",icon:V,color:"text-blue-600"}],githubUrl:"https://github.com/fadlanzunima",liveUrl:"https://donasi.darisini.com",featured:!1},{id:4,title:"Platform Web for Banned Product - konsumenbijak.com",description:"2023 - Integrated form and data management for front-end web application focused on consumer awareness. Features fully responsive layout with seamless user experience.",image:"https://images.unsplash.com/photo-1563013544-824ae1b704d3?w=500&h=300&fit=crop",technologies:[{name:"Vue.js",icon:ct,color:"text-green-500"},{name:"Nuxt.js",icon:de,color:"text-green-600"},{name:"Tailwind",icon:U,color:"text-cyan-500"},{name:"TypeScript",icon:V,color:"text-blue-600"}],githubUrl:"https://github.com/fadlanzunima",liveUrl:"http://konsumenbijak.com/",featured:!1},{id:5,title:"Portfolio Website - Remix",description:"Personal portfolio website showcasing modern web development skills with Remix, Tailwind CSS, and Framer Motion animations. Features glassmorphism design and dark mode.",image:"https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?w=500&h=300&fit=crop",technologies:[{name:"Remix",icon:oe,color:"text-blue-600"},{name:"TypeScript",icon:V,color:"text-blue-600"},{name:"Tailwind",icon:U,color:"text-cyan-500"}],githubUrl:"https://github.com/fadlanzunima/portfolio-remix",liveUrl:"https://fadlanzunima.vercel.app",featured:!1},{id:6,title:"Learning Projects & Experiments",description:"Collection of learning projects exploring Vue.js, Angular, React Native, state management with Jotai and Relay, and backend technologies including GraphQL and Prisma.",image:"https://images.unsplash.com/photo-1504608524841-42fe6f032b4b?w=500&h=300&fit=crop",technologies:[{name:"Vue.js",icon:ct,color:"text-green-500"},{name:"Angular",icon:re,color:"text-red-600"},{name:"GraphQL",icon:mt,color:"text-pink-500"},{name:"Jotai",icon:ae,color:"text-purple-500"},{name:"Prisma",icon:pt,color:"text-gray-700 dark:text-gray-300"}],githubUrl:"https://github.com/fadlanzunima",liveUrl:"#",featured:!1},{id:7,title:"Mobile App Development - React Native",description:"Cross-platform mobile application built with React Native and TypeScript. Features real-time data synchronization, push notifications, and offline functionality with MongoDB integration.",image:"https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=500&h=300&fit=crop",technologies:[{name:"React Native",icon:$,color:"text-blue-500"},{name:"TypeScript",icon:V,color:"text-blue-600"},{name:"MongoDB",icon:se,color:"text-green-600"},{name:"GraphQL",icon:mt,color:"text-pink-500"}],githubUrl:"https://github.com/fadlanzunima",liveUrl:"#",featured:!1}],d={hidden:{opacity:0},visible:{opacity:1,transition:{delayChildren:.3,staggerChildren:.2}}},i={hidden:{y:50,opacity:0},visible:{y:0,opacity:1,transition:{duration:.6,ease:"easeOut"}}};return f("section",{id:"projects",className:"py-20 bg-gray-50 dark:bg-gray-800",children:[f("div",{className:"max-w-7xl mx-auto px-6",children:[f(M.div,{initial:"hidden",whileInView:"visible",viewport:{once:!0,amount:.3},variants:d,className:"text-center mb-16",children:[c(M.h2,{variants:i,className:"text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent",children:"Featured Projects"}),c(M.div,{variants:i,className:"w-24 h-1 bg-gradient-to-r from-blue-600 to-purple-600 mx-auto mb-8"}),c(M.p,{variants:i,className:"text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto",children:"Real projects showcasing expertise in Vue.js, Nuxt.js, React.js, Next.js, Angular, Laravel, GraphQL, state management (Vuex, Relay, Jotai), and databases (MySQL, PostgreSQL, MongoDB) from 2021 to 2024."})]}),c("div",{className:"masonry-container",children:e.map((r,t)=>f(M.div,{initial:{opacity:0,y:50},whileInView:{opacity:1,y:0},viewport:{once:!0},transition:{duration:.6,delay:t*.1},whileHover:{y:-8,scale:1.02},className:`masonry-item group relative bg-white dark:bg-gray-900 rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 break-inside-avoid mb-6 ${r.featured?"featured ring-2 ring-blue-500/30 bg-gradient-to-br from-blue-50/50 to-white dark:from-blue-900/20 dark:to-gray-900":""}`,children:[f("div",{className:"relative overflow-hidden",children:[c("img",{src:r.image,alt:r.title,className:`w-full object-cover group-hover:scale-110 transition-transform duration-500 ${r.featured?"h-64":t%4===0?"h-48":t%4===1?"h-56":t%4===2?"h-52":"h-60"}`}),c("div",{className:"absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"}),r.featured&&c("div",{className:"absolute top-4 left-4 z-10",children:c("span",{className:"bg-gradient-to-r from-blue-600 to-purple-600 text-white px-3 py-1 rounded-full text-xs font-bold shadow-lg",children:"Featured Project"})}),c("div",{className:"absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-all duration-300",children:f("div",{className:"flex space-x-3",children:[c("a",{href:r.githubUrl,target:"_blank",rel:"noopener noreferrer",className:"p-3 bg-white/95 backdrop-blur-sm rounded-full hover:bg-white hover:scale-110 transition-all duration-300 shadow-lg",children:c(Q,{className:"text-lg text-gray-800"})}),r.liveUrl!=="#"&&c("a",{href:r.liveUrl,target:"_blank",rel:"noopener noreferrer",className:"p-3 bg-blue-600 rounded-full hover:bg-blue-700 hover:scale-110 transition-all duration-300 shadow-lg",children:c(lt,{className:"text-lg text-white"})})]})})]}),f("div",{className:"p-6",children:[f("div",{className:"mb-4",children:[c("h3",{className:"text-lg font-bold mb-2 text-gray-800 dark:text-white group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors duration-300 leading-tight",children:r.title}),f("div",{className:"flex items-center gap-2 mb-3",children:[r.featured&&c("span",{className:"inline-flex items-center px-2 py-1 rounded-full text-xs font-medium bg-blue-100 text-blue-800 dark:bg-blue-900 dark:text-blue-200",children:"\u2B50 Featured"}),r.liveUrl!=="#"&&c("span",{className:"inline-flex items-center px-2 py-1 rounded-full text-xs font-medium bg-green-100 text-green-800 dark:bg-green-900 dark:text-green-200",children:"\u{1F680} Live"})]})]}),c("p",{className:`text-gray-600 dark:text-gray-300 mb-5 leading-relaxed text-sm line-clamp-4 ${r.featured?"text-gray-700 dark:text-gray-200":""}`,children:r.description}),c("div",{className:"flex flex-wrap gap-2 mb-5",children:r.technologies.map(u=>f("div",{className:"flex items-center space-x-1 bg-gradient-to-r from-gray-50 to-gray-100 dark:from-gray-700 dark:to-gray-600 px-2 py-1 rounded-md border border-gray-200 dark:border-gray-600 hover:shadow-sm transition-shadow duration-200",children:[c(u.icon,{className:`text-xs ${u.color}`}),c("span",{className:"text-xs font-medium text-gray-700 dark:text-gray-300",children:u.name})]},u.name))}),f("div",{className:"flex gap-2",children:[f("a",{href:r.githubUrl,target:"_blank",rel:"noopener noreferrer",className:"flex-1 flex items-center justify-center space-x-2 py-2.5 px-3 bg-gradient-to-r from-gray-800 to-gray-900 dark:from-gray-700 dark:to-gray-800 text-white rounded-lg hover:from-gray-900 hover:to-black dark:hover:from-gray-600 dark:hover:to-gray-700 transition-all duration-300 transform hover:scale-105 shadow-md hover:shadow-lg",children:[c(Q,{className:"text-sm"}),c("span",{className:"text-sm font-medium",children:"Code"})]}),r.liveUrl!=="#"&&f("a",{href:r.liveUrl,target:"_blank",rel:"noopener noreferrer",className:"flex-1 flex items-center justify-center space-x-2 py-2.5 px-3 bg-gradient-to-r from-blue-600 to-blue-700 text-white rounded-lg hover:from-blue-700 hover:to-blue-800 transition-all duration-300 transform hover:scale-105 shadow-md hover:shadow-lg",children:[c(lt,{className:"text-sm"}),c("span",{className:"text-sm font-medium",children:"Visit"})]})]})]})]},r.id))}),c(M.div,{initial:{opacity:0,y:30},whileInView:{opacity:1,y:0},viewport:{once:!0},transition:{duration:.6,delay:.5},className:"text-center mt-12",children:f("a",{href:"https://github.com/fadlanzunima",target:"_blank",rel:"noopener noreferrer",className:"inline-flex items-center space-x-2 px-8 py-3 bg-gradient-to-r from-blue-600 to-purple-600 text-white rounded-full font-semibold hover:from-blue-700 hover:to-purple-700 transition-all duration-300 transform hover:scale-105 hover:shadow-lg",children:[c(Q,{className:"text-lg"}),c("span",{children:"View More on GitHub"})]})})]}),c("style",{children:`
+      ` }, void 0, !1, {
+      fileName: "app/components/Hero.tsx",
+      lineNumber: 159,
+      columnNumber: 7
+    }, this)
+  ] }, void 0, !0, {
+    fileName: "app/components/Hero.tsx",
+    lineNumber: 19,
+    columnNumber: 5
+  }, this);
+}
+
+// app/components/About.tsx
+import { motion as motion2 } from "framer-motion";
+import { FaReact, FaVuejs, FaPhp } from "react-icons/fa/index.js";
+import {
+  SiTailwindcss,
+  SiGraphql,
+  SiVercel,
+  SiMysql,
+  SiTypescript,
+  SiNextdotjs
+} from "react-icons/si/index.js";
+import { jsxDEV as jsxDEV4 } from "react/jsx-dev-runtime";
+function About() {
+  let techIcons = [
+    { Icon: FaReact, name: "React", color: "text-blue-500" },
+    { Icon: SiTypescript, name: "TypeScript", color: "text-blue-600" },
+    { Icon: FaVuejs, name: "Vue.js", color: "text-green-500" },
+    { Icon: SiTailwindcss, name: "Tailwind CSS", color: "text-cyan-500" },
+    { Icon: SiGraphql, name: "GraphQL", color: "text-pink-500" },
+    { Icon: SiNextdotjs, name: "Next.js", color: "text-gray-900 dark:text-white" },
+    // { Icon: SiFlutter, name: "Flutter", color: "text-blue-400" },
+    { Icon: SiVercel, name: "Vercel", color: "text-black dark:text-white" },
+    { Icon: FaPhp, name: "PHP", color: "text-purple-600" },
+    { Icon: SiMysql, name: "MySQL", color: "text-orange-500" }
+  ], containerVariants = {
+    hidden: { opacity: 0 },
+    visible: {
+      opacity: 1,
+      transition: {
+        delayChildren: 0.3,
+        staggerChildren: 0.1
+      }
+    }
+  }, itemVariants = {
+    hidden: { y: 20, opacity: 0 },
+    visible: {
+      y: 0,
+      opacity: 1,
+      transition: {
+        duration: 0.5
+      }
+    }
+  };
+  return /* @__PURE__ */ jsxDEV4("section", { id: "about", className: "py-20 bg-white dark:bg-gray-900", children: /* @__PURE__ */ jsxDEV4("div", { className: "max-w-6xl mx-auto px-6", children: [
+    /* @__PURE__ */ jsxDEV4(
+      motion2.div,
+      {
+        initial: "hidden",
+        whileInView: "visible",
+        viewport: { once: !0, amount: 0.3 },
+        variants: containerVariants,
+        className: "text-center mb-16",
+        children: [
+          /* @__PURE__ */ jsxDEV4(
+            motion2.h2,
+            {
+              variants: itemVariants,
+              className: "text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent",
+              children: "About Me"
+            },
+            void 0,
+            !1,
+            {
+              fileName: "app/components/About.tsx",
+              lineNumber: 59,
+              columnNumber: 11
+            },
+            this
+          ),
+          /* @__PURE__ */ jsxDEV4(
+            motion2.div,
+            {
+              variants: itemVariants,
+              className: "w-24 h-1 bg-gradient-to-r from-blue-600 to-purple-600 mx-auto mb-8"
+            },
+            void 0,
+            !1,
+            {
+              fileName: "app/components/About.tsx",
+              lineNumber: 65,
+              columnNumber: 11
+            },
+            this
+          )
+        ]
+      },
+      void 0,
+      !0,
+      {
+        fileName: "app/components/About.tsx",
+        lineNumber: 52,
+        columnNumber: 9
+      },
+      this
+    ),
+    /* @__PURE__ */ jsxDEV4("div", { className: "grid lg:grid-cols-2 gap-12 items-center", children: [
+      /* @__PURE__ */ jsxDEV4(
+        motion2.div,
+        {
+          initial: { opacity: 0, x: -50 },
+          whileInView: { opacity: 1, x: 0 },
+          viewport: { once: !0 },
+          transition: { duration: 0.8 },
+          className: "space-y-6",
+          children: [
+            /* @__PURE__ */ jsxDEV4("div", { className: "bg-gradient-to-br from-blue-50 to-indigo-50 dark:from-gray-800 dark:to-gray-700 rounded-2xl p-8 shadow-lg", children: [
+              /* @__PURE__ */ jsxDEV4("h3", { className: "text-2xl font-bold mb-4 text-gray-800 dark:text-white", children: "Frontend Engineer & GraphQL Enthusiast" }, void 0, !1, {
+                fileName: "app/components/About.tsx",
+                lineNumber: 81,
+                columnNumber: 15
+              }, this),
+              /* @__PURE__ */ jsxDEV4("p", { className: "text-gray-600 dark:text-gray-300 leading-relaxed mb-4", children: "Saya adalah seorang Frontend Engineer yang berbasis di Bandung, Indonesia. Dengan pengalaman dalam membangun aplikasi web modern dan responsif menggunakan React, GraphQL, dan teknologi frontend terkini. Saya fokus pada pengembangan antarmuka yang tidak hanya indah secara visual, tetapi juga memberikan pengalaman pengguna yang luar biasa." }, void 0, !1, {
+                fileName: "app/components/About.tsx",
+                lineNumber: 84,
+                columnNumber: 15
+              }, this),
+              /* @__PURE__ */ jsxDEV4("p", { className: "text-gray-600 dark:text-gray-300 leading-relaxed mb-4", children: "Saat ini saya sedang memperdalam kemampuan dalam GraphQL dan React.js, dengan passion yang kuat terhadap detail desain, performa aplikasi, dan implementasi best practices dalam pengembangan web. Saya selalu antusias mempelajari teknologi baru dan mengikuti tren terkini dalam dunia frontend development." }, void 0, !1, {
+                fileName: "app/components/About.tsx",
+                lineNumber: 92,
+                columnNumber: 15
+              }, this),
+              /* @__PURE__ */ jsxDEV4("p", { className: "text-gray-600 dark:text-gray-300 leading-relaxed", children: "Sebagai remote worker, saya menikmati fleksibilitas dalam bekerja sambil tetap berkolaborasi efektif dengan tim. Ketika tidak sedang coding, saya gemar mengeksplorasi design patterns, berkontribusi pada open source, dan berbagi pengetahuan dengan komunitas developer." }, void 0, !1, {
+                fileName: "app/components/About.tsx",
+                lineNumber: 100,
+                columnNumber: 15
+              }, this)
+            ] }, void 0, !0, {
+              fileName: "app/components/About.tsx",
+              lineNumber: 80,
+              columnNumber: 13
+            }, this),
+            /* @__PURE__ */ jsxDEV4("div", { className: "grid grid-cols-3 gap-4", children: [
+              /* @__PURE__ */ jsxDEV4(
+                motion2.div,
+                {
+                  whileHover: { scale: 1.05 },
+                  className: "text-center p-4 bg-white dark:bg-gray-800 rounded-xl shadow-md",
+                  children: [
+                    /* @__PURE__ */ jsxDEV4("div", { className: "text-2xl font-bold text-blue-600 dark:text-blue-400", children: "5+" }, void 0, !1, {
+                      fileName: "app/components/About.tsx",
+                      lineNumber: 115,
+                      columnNumber: 17
+                    }, this),
+                    /* @__PURE__ */ jsxDEV4("div", { className: "text-sm text-gray-600 dark:text-gray-400", children: "Years Experience" }, void 0, !1, {
+                      fileName: "app/components/About.tsx",
+                      lineNumber: 118,
+                      columnNumber: 17
+                    }, this)
+                  ]
+                },
+                void 0,
+                !0,
+                {
+                  fileName: "app/components/About.tsx",
+                  lineNumber: 111,
+                  columnNumber: 15
+                },
+                this
+              ),
+              /* @__PURE__ */ jsxDEV4(
+                motion2.div,
+                {
+                  whileHover: { scale: 1.05 },
+                  className: "text-center p-4 bg-white dark:bg-gray-800 rounded-xl shadow-md",
+                  children: [
+                    /* @__PURE__ */ jsxDEV4("div", { className: "text-2xl font-bold text-purple-600 dark:text-purple-400", children: "10+" }, void 0, !1, {
+                      fileName: "app/components/About.tsx",
+                      lineNumber: 126,
+                      columnNumber: 17
+                    }, this),
+                    /* @__PURE__ */ jsxDEV4("div", { className: "text-sm text-gray-600 dark:text-gray-400", children: "Projects Completed" }, void 0, !1, {
+                      fileName: "app/components/About.tsx",
+                      lineNumber: 129,
+                      columnNumber: 17
+                    }, this)
+                  ]
+                },
+                void 0,
+                !0,
+                {
+                  fileName: "app/components/About.tsx",
+                  lineNumber: 122,
+                  columnNumber: 15
+                },
+                this
+              ),
+              /* @__PURE__ */ jsxDEV4(
+                motion2.div,
+                {
+                  whileHover: { scale: 1.05 },
+                  className: "text-center p-4 bg-white dark:bg-gray-800 rounded-xl shadow-md",
+                  children: [
+                    /* @__PURE__ */ jsxDEV4("div", { className: "text-2xl font-bold text-green-600 dark:text-green-400", children: "5+" }, void 0, !1, {
+                      fileName: "app/components/About.tsx",
+                      lineNumber: 137,
+                      columnNumber: 17
+                    }, this),
+                    /* @__PURE__ */ jsxDEV4("div", { className: "text-sm text-gray-600 dark:text-gray-400", children: "Happy Clients" }, void 0, !1, {
+                      fileName: "app/components/About.tsx",
+                      lineNumber: 140,
+                      columnNumber: 17
+                    }, this)
+                  ]
+                },
+                void 0,
+                !0,
+                {
+                  fileName: "app/components/About.tsx",
+                  lineNumber: 133,
+                  columnNumber: 15
+                },
+                this
+              )
+            ] }, void 0, !0, {
+              fileName: "app/components/About.tsx",
+              lineNumber: 110,
+              columnNumber: 13
+            }, this)
+          ]
+        },
+        void 0,
+        !0,
+        {
+          fileName: "app/components/About.tsx",
+          lineNumber: 73,
+          columnNumber: 11
+        },
+        this
+      ),
+      /* @__PURE__ */ jsxDEV4(
+        motion2.div,
+        {
+          initial: { opacity: 0, x: 50 },
+          whileInView: { opacity: 1, x: 0 },
+          viewport: { once: !0 },
+          transition: { duration: 0.8 },
+          className: "relative",
+          children: /* @__PURE__ */ jsxDEV4("div", { className: "bg-gradient-to-br from-blue-50 to-purple-50 dark:from-gray-800 dark:to-gray-700 rounded-2xl p-8 shadow-lg", children: [
+            /* @__PURE__ */ jsxDEV4("h3", { className: "text-2xl font-bold mb-8 text-center text-gray-800 dark:text-white", children: "Technologies I Work With" }, void 0, !1, {
+              fileName: "app/components/About.tsx",
+              lineNumber: 156,
+              columnNumber: 15
+            }, this),
+            /* @__PURE__ */ jsxDEV4("div", { className: "grid grid-cols-3 gap-6", children: techIcons.map(({ Icon, name, color }, index) => /* @__PURE__ */ jsxDEV4(
+              motion2.div,
+              {
+                initial: { opacity: 0, scale: 0 },
+                whileInView: { opacity: 1, scale: 1 },
+                viewport: { once: !0 },
+                transition: {
+                  duration: 0.5,
+                  delay: index * 0.1,
+                  type: "spring",
+                  stiffness: 100
+                },
+                whileHover: { scale: 1.1, y: -5 },
+                className: "flex flex-col items-center p-4 bg-white dark:bg-gray-700 rounded-xl shadow-md hover:shadow-lg transition-all duration-300 group",
+                children: [
+                  /* @__PURE__ */ jsxDEV4(
+                    Icon,
+                    {
+                      className: `text-4xl ${color} mb-2 group-hover:scale-110 transition-transform duration-300`
+                    },
+                    void 0,
+                    !1,
+                    {
+                      fileName: "app/components/About.tsx",
+                      lineNumber: 176,
+                      columnNumber: 21
+                    },
+                    this
+                  ),
+                  /* @__PURE__ */ jsxDEV4("span", { className: "text-sm font-medium text-gray-700 dark:text-gray-300 text-center", children: name }, void 0, !1, {
+                    fileName: "app/components/About.tsx",
+                    lineNumber: 179,
+                    columnNumber: 21
+                  }, this)
+                ]
+              },
+              name,
+              !0,
+              {
+                fileName: "app/components/About.tsx",
+                lineNumber: 162,
+                columnNumber: 19
+              },
+              this
+            )) }, void 0, !1, {
+              fileName: "app/components/About.tsx",
+              lineNumber: 160,
+              columnNumber: 15
+            }, this),
+            /* @__PURE__ */ jsxDEV4("div", { className: "absolute -top-4 -right-4 w-20 h-20 bg-gradient-to-r from-blue-500 to-purple-500 rounded-full opacity-20 blur-xl" }, void 0, !1, {
+              fileName: "app/components/About.tsx",
+              lineNumber: 187,
+              columnNumber: 15
+            }, this),
+            /* @__PURE__ */ jsxDEV4("div", { className: "absolute -bottom-4 -left-4 w-16 h-16 bg-gradient-to-r from-pink-500 to-yellow-500 rounded-full opacity-20 blur-xl" }, void 0, !1, {
+              fileName: "app/components/About.tsx",
+              lineNumber: 188,
+              columnNumber: 15
+            }, this)
+          ] }, void 0, !0, {
+            fileName: "app/components/About.tsx",
+            lineNumber: 155,
+            columnNumber: 13
+          }, this)
+        },
+        void 0,
+        !1,
+        {
+          fileName: "app/components/About.tsx",
+          lineNumber: 148,
+          columnNumber: 11
+        },
+        this
+      )
+    ] }, void 0, !0, {
+      fileName: "app/components/About.tsx",
+      lineNumber: 71,
+      columnNumber: 9
+    }, this)
+  ] }, void 0, !0, {
+    fileName: "app/components/About.tsx",
+    lineNumber: 51,
+    columnNumber: 7
+  }, this) }, void 0, !1, {
+    fileName: "app/components/About.tsx",
+    lineNumber: 50,
+    columnNumber: 5
+  }, this);
+}
+
+// app/components/Projects.tsx
+import { motion as motion3 } from "framer-motion";
+import { FaGithub as FaGithub2, FaExternalLinkAlt, FaReact as FaReact2, FaVuejs as FaVuejs2, FaPhp as FaPhp2, FaAngular, FaAtom } from "react-icons/fa/index.js";
+import { SiTailwindcss as SiTailwindcss2, SiTypescript as SiTypescript2, SiNextdotjs as SiNextdotjs2, SiRemix, SiMysql as SiMysql2, SiGraphql as SiGraphql2, SiLaravel, SiNuxtdotjs, SiPrisma, SiMongodb } from "react-icons/si/index.js";
+import { jsxDEV as jsxDEV5 } from "react/jsx-dev-runtime";
+function Projects() {
+  let projects = [
+    {
+      id: 1,
+      title: "Ticketing Event Platform - darisini.com",
+      description: "Ongoing development since 2021 - Front-end web application for darisini.com ticketing platform. Ensuring seamless user experience with integrated data management and responsive design.",
+      image: "https://images.unsplash.com/photo-1492684223066-81342ee5ff30?w=500&h=300&fit=crop",
+      technologies: [
+        { name: "Next.js", icon: SiNextdotjs2, color: "text-black dark:text-white" },
+        { name: "React", icon: FaReact2, color: "text-blue-500" },
+        { name: "Tailwind", icon: SiTailwindcss2, color: "text-cyan-500" },
+        { name: "TypeScript", icon: SiTypescript2, color: "text-blue-600" }
+      ],
+      githubUrl: "https://github.com/fadlanzunima",
+      liveUrl: "https://darisini.com",
+      featured: !0
+    },
+    {
+      id: 2,
+      title: "Archive Document Web Application",
+      description: "2024 - Full-stack application with MySQL database for document archiving. Designed and structured database entities using Eloquent ORM for efficiency and scalability.",
+      image: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=500&h=300&fit=crop",
+      technologies: [
+        { name: "Laravel", icon: SiLaravel, color: "text-red-500" },
+        { name: "MySQL", icon: SiMysql2, color: "text-orange-500" },
+        { name: "PHP", icon: FaPhp2, color: "text-purple-600" },
+        { name: "Prisma", icon: SiPrisma, color: "text-gray-700 dark:text-gray-300" }
+      ],
+      githubUrl: "https://github.com/fadlanzunima",
+      liveUrl: "#",
+      featured: !0
+    },
+    {
+      id: 3,
+      title: "Landing Page Donation - donasi.darisini.com",
+      description: "2023 - Built and deployed responsive front-end web application for donation platform. Designed fully responsive layout ensuring seamless user experience across all devices.",
+      image: "https://images.unsplash.com/photo-1532629345422-7515f3d16bb6?w=500&h=300&fit=crop",
+      technologies: [
+        { name: "Next.js", icon: SiNextdotjs2, color: "text-black dark:text-white" },
+        { name: "Tailwind", icon: SiTailwindcss2, color: "text-cyan-500" },
+        { name: "React", icon: FaReact2, color: "text-blue-500" },
+        { name: "TypeScript", icon: SiTypescript2, color: "text-blue-600" }
+      ],
+      githubUrl: "https://github.com/fadlanzunima",
+      liveUrl: "https://donasi.darisini.com",
+      featured: !1
+    },
+    {
+      id: 4,
+      title: "Platform Web for Banned Product - konsumenbijak.com",
+      description: "2023 - Integrated form and data management for front-end web application focused on consumer awareness. Features fully responsive layout with seamless user experience.",
+      image: "https://images.unsplash.com/photo-1563013544-824ae1b704d3?w=500&h=300&fit=crop",
+      technologies: [
+        { name: "Vue.js", icon: FaVuejs2, color: "text-green-500" },
+        { name: "Nuxt.js", icon: SiNuxtdotjs, color: "text-green-600" },
+        { name: "Tailwind", icon: SiTailwindcss2, color: "text-cyan-500" },
+        { name: "TypeScript", icon: SiTypescript2, color: "text-blue-600" }
+      ],
+      githubUrl: "https://github.com/fadlanzunima",
+      liveUrl: "http://konsumenbijak.com/",
+      featured: !1
+    },
+    {
+      id: 5,
+      title: "Portfolio Website - Remix",
+      description: "Personal portfolio website showcasing modern web development skills with Remix, Tailwind CSS, and Framer Motion animations. Features glassmorphism design and dark mode.",
+      image: "https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?w=500&h=300&fit=crop",
+      technologies: [
+        { name: "Remix", icon: SiRemix, color: "text-blue-600" },
+        { name: "TypeScript", icon: SiTypescript2, color: "text-blue-600" },
+        { name: "Tailwind", icon: SiTailwindcss2, color: "text-cyan-500" }
+      ],
+      githubUrl: "https://github.com/fadlanzunima/portfolio-remix",
+      liveUrl: "https://fadlanzunima.vercel.app",
+      featured: !1
+    },
+    {
+      id: 6,
+      title: "Learning Projects & Experiments",
+      description: "Collection of learning projects exploring Vue.js, Angular, React Native, state management with Jotai and Relay, and backend technologies including GraphQL and Prisma.",
+      image: "https://images.unsplash.com/photo-1504608524841-42fe6f032b4b?w=500&h=300&fit=crop",
+      technologies: [
+        { name: "Vue.js", icon: FaVuejs2, color: "text-green-500" },
+        { name: "Angular", icon: FaAngular, color: "text-red-600" },
+        { name: "GraphQL", icon: SiGraphql2, color: "text-pink-500" },
+        { name: "Jotai", icon: FaAtom, color: "text-purple-500" },
+        { name: "Prisma", icon: SiPrisma, color: "text-gray-700 dark:text-gray-300" }
+      ],
+      githubUrl: "https://github.com/fadlanzunima",
+      liveUrl: "#",
+      featured: !1
+    },
+    {
+      id: 7,
+      title: "Mobile App Development - React Native",
+      description: "Cross-platform mobile application built with React Native and TypeScript. Features real-time data synchronization, push notifications, and offline functionality with MongoDB integration.",
+      image: "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=500&h=300&fit=crop",
+      technologies: [
+        { name: "React Native", icon: FaReact2, color: "text-blue-500" },
+        { name: "TypeScript", icon: SiTypescript2, color: "text-blue-600" },
+        { name: "MongoDB", icon: SiMongodb, color: "text-green-600" },
+        { name: "GraphQL", icon: SiGraphql2, color: "text-pink-500" }
+      ],
+      githubUrl: "https://github.com/fadlanzunima",
+      liveUrl: "#",
+      featured: !1
+    }
+  ], containerVariants = {
+    hidden: { opacity: 0 },
+    visible: {
+      opacity: 1,
+      transition: {
+        delayChildren: 0.3,
+        staggerChildren: 0.2
+      }
+    }
+  }, itemVariants = {
+    hidden: { y: 50, opacity: 0 },
+    visible: {
+      y: 0,
+      opacity: 1,
+      transition: {
+        duration: 0.6,
+        ease: "easeOut"
+      }
+    }
+  };
+  return /* @__PURE__ */ jsxDEV5("section", { id: "projects", className: "py-20 bg-gray-50 dark:bg-gray-800", children: [
+    /* @__PURE__ */ jsxDEV5("div", { className: "max-w-7xl mx-auto px-6", children: [
+      /* @__PURE__ */ jsxDEV5(
+        motion3.div,
+        {
+          initial: "hidden",
+          whileInView: "visible",
+          viewport: { once: !0, amount: 0.3 },
+          variants: containerVariants,
+          className: "text-center mb-16",
+          children: [
+            /* @__PURE__ */ jsxDEV5(
+              motion3.h2,
+              {
+                variants: itemVariants,
+                className: "text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent",
+                children: "Featured Projects"
+              },
+              void 0,
+              !1,
+              {
+                fileName: "app/components/Projects.tsx",
+                lineNumber: 158,
+                columnNumber: 11
+              },
+              this
+            ),
+            /* @__PURE__ */ jsxDEV5(
+              motion3.div,
+              {
+                variants: itemVariants,
+                className: "w-24 h-1 bg-gradient-to-r from-blue-600 to-purple-600 mx-auto mb-8"
+              },
+              void 0,
+              !1,
+              {
+                fileName: "app/components/Projects.tsx",
+                lineNumber: 164,
+                columnNumber: 11
+              },
+              this
+            ),
+            /* @__PURE__ */ jsxDEV5(
+              motion3.p,
+              {
+                variants: itemVariants,
+                className: "text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto",
+                children: "Real projects showcasing expertise in Vue.js, Nuxt.js, React.js, Next.js, Angular, Laravel, GraphQL, state management (Vuex, Relay, Jotai), and databases (MySQL, PostgreSQL, MongoDB) from 2021 to 2024."
+              },
+              void 0,
+              !1,
+              {
+                fileName: "app/components/Projects.tsx",
+                lineNumber: 168,
+                columnNumber: 11
+              },
+              this
+            )
+          ]
+        },
+        void 0,
+        !0,
+        {
+          fileName: "app/components/Projects.tsx",
+          lineNumber: 151,
+          columnNumber: 9
+        },
+        this
+      ),
+      /* @__PURE__ */ jsxDEV5("div", { className: "masonry-container", children: projects.map((project, index) => /* @__PURE__ */ jsxDEV5(
+        motion3.div,
+        {
+          initial: { opacity: 0, y: 50 },
+          whileInView: { opacity: 1, y: 0 },
+          viewport: { once: !0 },
+          transition: { duration: 0.6, delay: index * 0.1 },
+          whileHover: { y: -8, scale: 1.02 },
+          className: `masonry-item group relative bg-white dark:bg-gray-900 rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 break-inside-avoid mb-6 ${project.featured ? "featured ring-2 ring-blue-500/30 bg-gradient-to-br from-blue-50/50 to-white dark:from-blue-900/20 dark:to-gray-900" : ""}`,
+          children: [
+            /* @__PURE__ */ jsxDEV5("div", { className: "relative overflow-hidden", children: [
+              /* @__PURE__ */ jsxDEV5(
+                "img",
+                {
+                  src: project.image,
+                  alt: project.title,
+                  className: `w-full object-cover group-hover:scale-110 transition-transform duration-500 ${project.featured ? "h-64" : index % 4 === 0 ? "h-48" : index % 4 === 1 ? "h-56" : index % 4 === 2 ? "h-52" : "h-60"}`
+                },
+                void 0,
+                !1,
+                {
+                  fileName: "app/components/Projects.tsx",
+                  lineNumber: 193,
+                  columnNumber: 17
+                },
+                this
+              ),
+              /* @__PURE__ */ jsxDEV5("div", { className: "absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" }, void 0, !1, {
+                fileName: "app/components/Projects.tsx",
+                lineNumber: 203,
+                columnNumber: 17
+              }, this),
+              project.featured && /* @__PURE__ */ jsxDEV5("div", { className: "absolute top-4 left-4 z-10", children: /* @__PURE__ */ jsxDEV5("span", { className: "bg-gradient-to-r from-blue-600 to-purple-600 text-white px-3 py-1 rounded-full text-xs font-bold shadow-lg", children: "Featured Project" }, void 0, !1, {
+                fileName: "app/components/Projects.tsx",
+                lineNumber: 208,
+                columnNumber: 21
+              }, this) }, void 0, !1, {
+                fileName: "app/components/Projects.tsx",
+                lineNumber: 207,
+                columnNumber: 19
+              }, this),
+              /* @__PURE__ */ jsxDEV5("div", { className: "absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-all duration-300", children: /* @__PURE__ */ jsxDEV5("div", { className: "flex space-x-3", children: [
+                /* @__PURE__ */ jsxDEV5(
+                  "a",
+                  {
+                    href: project.githubUrl,
+                    target: "_blank",
+                    rel: "noopener noreferrer",
+                    className: "p-3 bg-white/95 backdrop-blur-sm rounded-full hover:bg-white hover:scale-110 transition-all duration-300 shadow-lg",
+                    children: /* @__PURE__ */ jsxDEV5(FaGithub2, { className: "text-lg text-gray-800" }, void 0, !1, {
+                      fileName: "app/components/Projects.tsx",
+                      lineNumber: 223,
+                      columnNumber: 23
+                    }, this)
+                  },
+                  void 0,
+                  !1,
+                  {
+                    fileName: "app/components/Projects.tsx",
+                    lineNumber: 217,
+                    columnNumber: 21
+                  },
+                  this
+                ),
+                project.liveUrl !== "#" && /* @__PURE__ */ jsxDEV5(
+                  "a",
+                  {
+                    href: project.liveUrl,
+                    target: "_blank",
+                    rel: "noopener noreferrer",
+                    className: "p-3 bg-blue-600 rounded-full hover:bg-blue-700 hover:scale-110 transition-all duration-300 shadow-lg",
+                    children: /* @__PURE__ */ jsxDEV5(FaExternalLinkAlt, { className: "text-lg text-white" }, void 0, !1, {
+                      fileName: "app/components/Projects.tsx",
+                      lineNumber: 232,
+                      columnNumber: 25
+                    }, this)
+                  },
+                  void 0,
+                  !1,
+                  {
+                    fileName: "app/components/Projects.tsx",
+                    lineNumber: 226,
+                    columnNumber: 23
+                  },
+                  this
+                )
+              ] }, void 0, !0, {
+                fileName: "app/components/Projects.tsx",
+                lineNumber: 216,
+                columnNumber: 19
+              }, this) }, void 0, !1, {
+                fileName: "app/components/Projects.tsx",
+                lineNumber: 215,
+                columnNumber: 17
+              }, this)
+            ] }, void 0, !0, {
+              fileName: "app/components/Projects.tsx",
+              lineNumber: 192,
+              columnNumber: 15
+            }, this),
+            /* @__PURE__ */ jsxDEV5("div", { className: "p-6", children: [
+              /* @__PURE__ */ jsxDEV5("div", { className: "mb-4", children: [
+                /* @__PURE__ */ jsxDEV5("h3", { className: "text-lg font-bold mb-2 text-gray-800 dark:text-white group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors duration-300 leading-tight", children: project.title }, void 0, !1, {
+                  fileName: "app/components/Projects.tsx",
+                  lineNumber: 243,
+                  columnNumber: 19
+                }, this),
+                /* @__PURE__ */ jsxDEV5("div", { className: "flex items-center gap-2 mb-3", children: [
+                  project.featured && /* @__PURE__ */ jsxDEV5("span", { className: "inline-flex items-center px-2 py-1 rounded-full text-xs font-medium bg-blue-100 text-blue-800 dark:bg-blue-900 dark:text-blue-200", children: "\u2B50 Featured" }, void 0, !1, {
+                    fileName: "app/components/Projects.tsx",
+                    lineNumber: 250,
+                    columnNumber: 23
+                  }, this),
+                  project.liveUrl !== "#" && /* @__PURE__ */ jsxDEV5("span", { className: "inline-flex items-center px-2 py-1 rounded-full text-xs font-medium bg-green-100 text-green-800 dark:bg-green-900 dark:text-green-200", children: "\u{1F680} Live" }, void 0, !1, {
+                    fileName: "app/components/Projects.tsx",
+                    lineNumber: 255,
+                    columnNumber: 23
+                  }, this)
+                ] }, void 0, !0, {
+                  fileName: "app/components/Projects.tsx",
+                  lineNumber: 248,
+                  columnNumber: 19
+                }, this)
+              ] }, void 0, !0, {
+                fileName: "app/components/Projects.tsx",
+                lineNumber: 242,
+                columnNumber: 17
+              }, this),
+              /* @__PURE__ */ jsxDEV5("p", { className: `text-gray-600 dark:text-gray-300 mb-5 leading-relaxed text-sm line-clamp-4 ${project.featured ? "text-gray-700 dark:text-gray-200" : ""}`, children: project.description }, void 0, !1, {
+                fileName: "app/components/Projects.tsx",
+                lineNumber: 263,
+                columnNumber: 17
+              }, this),
+              /* @__PURE__ */ jsxDEV5("div", { className: "flex flex-wrap gap-2 mb-5", children: project.technologies.map((tech) => /* @__PURE__ */ jsxDEV5(
+                "div",
+                {
+                  className: "flex items-center space-x-1 bg-gradient-to-r from-gray-50 to-gray-100 dark:from-gray-700 dark:to-gray-600 px-2 py-1 rounded-md border border-gray-200 dark:border-gray-600 hover:shadow-sm transition-shadow duration-200",
+                  children: [
+                    /* @__PURE__ */ jsxDEV5(tech.icon, { className: `text-xs ${tech.color}` }, void 0, !1, {
+                      fileName: "app/components/Projects.tsx",
+                      lineNumber: 276,
+                      columnNumber: 23
+                    }, this),
+                    /* @__PURE__ */ jsxDEV5("span", { className: "text-xs font-medium text-gray-700 dark:text-gray-300", children: tech.name }, void 0, !1, {
+                      fileName: "app/components/Projects.tsx",
+                      lineNumber: 277,
+                      columnNumber: 23
+                    }, this)
+                  ]
+                },
+                tech.name,
+                !0,
+                {
+                  fileName: "app/components/Projects.tsx",
+                  lineNumber: 272,
+                  columnNumber: 21
+                },
+                this
+              )) }, void 0, !1, {
+                fileName: "app/components/Projects.tsx",
+                lineNumber: 270,
+                columnNumber: 17
+              }, this),
+              /* @__PURE__ */ jsxDEV5("div", { className: "flex gap-2", children: [
+                /* @__PURE__ */ jsxDEV5(
+                  "a",
+                  {
+                    href: project.githubUrl,
+                    target: "_blank",
+                    rel: "noopener noreferrer",
+                    className: "flex-1 flex items-center justify-center space-x-2 py-2.5 px-3 bg-gradient-to-r from-gray-800 to-gray-900 dark:from-gray-700 dark:to-gray-800 text-white rounded-lg hover:from-gray-900 hover:to-black dark:hover:from-gray-600 dark:hover:to-gray-700 transition-all duration-300 transform hover:scale-105 shadow-md hover:shadow-lg",
+                    children: [
+                      /* @__PURE__ */ jsxDEV5(FaGithub2, { className: "text-sm" }, void 0, !1, {
+                        fileName: "app/components/Projects.tsx",
+                        lineNumber: 292,
+                        columnNumber: 21
+                      }, this),
+                      /* @__PURE__ */ jsxDEV5("span", { className: "text-sm font-medium", children: "Code" }, void 0, !1, {
+                        fileName: "app/components/Projects.tsx",
+                        lineNumber: 293,
+                        columnNumber: 21
+                      }, this)
+                    ]
+                  },
+                  void 0,
+                  !0,
+                  {
+                    fileName: "app/components/Projects.tsx",
+                    lineNumber: 286,
+                    columnNumber: 19
+                  },
+                  this
+                ),
+                project.liveUrl !== "#" && /* @__PURE__ */ jsxDEV5(
+                  "a",
+                  {
+                    href: project.liveUrl,
+                    target: "_blank",
+                    rel: "noopener noreferrer",
+                    className: "flex-1 flex items-center justify-center space-x-2 py-2.5 px-3 bg-gradient-to-r from-blue-600 to-blue-700 text-white rounded-lg hover:from-blue-700 hover:to-blue-800 transition-all duration-300 transform hover:scale-105 shadow-md hover:shadow-lg",
+                    children: [
+                      /* @__PURE__ */ jsxDEV5(FaExternalLinkAlt, { className: "text-sm" }, void 0, !1, {
+                        fileName: "app/components/Projects.tsx",
+                        lineNumber: 302,
+                        columnNumber: 23
+                      }, this),
+                      /* @__PURE__ */ jsxDEV5("span", { className: "text-sm font-medium", children: "Visit" }, void 0, !1, {
+                        fileName: "app/components/Projects.tsx",
+                        lineNumber: 303,
+                        columnNumber: 23
+                      }, this)
+                    ]
+                  },
+                  void 0,
+                  !0,
+                  {
+                    fileName: "app/components/Projects.tsx",
+                    lineNumber: 296,
+                    columnNumber: 21
+                  },
+                  this
+                )
+              ] }, void 0, !0, {
+                fileName: "app/components/Projects.tsx",
+                lineNumber: 285,
+                columnNumber: 17
+              }, this)
+            ] }, void 0, !0, {
+              fileName: "app/components/Projects.tsx",
+              lineNumber: 240,
+              columnNumber: 15
+            }, this)
+          ]
+        },
+        project.id,
+        !0,
+        {
+          fileName: "app/components/Projects.tsx",
+          lineNumber: 179,
+          columnNumber: 13
+        },
+        this
+      )) }, void 0, !1, {
+        fileName: "app/components/Projects.tsx",
+        lineNumber: 177,
+        columnNumber: 9
+      }, this),
+      /* @__PURE__ */ jsxDEV5(
+        motion3.div,
+        {
+          initial: { opacity: 0, y: 30 },
+          whileInView: { opacity: 1, y: 0 },
+          viewport: { once: !0 },
+          transition: { duration: 0.6, delay: 0.5 },
+          className: "text-center mt-12",
+          children: /* @__PURE__ */ jsxDEV5(
+            "a",
+            {
+              href: "https://github.com/fadlanzunima",
+              target: "_blank",
+              rel: "noopener noreferrer",
+              className: "inline-flex items-center space-x-2 px-8 py-3 bg-gradient-to-r from-blue-600 to-purple-600 text-white rounded-full font-semibold hover:from-blue-700 hover:to-purple-700 transition-all duration-300 transform hover:scale-105 hover:shadow-lg",
+              children: [
+                /* @__PURE__ */ jsxDEV5(FaGithub2, { className: "text-lg" }, void 0, !1, {
+                  fileName: "app/components/Projects.tsx",
+                  lineNumber: 326,
+                  columnNumber: 13
+                }, this),
+                /* @__PURE__ */ jsxDEV5("span", { children: "View More on GitHub" }, void 0, !1, {
+                  fileName: "app/components/Projects.tsx",
+                  lineNumber: 327,
+                  columnNumber: 13
+                }, this)
+              ]
+            },
+            void 0,
+            !0,
+            {
+              fileName: "app/components/Projects.tsx",
+              lineNumber: 320,
+              columnNumber: 11
+            },
+            this
+          )
+        },
+        void 0,
+        !1,
+        {
+          fileName: "app/components/Projects.tsx",
+          lineNumber: 313,
+          columnNumber: 9
+        },
+        this
+      )
+    ] }, void 0, !0, {
+      fileName: "app/components/Projects.tsx",
+      lineNumber: 150,
+      columnNumber: 7
+    }, this),
+    /* @__PURE__ */ jsxDEV5("style", { children: `
         .masonry-container {
           column-count: 1;
           column-gap: 1.5rem;
@@ -134,4 +1445,1454 @@ var Tt=Object.defineProperty;var G=(e,d)=>{for(var i in d)Tt(e,i,{get:d[i],enume
           page-break-inside: avoid;
           height: 0;
         }
-      `})]})}import{motion as I}from"framer-motion";import{FaReact as le,FaVuejs as ce,FaPhp as ge,FaGitAlt as me}from"react-icons/fa/index.js";import{SiTailwindcss as pe,SiGraphql as be,SiFlutter as we,SiVercel as ue,SiMysql as ve,SiTypescript as xe,SiNextdotjs as fe,SiRemix as he,SiNodedotjs as ye,SiFigma as ke,SiPostman as Ne,SiVisualstudiocode as Fe}from"react-icons/si/index.js";import{jsx as m,jsxs as T}from"react/jsx-runtime";function Z(){let e=[{name:"React",icon:le,color:"text-blue-500",category:"Frontend",experience:"3+ years",description:"Building interactive user interfaces and SPAs"},{name:"TypeScript",icon:xe,color:"text-blue-600",category:"Language",experience:"2+ years",description:"Type-safe JavaScript development"},{name:"Next.js",icon:fe,color:"text-black dark:text-white",category:"Framework",experience:"2+ years",description:"Full-stack React framework for production"},{name:"Remix",icon:he,color:"text-blue-600",category:"Framework",experience:"1+ year",description:"Modern full-stack web framework"},{name:"Vue.js",icon:ce,color:"text-green-500",category:"Frontend",experience:"2+ years",description:"Progressive framework for building UIs"},{name:"Tailwind CSS",icon:pe,color:"text-cyan-500",category:"Styling",experience:"3+ years",description:"Utility-first CSS framework"},{name:"Node.js",icon:ye,color:"text-green-600",category:"Backend",experience:"2+ years",description:"JavaScript runtime for server-side development"},{name:"GraphQL",icon:be,color:"text-pink-500",category:"API",experience:"1+ year",description:"Query language for APIs"},{name:"Flutter",icon:we,color:"text-blue-400",category:"Mobile",experience:"2+ years",description:"Cross-platform mobile app development"},{name:"PHP",icon:ge,color:"text-purple-600",category:"Backend",experience:"3+ years",description:"Server-side scripting language"},{name:"MySQL",icon:ve,color:"text-orange-500",category:"Database",experience:"3+ years",description:"Relational database management"},{name:"Git",icon:me,color:"text-orange-600",category:"Tools",experience:"3+ years",description:"Version control system"},{name:"Vercel",icon:ue,color:"text-black dark:text-white",category:"Deployment",experience:"2+ years",description:"Frontend cloud platform"},{name:"Figma",icon:ke,color:"text-purple-500",category:"Design",experience:"2+ years",description:"UI/UX design and prototyping"},{name:"VS Code",icon:Fe,color:"text-blue-500",category:"Tools",experience:"3+ years",description:"Code editor and development environment"},{name:"Postman",icon:Ne,color:"text-orange-500",category:"Tools",experience:"2+ years",description:"API development and testing"}],d=[{name:"Frontend",color:"from-blue-500 to-cyan-500"},{name:"Backend",color:"from-green-500 to-emerald-500"},{name:"Mobile",color:"from-purple-500 to-pink-500"},{name:"Tools",color:"from-orange-500 to-red-500"},{name:"Design",color:"from-indigo-500 to-purple-500"},{name:"Database",color:"from-yellow-500 to-orange-500"}],i={hidden:{opacity:0},visible:{opacity:1,transition:{delayChildren:.3,staggerChildren:.1}}},r={hidden:{y:30,opacity:0},visible:{y:0,opacity:1,transition:{duration:.5,ease:"easeOut"}}};return m("section",{id:"techstack",className:"py-20 bg-white dark:bg-gray-900",children:T("div",{className:"max-w-7xl mx-auto px-6",children:[T(I.div,{initial:"hidden",whileInView:"visible",viewport:{once:!0,amount:.3},variants:i,className:"text-center mb-16",children:[m(I.h2,{variants:r,className:"text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent",children:"Tech Stack & Skills"}),m(I.div,{variants:r,className:"w-24 h-1 bg-gradient-to-r from-blue-600 to-purple-600 mx-auto mb-8"}),m(I.p,{variants:r,className:"text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto",children:"Technologies and tools I use to bring ideas to life. Hover over each item to learn more about my experience."})]}),m(I.div,{initial:"hidden",whileInView:"visible",viewport:{once:!0},variants:i,className:"flex flex-wrap justify-center gap-4 mb-12",children:d.map(t=>m(I.div,{variants:r,className:`px-4 py-2 rounded-full bg-gradient-to-r ${t.color} text-white text-sm font-medium shadow-lg`,children:t.name},t.name))}),m(I.div,{initial:"hidden",whileInView:"visible",viewport:{once:!0,amount:.1},variants:i,className:"grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 xl:grid-cols-8 gap-6",children:e.map((t,u)=>T(I.div,{variants:r,whileHover:{scale:1.1,y:-10,transition:{type:"spring",stiffness:300}},className:"group relative",children:[T("div",{className:"flex flex-col items-center p-6 bg-gray-50 dark:bg-gray-800 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 border border-gray-200 dark:border-gray-700 hover:border-blue-300 dark:hover:border-blue-600",children:[m(t.icon,{className:`text-4xl ${t.color} mb-3 group-hover:scale-110 transition-transform duration-300`}),m("h3",{className:"text-sm font-semibold text-gray-800 dark:text-white text-center mb-1",children:t.name}),m("span",{className:"text-xs text-gray-500 dark:text-gray-400 bg-gray-200 dark:bg-gray-700 px-2 py-1 rounded-full",children:t.category}),T("div",{className:"absolute inset-0 bg-black/80 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-center items-center p-4 text-center",children:[m(t.icon,{className:`text-3xl ${t.color} mb-2`}),m("h4",{className:"text-white font-semibold text-sm mb-1",children:t.name}),m("p",{className:"text-gray-300 text-xs mb-2",children:t.experience}),m("p",{className:"text-gray-400 text-xs leading-tight",children:t.description})]})]}),m("div",{className:"absolute -top-2 -right-2 bg-gradient-to-r from-blue-500 to-purple-500 text-white text-xs font-bold px-2 py-1 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300",children:t.experience})]},t.name))}),T(I.div,{initial:{opacity:0,y:50},whileInView:{opacity:1,y:0},viewport:{once:!0},transition:{duration:.8,delay:.5},className:"mt-16 grid md:grid-cols-3 gap-8",children:[T("div",{className:"text-center p-6 bg-gradient-to-br from-blue-50 to-cyan-50 dark:from-gray-800 dark:to-gray-700 rounded-2xl",children:[m("div",{className:"text-3xl font-bold text-blue-600 dark:text-blue-400 mb-2",children:"16+"}),m("div",{className:"text-gray-700 dark:text-gray-300 font-medium",children:"Technologies"}),m("div",{className:"text-sm text-gray-500 dark:text-gray-400 mt-1",children:"Frontend & Backend"})]}),T("div",{className:"text-center p-6 bg-gradient-to-br from-purple-50 to-pink-50 dark:from-gray-800 dark:to-gray-700 rounded-2xl",children:[m("div",{className:"text-3xl font-bold text-purple-600 dark:text-purple-400 mb-2",children:"3+"}),m("div",{className:"text-gray-700 dark:text-gray-300 font-medium",children:"Years Experience"}),m("div",{className:"text-sm text-gray-500 dark:text-gray-400 mt-1",children:"Web Development"})]}),T("div",{className:"text-center p-6 bg-gradient-to-br from-green-50 to-emerald-50 dark:from-gray-800 dark:to-gray-700 rounded-2xl",children:[m("div",{className:"text-3xl font-bold text-green-600 dark:text-green-400 mb-2",children:"50+"}),m("div",{className:"text-gray-700 dark:text-gray-300 font-medium",children:"Projects Built"}),m("div",{className:"text-sm text-gray-500 dark:text-gray-400 mt-1",children:"Web & Mobile Apps"})]})]})]})})}import{motion as A,AnimatePresence as Se}from"framer-motion";import{useState as bt,useEffect as ze}from"react";import{FaQuoteLeft as Ie,FaStar as Te,FaChevronLeft as je,FaChevronRight as Ce,FaUser as wt,FaBuilding as Pe,FaBriefcase as Le}from"react-icons/fa/index.js";import{jsx as o,jsxs as v}from"react/jsx-runtime";function X(){let[e,d]=bt(0),[i,r]=bt(!0),t=[{id:1,name:"Sarah Johnson",role:"Product Manager",company:"TechCorp Inc.",content:"Fadlan sangat cepat respon dan selalu memberikan solusi terbaik. Desainnya rapi, kode bersih, dan sangat enak diajak diskusi untuk pengembangan produk.",rating:5,color:"from-blue-500 to-purple-600",bgGradient:"from-blue-50 to-purple-50 dark:from-blue-900/20 dark:to-purple-900/20"},{id:2,name:"Michael Chen",role:"Startup Founder",company:"InnovateLab",content:"Luar biasa! Fadlan tidak hanya memahami requirements teknis, tapi juga memberikan input valuable untuk UX. Project selesai tepat waktu dengan kualitas premium.",rating:5,color:"from-green-500 to-teal-600",bgGradient:"from-green-50 to-teal-50 dark:from-green-900/20 dark:to-teal-900/20"},{id:3,name:"Jessica Williams",role:"UI/UX Designer",company:"DesignStudio",content:"Collaborasi dengan Fadlan sangat menyenangkan. Dia mampu mengimplementasikan design complex dengan pixel-perfect dan performa optimal. Highly recommended!",rating:5,color:"from-pink-500 to-rose-600",bgGradient:"from-pink-50 to-rose-50 dark:from-pink-900/20 dark:to-rose-900/20"},{id:4,name:"David Rodriguez",role:"CTO",company:"E-commerce Plus",content:"Fadlan membawa platform e-commerce kami ke level selanjutnya. Frontend yang responsif, loading cepat, dan conversion rate meningkat signifikan. Excellent work!",rating:5,color:"from-orange-500 to-red-600",bgGradient:"from-orange-50 to-red-50 dark:from-orange-900/20 dark:to-red-900/20"},{id:5,name:"Emily Davis",role:"Marketing Director",company:"GrowthAgency",content:"Website yang dibuat Fadlan tidak hanya beautiful tapi juga SEO-friendly. Organic traffic naik 200% dalam 3 bulan pertama. Amazing results!",rating:5,color:"from-indigo-500 to-blue-600",bgGradient:"from-indigo-50 to-blue-50 dark:from-indigo-900/20 dark:to-blue-900/20"},{id:6,name:"Alex Thompson",role:"Lead Developer",company:"DevTeam Pro",content:"Code quality Fadlan top-notch. Clean architecture, well-documented, dan mudah di-maintain. Senang bisa berkolaborasi dengan developer sekaliber ini.",rating:5,color:"from-purple-500 to-indigo-600",bgGradient:"from-purple-50 to-indigo-50 dark:from-purple-900/20 dark:to-indigo-900/20"}],u=()=>{d(p=>(p+1)%t.length)},h=()=>{d(p=>(p-1+t.length)%t.length)},S=p=>{d(p)};ze(()=>{if(!i)return;let p=setInterval(()=>{u()},5e3);return()=>clearInterval(p)},[i,e]);let k=()=>r(!1),l=()=>r(!0),s=p=>[...Array(5)].map((N,tt)=>o(Te,{className:`${tt<p?"text-yellow-400":"text-gray-300 dark:text-gray-600"} text-sm`},tt));return o("section",{id:"testimonials",className:"py-20 bg-gradient-to-br from-blue-50 via-indigo-50 to-purple-50 dark:from-gray-900 dark:via-blue-900 dark:to-indigo-900",children:v("div",{className:"max-w-6xl mx-auto px-6",children:[v(A.div,{initial:{opacity:0,y:30},whileInView:{opacity:1,y:0},viewport:{once:!0},transition:{duration:.8},className:"text-center mb-16",children:[o("h2",{className:"text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent",children:"What Clients Say"}),o("div",{className:"w-24 h-1 bg-gradient-to-r from-blue-600 to-purple-600 mx-auto mb-8"}),o("p",{className:"text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto",children:"Testimonials from clients who trusted me to bring their ideas to life"})]}),v("div",{className:"relative",onMouseEnter:k,onMouseLeave:l,children:[o("div",{className:"relative overflow-hidden",children:o(Se,{mode:"wait",children:v(A.div,{initial:{opacity:0,x:100},animate:{opacity:1,x:0},exit:{opacity:0,x:-100},transition:{duration:.5,ease:"easeInOut"},className:`bg-gradient-to-br ${t[e].bgGradient} backdrop-blur-md rounded-3xl p-8 md:p-12 shadow-2xl border border-white/20 dark:border-gray-700/20 relative overflow-hidden`,children:[o("div",{className:"absolute top-0 right-0 w-32 h-32 opacity-10",children:o("div",{className:`w-full h-full bg-gradient-to-br ${t[e].color} rounded-full blur-3xl`})}),o("div",{className:"absolute bottom-0 left-0 w-24 h-24 opacity-10",children:o("div",{className:`w-full h-full bg-gradient-to-tr ${t[e].color} rounded-full blur-2xl`})}),v("div",{className:"relative z-10",children:[o("div",{className:"text-center mb-8",children:o("div",{className:`inline-flex items-center justify-center w-16 h-16 bg-gradient-to-r ${t[e].color} rounded-full shadow-lg`,children:o(Ie,{className:"text-white text-xl"})})}),v("div",{className:"text-center",children:[v("blockquote",{className:"text-lg md:text-xl text-gray-700 dark:text-gray-200 leading-relaxed mb-8 italic font-medium",children:['"',t[e].content,'"']}),o("div",{className:"flex justify-center space-x-1 mb-6",children:s(t[e].rating)}),v("div",{className:"space-y-2",children:[v("div",{className:"flex items-center justify-center space-x-2",children:[o("div",{className:`p-2 bg-gradient-to-r ${t[e].color} rounded-full`,children:o(wt,{className:"text-white text-sm"})}),o("h3",{className:"text-xl font-bold text-gray-800 dark:text-white",children:t[e].name})]}),v("div",{className:"flex items-center justify-center space-x-4 text-gray-600 dark:text-gray-300",children:[v("div",{className:"flex items-center space-x-1",children:[o(Le,{className:"text-sm"}),o("span",{className:"font-medium",children:t[e].role})]}),v("div",{className:"flex items-center space-x-1",children:[o(Pe,{className:"text-sm"}),o("span",{children:t[e].company})]})]})]})]})]})]},e)})}),o("button",{onClick:h,className:"absolute left-4 top-1/2 transform -translate-y-1/2 bg-white/90 dark:bg-gray-800/90 hover:bg-white dark:hover:bg-gray-700 text-gray-800 dark:text-white p-3 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 z-10",children:o(je,{className:"text-lg"})}),o("button",{onClick:u,className:"absolute right-4 top-1/2 transform -translate-y-1/2 bg-white/90 dark:bg-gray-800/90 hover:bg-white dark:hover:bg-gray-700 text-gray-800 dark:text-white p-3 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 z-10",children:o(Ce,{className:"text-lg"})})]}),o("div",{className:"flex justify-center space-x-3 mt-8",children:t.map((p,N)=>o("button",{onClick:()=>S(N),className:`w-3 h-3 rounded-full transition-all duration-300 ${N===e?"bg-blue-600 w-8":"bg-gray-300 dark:bg-gray-600 hover:bg-gray-400 dark:hover:bg-gray-500"}`},N))}),o(A.div,{initial:{opacity:0,y:50},whileInView:{opacity:1,y:0},viewport:{once:!0},transition:{duration:.8,delay:.3},className:"mt-16 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4",children:t.map((p,N)=>v(A.button,{onClick:()=>S(N),whileHover:{scale:1.05},className:`p-4 rounded-2xl transition-all duration-300 text-center ${N===e?`bg-gradient-to-r ${p.color} shadow-lg text-white`:"bg-white/60 dark:bg-gray-800/60 hover:bg-white dark:hover:bg-gray-700 text-gray-700 dark:text-gray-300"}`,children:[o("div",{className:`w-12 h-12 rounded-full mx-auto mb-2 flex items-center justify-center ${N===e?"bg-white/20":`bg-gradient-to-r ${p.color}`}`,children:o(wt,{className:"text-lg text-white"})}),o("p",{className:"text-xs font-medium truncate",children:p.name}),o("p",{className:"text-xs opacity-75 truncate",children:p.role})]},p.id))}),v(A.div,{initial:{opacity:0,y:50},whileInView:{opacity:1,y:0},viewport:{once:!0},transition:{duration:.8,delay:.5},className:"mt-16 grid grid-cols-2 md:grid-cols-4 gap-6",children:[v("div",{className:"text-center p-6 bg-white/60 dark:bg-gray-800/60 rounded-2xl",children:[o("div",{className:"text-3xl font-bold text-blue-600 dark:text-blue-400 mb-2",children:"5.0"}),o("div",{className:"text-sm text-gray-600 dark:text-gray-300",children:"Average Rating"})]}),v("div",{className:"text-center p-6 bg-white/60 dark:bg-gray-800/60 rounded-2xl",children:[o("div",{className:"text-3xl font-bold text-green-600 dark:text-green-400 mb-2",children:"25+"}),o("div",{className:"text-sm text-gray-600 dark:text-gray-300",children:"Happy Clients"})]}),v("div",{className:"text-center p-6 bg-white/60 dark:bg-gray-800/60 rounded-2xl",children:[o("div",{className:"text-3xl font-bold text-purple-600 dark:text-purple-400 mb-2",children:"100%"}),o("div",{className:"text-sm text-gray-600 dark:text-gray-300",children:"Project Success"})]}),v("div",{className:"text-center p-6 bg-white/60 dark:bg-gray-800/60 rounded-2xl",children:[o("div",{className:"text-3xl font-bold text-orange-600 dark:text-orange-400 mb-2",children:"48h"}),o("div",{className:"text-sm text-gray-600 dark:text-gray-300",children:"Avg Response"})]})]})]})})}import{motion as j}from"framer-motion";import{useState as ut}from"react";import{FaGithub as vt,FaLinkedin as Ee,FaEnvelope as xt,FaWhatsapp as ft,FaInstagram as Re,FaTwitter as Me,FaPaperPlane as Ve,FaSpinner as Ae}from"react-icons/fa/index.js";import{Fragment as ht,jsx as a,jsxs as g}from"react/jsx-runtime";function O(){let[e,d]=ut({name:"",email:"",subject:"",message:""}),[i,r]=ut({type:"idle",message:""}),t=l=>{let{name:s,value:p}=l.target;d(N=>({...N,[s]:p}))},u=async l=>{l.preventDefault(),r({type:"loading",message:"Sending message..."});try{await new Promise(s=>setTimeout(s,2e3)),r({type:"success",message:"Message sent successfully! I'll get back to you soon."}),d({name:"",email:"",subject:"",message:""})}catch{r({type:"error",message:"Failed to send message. Please try again or contact me directly."})}setTimeout(()=>{r({type:"idle",message:""})},5e3)},h=[{name:"GitHub",url:"https://github.com/fadlanzunima",icon:vt,color:"hover:text-gray-800 dark:hover:text-white",bgColor:"hover:bg-gray-100 dark:hover:bg-gray-700"},{name:"LinkedIn",url:"https://linkedin.com/in/fadlanzunima",icon:Ee,color:"hover:text-blue-600",bgColor:"hover:bg-blue-50 dark:hover:bg-blue-900/30"},{name:"Email",url:"mailto:fadlan.zunima@example.com",icon:xt,color:"hover:text-red-600",bgColor:"hover:bg-red-50 dark:hover:bg-red-900/30"},{name:"WhatsApp",url:"https://wa.me/6281234567890",icon:ft,color:"hover:text-green-600",bgColor:"hover:bg-green-50 dark:hover:bg-green-900/30"},{name:"Instagram",url:"https://instagram.com/fdlnzunima",icon:Re,color:"hover:text-pink-600",bgColor:"hover:bg-pink-50 dark:hover:bg-pink-900/30"},{name:"Twitter",url:"https://twitter.com/fadlanzunima",icon:Me,color:"hover:text-blue-400",bgColor:"hover:bg-blue-50 dark:hover:bg-blue-900/30"}],S={hidden:{opacity:0},visible:{opacity:1,transition:{delayChildren:.3,staggerChildren:.2}}},k={hidden:{y:30,opacity:0},visible:{y:0,opacity:1,transition:{duration:.6,ease:"easeOut"}}};return a("section",{id:"contact",className:"py-20 bg-white dark:bg-gray-900",children:g("div",{className:"max-w-6xl mx-auto px-6",children:[g(j.div,{initial:"hidden",whileInView:"visible",viewport:{once:!0,amount:.3},variants:S,className:"text-center mb-16",children:[a(j.h2,{variants:k,className:"text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent",children:"Let's Work Together"}),a(j.div,{variants:k,className:"w-24 h-1 bg-gradient-to-r from-blue-600 to-purple-600 mx-auto mb-8"}),a(j.p,{variants:k,className:"text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto",children:"Have a project in mind? Let's discuss how we can bring your ideas to life. I'm always excited to work on new challenges!"})]}),g("div",{className:"grid lg:grid-cols-2 gap-12",children:[g(j.div,{initial:{opacity:0,x:-50},whileInView:{opacity:1,x:0},viewport:{once:!0},transition:{duration:.8},className:"space-y-8",children:[g("div",{className:"bg-gradient-to-br from-blue-50 to-indigo-50 dark:from-gray-800 dark:to-gray-700 rounded-2xl p-8",children:[a("h3",{className:"text-2xl font-bold mb-6 text-gray-800 dark:text-white",children:"Get In Touch"}),g("div",{className:"space-y-6",children:[g("div",{className:"flex items-start space-x-4",children:[a("div",{className:"bg-blue-600 text-white p-3 rounded-full",children:a(xt,{className:"text-lg"})}),g("div",{children:[a("h4",{className:"font-semibold text-gray-800 dark:text-white",children:"Email"}),a("p",{className:"text-gray-600 dark:text-gray-300",children:"fadlan.zunima@example.com"}),a("p",{className:"text-sm text-gray-500 dark:text-gray-400",children:"I'll respond within 24 hours"})]})]}),g("div",{className:"flex items-start space-x-4",children:[a("div",{className:"bg-green-600 text-white p-3 rounded-full",children:a(ft,{className:"text-lg"})}),g("div",{children:[a("h4",{className:"font-semibold text-gray-800 dark:text-white",children:"WhatsApp"}),a("p",{className:"text-gray-600 dark:text-gray-300",children:"+62 812-3456-7890"}),a("p",{className:"text-sm text-gray-500 dark:text-gray-400",children:"For urgent inquiries"})]})]}),g("div",{className:"flex items-start space-x-4",children:[a("div",{className:"bg-purple-600 text-white p-3 rounded-full",children:a(vt,{className:"text-lg"})}),g("div",{children:[a("h4",{className:"font-semibold text-gray-800 dark:text-white",children:"GitHub"}),a("p",{className:"text-gray-600 dark:text-gray-300",children:"@fadlanzunima"}),a("p",{className:"text-sm text-gray-500 dark:text-gray-400",children:"Check out my open source work"})]})]})]})]}),g("div",{className:"bg-gradient-to-br from-purple-50 to-pink-50 dark:from-gray-800 dark:to-gray-700 rounded-2xl p-8",children:[a("h3",{className:"text-xl font-bold mb-6 text-gray-800 dark:text-white",children:"Connect With Me"}),a("div",{className:"grid grid-cols-3 gap-4",children:h.map(l=>g(j.a,{href:l.url,target:"_blank",rel:"noopener noreferrer",whileHover:{scale:1.05,y:-2},className:`flex flex-col items-center p-4 rounded-xl bg-white dark:bg-gray-700 shadow-md transition-all duration-300 ${l.bgColor} group`,children:[a(l.icon,{className:`text-2xl text-gray-600 dark:text-gray-400 transition-colors duration-300 ${l.color} mb-2`}),a("span",{className:"text-xs font-medium text-gray-700 dark:text-gray-300",children:l.name})]},l.name))})]}),g("div",{className:"grid grid-cols-2 gap-4",children:[g("div",{className:"text-center p-6 bg-gradient-to-br from-blue-500 to-purple-600 text-white rounded-2xl",children:[a("div",{className:"text-2xl font-bold mb-1",children:"24h"}),a("div",{className:"text-sm opacity-90",children:"Response Time"})]}),g("div",{className:"text-center p-6 bg-gradient-to-br from-green-500 to-emerald-600 text-white rounded-2xl",children:[a("div",{className:"text-2xl font-bold mb-1",children:"100%"}),a("div",{className:"text-sm opacity-90",children:"Client Satisfaction"})]})]})]}),g(j.div,{initial:{opacity:0,x:50},whileInView:{opacity:1,x:0},viewport:{once:!0},transition:{duration:.8},className:"bg-gray-50 dark:bg-gray-800 rounded-2xl p-8",children:[a("h3",{className:"text-2xl font-bold mb-6 text-gray-800 dark:text-white",children:"Send Me a Message"}),g("form",{onSubmit:u,className:"space-y-6",children:[g("div",{className:"grid md:grid-cols-2 gap-6",children:[g("div",{children:[a("label",{htmlFor:"name",className:"block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2",children:"Your Name *"}),a("input",{type:"text",id:"name",name:"name",value:e.name,onChange:t,required:!0,className:"w-full px-4 py-3 bg-white dark:bg-gray-700 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-300 text-gray-900 dark:text-white",placeholder:"John Doe"})]}),g("div",{children:[a("label",{htmlFor:"email",className:"block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2",children:"Email Address *"}),a("input",{type:"email",id:"email",name:"email",value:e.email,onChange:t,required:!0,className:"w-full px-4 py-3 bg-white dark:bg-gray-700 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-300 text-gray-900 dark:text-white",placeholder:"john@example.com"})]})]}),g("div",{children:[a("label",{htmlFor:"subject",className:"block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2",children:"Subject *"}),a("input",{type:"text",id:"subject",name:"subject",value:e.subject,onChange:t,required:!0,className:"w-full px-4 py-3 bg-white dark:bg-gray-700 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-300 text-gray-900 dark:text-white",placeholder:"Project Discussion"})]}),g("div",{children:[a("label",{htmlFor:"message",className:"block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2",children:"Message *"}),a("textarea",{id:"message",name:"message",value:e.message,onChange:t,required:!0,rows:6,className:"w-full px-4 py-3 bg-white dark:bg-gray-700 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-300 text-gray-900 dark:text-white resize-none",placeholder:"Tell me about your project..."})]}),i.type!=="idle"&&a(j.div,{initial:{opacity:0,y:10},animate:{opacity:1,y:0},className:`p-4 rounded-lg ${i.type==="success"?"bg-green-50 dark:bg-green-900/30 text-green-700 dark:text-green-400 border border-green-200 dark:border-green-800":i.type==="error"?"bg-red-50 dark:bg-red-900/30 text-red-700 dark:text-red-400 border border-red-200 dark:border-red-800":"bg-blue-50 dark:bg-blue-900/30 text-blue-700 dark:text-blue-400 border border-blue-200 dark:border-blue-800"}`,children:i.message}),a(j.button,{type:"submit",disabled:i.type==="loading",whileHover:{scale:1.02},whileTap:{scale:.98},className:"w-full flex items-center justify-center space-x-2 px-8 py-4 bg-gradient-to-r from-blue-600 to-purple-600 text-white rounded-lg font-semibold hover:from-blue-700 hover:to-purple-700 transition-all duration-300 transform hover:shadow-lg disabled:opacity-70 disabled:cursor-not-allowed",children:i.type==="loading"?g(ht,{children:[a(Ae,{className:"animate-spin"}),a("span",{children:"Sending..."})]}):g(ht,{children:[a(Ve,{}),a("span",{children:"Send Message"})]})})]})]})]})]})})}import{motion as L}from"framer-motion";import{useState as yt,useEffect as kt}from"react";import{FaGithub as Nt,FaLinkedin as De,FaEnvelope as Ft,FaWhatsapp as St,FaInstagram as Ue,FaTwitter as Ge,FaHeart as Be,FaSun as He,FaMoon as _e,FaArrowUp as Ye}from"react-icons/fa/index.js";import{Fragment as zt,jsx as n,jsxs as x}from"react/jsx-runtime";function J(){let[e,d]=yt(!1),[i,r]=yt(!1);kt(()=>{let s=localStorage.getItem("theme"),p=window.matchMedia("(prefers-color-scheme: dark)").matches;s==="dark"||!s&&p?(d(!0),document.documentElement.classList.add("dark")):(d(!1),document.documentElement.classList.remove("dark"))},[]),kt(()=>{let s=()=>{r(window.scrollY>400)};return window.addEventListener("scroll",s),()=>window.removeEventListener("scroll",s)},[]);let t=()=>{let s=!e;d(s),s?(document.documentElement.classList.add("dark"),localStorage.setItem("theme","dark")):(document.documentElement.classList.remove("dark"),localStorage.setItem("theme","light"))},u=()=>{window.scrollTo({top:0,behavior:"smooth"})},h=new Date().getFullYear(),S=[{name:"GitHub",url:"https://github.com/fadlanzunima",icon:Nt,color:"hover:text-gray-800 dark:hover:text-white"},{name:"LinkedIn",url:"https://linkedin.com/in/fadlanzunima",icon:De,color:"hover:text-blue-600"},{name:"Email",url:"mailto:fadlan.zunima@example.com",icon:Ft,color:"hover:text-red-600"},{name:"WhatsApp",url:"https://wa.me/6281234567890",icon:St,color:"hover:text-green-600"},{name:"Instagram",url:"https://instagram.com/fdlnzunima",icon:Ue,color:"hover:text-pink-600"},{name:"Twitter",url:"https://twitter.com/fadlanzunima",icon:Ge,color:"hover:text-blue-400"}],k=[{name:"Home",href:"#hero"},{name:"About",href:"#about"},{name:"Projects",href:"#projects"},{name:"Tech Stack",href:"#techstack"},{name:"Testimonials",href:"#testimonials"},{name:"Contact",href:"#contact"}],l=s=>{let p=document.getElementById(s.replace("#",""));p&&p.scrollIntoView({behavior:"smooth"})};return x("footer",{className:"bg-gray-900 dark:bg-black text-white relative overflow-hidden",children:[x("div",{className:"absolute inset-0",children:[n("div",{className:"absolute top-0 left-0 w-72 h-72 bg-blue-600 rounded-full mix-blend-multiply filter blur-3xl opacity-10"}),n("div",{className:"absolute bottom-0 right-0 w-72 h-72 bg-purple-600 rounded-full mix-blend-multiply filter blur-3xl opacity-10"})]}),x("div",{className:"relative z-10",children:[n("div",{className:"max-w-6xl mx-auto px-6 py-16",children:x("div",{className:"grid md:grid-cols-2 lg:grid-cols-4 gap-8",children:[x(L.div,{initial:{opacity:0,y:30},whileInView:{opacity:1,y:0},viewport:{once:!0},transition:{duration:.6},className:"lg:col-span-2",children:[n("h3",{className:"text-2xl font-bold mb-4 bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent",children:"Fadlan Zunima"}),n("p",{className:"text-gray-300 mb-6 leading-relaxed max-w-md",children:"Frontend Developer yang passionate dalam menciptakan pengalaman web yang modern, responsif, dan interaktif. Mari berkolaborasi untuk mewujudkan ide-ide inovatif Anda!"}),n("div",{className:"flex space-x-4",children:S.map(s=>n(L.a,{href:s.url,target:"_blank",rel:"noopener noreferrer",whileHover:{scale:1.1,y:-2},className:`p-3 bg-gray-800 dark:bg-gray-900 rounded-full text-gray-400 transition-all duration-300 ${s.color} hover:bg-gray-700 dark:hover:bg-gray-800`,children:n(s.icon,{className:"text-lg"})},s.name))})]}),x(L.div,{initial:{opacity:0,y:30},whileInView:{opacity:1,y:0},viewport:{once:!0},transition:{duration:.6,delay:.2},children:[n("h4",{className:"text-lg font-semibold mb-6",children:"Quick Links"}),n("ul",{className:"space-y-3",children:k.map(s=>n("li",{children:n("button",{onClick:()=>l(s.href),className:"text-gray-400 hover:text-white transition-colors duration-300 hover:translate-x-1 transform",children:s.name})},s.name))})]}),x(L.div,{initial:{opacity:0,y:30},whileInView:{opacity:1,y:0},viewport:{once:!0},transition:{duration:.6,delay:.4},children:[n("h4",{className:"text-lg font-semibold mb-6",children:"Get In Touch"}),x("div",{className:"space-y-4",children:[x("div",{className:"flex items-center space-x-3",children:[n(Ft,{className:"text-blue-400 flex-shrink-0"}),n("a",{href:"mailto:fadlan.zunima@example.com",className:"text-gray-400 hover:text-white transition-colors duration-300 text-sm",children:"fadlan.zunima@example.com"})]}),x("div",{className:"flex items-center space-x-3",children:[n(St,{className:"text-green-400 flex-shrink-0"}),n("a",{href:"https://wa.me/6281234567890",target:"_blank",rel:"noopener noreferrer",className:"text-gray-400 hover:text-white transition-colors duration-300 text-sm",children:"+62 812-3456-7890"})]}),x("div",{className:"flex items-center space-x-3",children:[n(Nt,{className:"text-purple-400 flex-shrink-0"}),n("a",{href:"https://github.com/fadlanzunima",target:"_blank",rel:"noopener noreferrer",className:"text-gray-400 hover:text-white transition-colors duration-300 text-sm",children:"@fadlanzunima"})]})]}),n("div",{className:"mt-6",children:n("button",{onClick:t,className:"flex items-center space-x-2 p-3 bg-gray-800 dark:bg-gray-900 rounded-lg hover:bg-gray-700 dark:hover:bg-gray-800 transition-all duration-300 group",children:e?x(zt,{children:[n(He,{className:"text-yellow-400 group-hover:rotate-180 transition-transform duration-300"}),n("span",{className:"text-sm text-gray-300",children:"Light Mode"})]}):x(zt,{children:[n(_e,{className:"text-blue-400 group-hover:rotate-180 transition-transform duration-300"}),n("span",{className:"text-sm text-gray-300",children:"Dark Mode"})]})})})]})]})}),n("div",{className:"border-t border-gray-800 dark:border-gray-700",children:n("div",{className:"max-w-6xl mx-auto px-6 py-6",children:n(L.div,{initial:{opacity:0},whileInView:{opacity:1},viewport:{once:!0},transition:{duration:.6},className:"flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0",children:x("div",{className:"flex items-center space-x-1 text-gray-400 text-sm",children:[x("span",{children:["\xA9 ",h," Fadlan Zunima. Made with"]}),n(L.div,{animate:{scale:[1,1.2,1]},transition:{duration:1,repeat:1/0,repeatDelay:2},children:n(Be,{className:"text-red-500"})}),n("span",{children:"using Remix & Tailwind CSS"})]})})})})]}),n(L.button,{onClick:u,initial:{opacity:0,scale:0},animate:{opacity:i?1:0,scale:i?1:0},transition:{duration:.3},className:"fixed bottom-8 right-8 p-3 bg-gradient-to-r from-blue-600 to-purple-600 text-white rounded-full shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-110 z-50",children:n(Ye,{className:"text-lg"})})]})}import{jsx as y,jsxs as Qe}from"react/jsx-runtime";var qe=()=>[{title:"Fadlan Zunima - Frontend Engineer Portfolio"},{name:"description",content:"Portfolio website of Fadlan Zunima, a skilled Frontend Engineer from Bandung, Indonesia specializing in React, GraphQL, and modern web technologies. Explore my projects and get in touch for collaborations."},{name:"keywords",content:"Frontend Engineer, React, GraphQL, JavaScript, TypeScript, Web Development, UI/UX, Portfolio, Fadlan Zunima, Bandung"},{name:"author",content:"Fadlan Zunima"},{property:"og:title",content:"Fadlan Zunima - Frontend Engineer Portfolio"},{property:"og:description",content:"Portfolio showcasing modern web applications and frontend engineering expertise by Fadlan Zunima from Bandung, Indonesia."},{property:"og:type",content:"website"},{property:"og:url",content:"https://fadlanzunima.vercel.app"},{property:"og:image",content:"https://fadlanzunima.vercel.app/og-image.jpg"},{name:"twitter:card",content:"summary_large_image"},{name:"twitter:title",content:"Fadlan Zunima - Frontend Developer Portfolio"},{name:"twitter:description",content:"Portfolio showcasing modern web applications and frontend development expertise."},{name:"twitter:image",content:"https://fadlanzunima.vercel.app/og-image.jpg"},{name:"robots",content:"index, follow"},{name:"viewport",content:"width=device-width, initial-scale=1"},{name:"theme-color",content:"#3B82F6"}];function It(){return Qe("main",{className:"min-h-screen",children:[y("section",{id:"hero",children:y(Y,{})}),y("section",{id:"about",children:y(q,{})}),y("section",{id:"projects",children:y(W,{})}),y("section",{id:"techstack",children:y(Z,{})}),y("section",{id:"testimonials",children:y(X,{})}),y("section",{id:"contact",children:y(O,{})}),y(J,{})]})}var $e={entry:{module:"/build/entry.client-R5A6G3Z4.js",imports:["/build/_shared/chunk-PAN74VI5.js","/build/_shared/chunk-KGVQUHBI.js"]},routes:{root:{id:"root",parentId:void 0,path:"",index:void 0,caseSensitive:void 0,module:"/build/root-COA53HBP.js",imports:void 0,hasAction:!1,hasLoader:!1,hasClientAction:!1,hasClientLoader:!1,hasErrorBoundary:!1},"routes/_index":{id:"routes/_index",parentId:"root",path:void 0,index:!0,caseSensitive:void 0,module:"/build/routes/_index-2LLQLDHJ.js",imports:void 0,hasAction:!1,hasLoader:!1,hasClientAction:!1,hasClientLoader:!1,hasErrorBoundary:!1}},version:"1d15f0af",hmr:void 0,url:"/build/manifest-1D15F0AF.js"};var ea="production",ra="public/build",aa={v3_fetcherPersist:!1,v3_relativeSplatPath:!1,v3_throwAbortReason:!1},oa="/build/",ia={module:B},na={root:{id:"root",parentId:void 0,path:"",index:void 0,caseSensitive:void 0,module:_},"routes/_index":{id:"routes/_index",parentId:"root",path:void 0,index:!0,caseSensitive:void 0,module:K}};export{$e as assets,ra as assetsBuildDirectory,ia as entry,aa as future,ea as mode,oa as publicPath,na as routes};
+      ` }, void 0, !1, {
+      fileName: "app/components/Projects.tsx",
+      lineNumber: 332,
+      columnNumber: 7
+    }, this)
+  ] }, void 0, !0, {
+    fileName: "app/components/Projects.tsx",
+    lineNumber: 149,
+    columnNumber: 5
+  }, this);
+}
+
+// app/components/TechStack.tsx
+import { motion as motion4 } from "framer-motion";
+import { FaReact as FaReact3, FaVuejs as FaVuejs3, FaPhp as FaPhp3, FaGitAlt } from "react-icons/fa/index.js";
+import {
+  SiTailwindcss as SiTailwindcss3,
+  SiGraphql as SiGraphql3,
+  SiVercel as SiVercel2,
+  SiMysql as SiMysql3,
+  SiTypescript as SiTypescript3,
+  SiNextdotjs as SiNextdotjs3,
+  SiRemix as SiRemix2,
+  SiNodedotjs,
+  SiFigma,
+  SiPostman,
+  SiVisualstudiocode
+} from "react-icons/si/index.js";
+import { jsxDEV as jsxDEV6 } from "react/jsx-dev-runtime";
+function TechStack() {
+  let technologies = [
+    {
+      name: "React",
+      icon: FaReact3,
+      color: "text-blue-500",
+      category: "Frontend",
+      experience: "3+ years",
+      description: "Building interactive user interfaces and SPAs"
+    },
+    {
+      name: "TypeScript",
+      icon: SiTypescript3,
+      color: "text-blue-600",
+      category: "Language",
+      experience: "2+ years",
+      description: "Type-safe JavaScript development"
+    },
+    {
+      name: "Next.js",
+      icon: SiNextdotjs3,
+      color: "text-black dark:text-white",
+      category: "Framework",
+      experience: "2+ years",
+      description: "Full-stack React framework for production"
+    },
+    {
+      name: "Remix",
+      icon: SiRemix2,
+      color: "text-blue-600",
+      category: "Framework",
+      experience: "1+ year",
+      description: "Modern full-stack web framework"
+    },
+    {
+      name: "Vue.js",
+      icon: FaVuejs3,
+      color: "text-green-500",
+      category: "Frontend",
+      experience: "5+ years",
+      description: "Progressive framework for building UIs"
+    },
+    {
+      name: "Tailwind CSS",
+      icon: SiTailwindcss3,
+      color: "text-cyan-500",
+      category: "Styling",
+      experience: "4+ years",
+      description: "Utility-first CSS framework"
+    },
+    {
+      name: "Node.js",
+      icon: SiNodedotjs,
+      color: "text-green-600",
+      category: "Backend",
+      experience: "2+ years",
+      description: "JavaScript runtime for server-side development"
+    },
+    {
+      name: "GraphQL",
+      icon: SiGraphql3,
+      color: "text-pink-500",
+      category: "API",
+      experience: "1+ year",
+      description: "Query language for APIs"
+    },
+    // {
+    //   name: "Flutter",
+    //   icon: SiFlutter,
+    //   color: "text-blue-400",
+    //   category: "Mobile",
+    //   experience: "2+ years",
+    //   description: "Cross-platform mobile app development"
+    // },
+    {
+      name: "PHP",
+      icon: FaPhp3,
+      color: "text-purple-600",
+      category: "Backend",
+      experience: "5+ years",
+      description: "Server-side scripting language"
+    },
+    {
+      name: "MySQL",
+      icon: SiMysql3,
+      color: "text-orange-500",
+      category: "Database",
+      experience: "3+ years",
+      description: "Relational database management"
+    },
+    {
+      name: "Git",
+      icon: FaGitAlt,
+      color: "text-orange-600",
+      category: "Tools",
+      experience: "3+ years",
+      description: "Version control system"
+    },
+    {
+      name: "Vercel",
+      icon: SiVercel2,
+      color: "text-black dark:text-white",
+      category: "Deployment",
+      experience: "2+ years",
+      description: "Frontend cloud platform"
+    },
+    {
+      name: "Figma",
+      icon: SiFigma,
+      color: "text-purple-500",
+      category: "Design",
+      experience: "2+ years",
+      description: "UI/UX design and prototyping"
+    },
+    {
+      name: "VS Code",
+      icon: SiVisualstudiocode,
+      color: "text-blue-500",
+      category: "Tools",
+      experience: "3+ years",
+      description: "Code editor and development environment"
+    },
+    {
+      name: "Postman",
+      icon: SiPostman,
+      color: "text-orange-500",
+      category: "Tools",
+      experience: "2+ years",
+      description: "API development and testing"
+    }
+  ], categories = [
+    { name: "Frontend", color: "from-blue-500 to-cyan-500" },
+    { name: "Backend", color: "from-green-500 to-emerald-500" },
+    { name: "Mobile", color: "from-purple-500 to-pink-500" },
+    { name: "Tools", color: "from-orange-500 to-red-500" },
+    { name: "Design", color: "from-indigo-500 to-purple-500" },
+    { name: "Database", color: "from-yellow-500 to-orange-500" }
+  ], containerVariants = {
+    hidden: { opacity: 0 },
+    visible: {
+      opacity: 1,
+      transition: {
+        delayChildren: 0.3,
+        staggerChildren: 0.1
+      }
+    }
+  }, itemVariants = {
+    hidden: { y: 30, opacity: 0 },
+    visible: {
+      y: 0,
+      opacity: 1,
+      transition: {
+        duration: 0.5,
+        ease: "easeOut"
+      }
+    }
+  };
+  return /* @__PURE__ */ jsxDEV6("section", { id: "techstack", className: "py-20 bg-white dark:bg-gray-900", children: /* @__PURE__ */ jsxDEV6("div", { className: "max-w-7xl mx-auto px-6", children: [
+    /* @__PURE__ */ jsxDEV6(
+      motion4.div,
+      {
+        initial: "hidden",
+        whileInView: "visible",
+        viewport: { once: !0, amount: 0.3 },
+        variants: containerVariants,
+        className: "text-center mb-16",
+        children: [
+          /* @__PURE__ */ jsxDEV6(
+            motion4.h2,
+            {
+              variants: itemVariants,
+              className: "text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent",
+              children: "Tech Stack & Skills"
+            },
+            void 0,
+            !1,
+            {
+              fileName: "app/components/TechStack.tsx",
+              lineNumber: 201,
+              columnNumber: 11
+            },
+            this
+          ),
+          /* @__PURE__ */ jsxDEV6(
+            motion4.div,
+            {
+              variants: itemVariants,
+              className: "w-24 h-1 bg-gradient-to-r from-blue-600 to-purple-600 mx-auto mb-8"
+            },
+            void 0,
+            !1,
+            {
+              fileName: "app/components/TechStack.tsx",
+              lineNumber: 207,
+              columnNumber: 11
+            },
+            this
+          ),
+          /* @__PURE__ */ jsxDEV6(
+            motion4.p,
+            {
+              variants: itemVariants,
+              className: "text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto",
+              children: "Technologies and tools I use to bring ideas to life. Hover over each item to learn more about my experience."
+            },
+            void 0,
+            !1,
+            {
+              fileName: "app/components/TechStack.tsx",
+              lineNumber: 211,
+              columnNumber: 11
+            },
+            this
+          )
+        ]
+      },
+      void 0,
+      !0,
+      {
+        fileName: "app/components/TechStack.tsx",
+        lineNumber: 194,
+        columnNumber: 9
+      },
+      this
+    ),
+    /* @__PURE__ */ jsxDEV6(
+      motion4.div,
+      {
+        initial: "hidden",
+        whileInView: "visible",
+        viewport: { once: !0 },
+        variants: containerVariants,
+        className: "flex flex-wrap justify-center gap-4 mb-12",
+        children: categories.map((category) => /* @__PURE__ */ jsxDEV6(
+          motion4.div,
+          {
+            variants: itemVariants,
+            className: `px-4 py-2 rounded-full bg-gradient-to-r ${category.color} text-white text-sm font-medium shadow-lg`,
+            children: category.name
+          },
+          category.name,
+          !1,
+          {
+            fileName: "app/components/TechStack.tsx",
+            lineNumber: 229,
+            columnNumber: 13
+          },
+          this
+        ))
+      },
+      void 0,
+      !1,
+      {
+        fileName: "app/components/TechStack.tsx",
+        lineNumber: 221,
+        columnNumber: 9
+      },
+      this
+    ),
+    /* @__PURE__ */ jsxDEV6(
+      motion4.div,
+      {
+        initial: "hidden",
+        whileInView: "visible",
+        viewport: { once: !0, amount: 0.1 },
+        variants: containerVariants,
+        className: "grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 xl:grid-cols-8 gap-6",
+        children: technologies.map((tech, index) => /* @__PURE__ */ jsxDEV6(
+          motion4.div,
+          {
+            variants: itemVariants,
+            whileHover: {
+              scale: 1.1,
+              y: -10,
+              transition: { type: "spring", stiffness: 300 }
+            },
+            className: "group relative",
+            children: [
+              /* @__PURE__ */ jsxDEV6("div", { className: "flex flex-col items-center p-6 bg-gray-50 dark:bg-gray-800 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 border border-gray-200 dark:border-gray-700 hover:border-blue-300 dark:hover:border-blue-600", children: [
+                /* @__PURE__ */ jsxDEV6(
+                  tech.icon,
+                  {
+                    className: `text-4xl ${tech.color} mb-3 group-hover:scale-110 transition-transform duration-300`
+                  },
+                  void 0,
+                  !1,
+                  {
+                    fileName: "app/components/TechStack.tsx",
+                    lineNumber: 261,
+                    columnNumber: 17
+                  },
+                  this
+                ),
+                /* @__PURE__ */ jsxDEV6("h3", { className: "text-sm font-semibold text-gray-800 dark:text-white text-center mb-1", children: tech.name }, void 0, !1, {
+                  fileName: "app/components/TechStack.tsx",
+                  lineNumber: 266,
+                  columnNumber: 17
+                }, this),
+                /* @__PURE__ */ jsxDEV6("span", { className: "text-xs text-gray-500 dark:text-gray-400 bg-gray-200 dark:bg-gray-700 px-2 py-1 rounded-full", children: tech.category }, void 0, !1, {
+                  fileName: "app/components/TechStack.tsx",
+                  lineNumber: 271,
+                  columnNumber: 17
+                }, this),
+                /* @__PURE__ */ jsxDEV6("div", { className: "absolute inset-0 bg-black/80 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-center items-center p-4 text-center", children: [
+                  /* @__PURE__ */ jsxDEV6(tech.icon, { className: `text-3xl ${tech.color} mb-2` }, void 0, !1, {
+                    fileName: "app/components/TechStack.tsx",
+                    lineNumber: 277,
+                    columnNumber: 19
+                  }, this),
+                  /* @__PURE__ */ jsxDEV6("h4", { className: "text-white font-semibold text-sm mb-1", children: tech.name }, void 0, !1, {
+                    fileName: "app/components/TechStack.tsx",
+                    lineNumber: 278,
+                    columnNumber: 19
+                  }, this),
+                  /* @__PURE__ */ jsxDEV6("p", { className: "text-gray-300 text-xs mb-2", children: tech.experience }, void 0, !1, {
+                    fileName: "app/components/TechStack.tsx",
+                    lineNumber: 281,
+                    columnNumber: 19
+                  }, this),
+                  /* @__PURE__ */ jsxDEV6("p", { className: "text-gray-400 text-xs leading-tight", children: tech.description }, void 0, !1, {
+                    fileName: "app/components/TechStack.tsx",
+                    lineNumber: 284,
+                    columnNumber: 19
+                  }, this)
+                ] }, void 0, !0, {
+                  fileName: "app/components/TechStack.tsx",
+                  lineNumber: 276,
+                  columnNumber: 17
+                }, this)
+              ] }, void 0, !0, {
+                fileName: "app/components/TechStack.tsx",
+                lineNumber: 259,
+                columnNumber: 15
+              }, this),
+              /* @__PURE__ */ jsxDEV6("div", { className: "absolute -top-2 -right-2 bg-gradient-to-r from-blue-500 to-purple-500 text-white text-xs font-bold px-2 py-1 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300", children: tech.experience }, void 0, !1, {
+                fileName: "app/components/TechStack.tsx",
+                lineNumber: 291,
+                columnNumber: 15
+              }, this)
+            ]
+          },
+          tech.name,
+          !0,
+          {
+            fileName: "app/components/TechStack.tsx",
+            lineNumber: 248,
+            columnNumber: 13
+          },
+          this
+        ))
+      },
+      void 0,
+      !1,
+      {
+        fileName: "app/components/TechStack.tsx",
+        lineNumber: 240,
+        columnNumber: 9
+      },
+      this
+    ),
+    /* @__PURE__ */ jsxDEV6(
+      motion4.div,
+      {
+        initial: { opacity: 0, y: 50 },
+        whileInView: { opacity: 1, y: 0 },
+        viewport: { once: !0 },
+        transition: { duration: 0.8, delay: 0.5 },
+        className: "mt-16 grid md:grid-cols-3 gap-8",
+        children: [
+          /* @__PURE__ */ jsxDEV6("div", { className: "text-center p-6 bg-gradient-to-br from-blue-50 to-cyan-50 dark:from-gray-800 dark:to-gray-700 rounded-2xl", children: [
+            /* @__PURE__ */ jsxDEV6("div", { className: "text-3xl font-bold text-blue-600 dark:text-blue-400 mb-2", children: "12+" }, void 0, !1, {
+              fileName: "app/components/TechStack.tsx",
+              lineNumber: 307,
+              columnNumber: 13
+            }, this),
+            /* @__PURE__ */ jsxDEV6("div", { className: "text-gray-700 dark:text-gray-300 font-medium", children: "Technologies" }, void 0, !1, {
+              fileName: "app/components/TechStack.tsx",
+              lineNumber: 310,
+              columnNumber: 13
+            }, this),
+            /* @__PURE__ */ jsxDEV6("div", { className: "text-sm text-gray-500 dark:text-gray-400 mt-1", children: "Frontend & Backend" }, void 0, !1, {
+              fileName: "app/components/TechStack.tsx",
+              lineNumber: 313,
+              columnNumber: 13
+            }, this)
+          ] }, void 0, !0, {
+            fileName: "app/components/TechStack.tsx",
+            lineNumber: 306,
+            columnNumber: 11
+          }, this),
+          /* @__PURE__ */ jsxDEV6("div", { className: "text-center p-6 bg-gradient-to-br from-purple-50 to-pink-50 dark:from-gray-800 dark:to-gray-700 rounded-2xl", children: [
+            /* @__PURE__ */ jsxDEV6("div", { className: "text-3xl font-bold text-purple-600 dark:text-purple-400 mb-2", children: "5+" }, void 0, !1, {
+              fileName: "app/components/TechStack.tsx",
+              lineNumber: 319,
+              columnNumber: 13
+            }, this),
+            /* @__PURE__ */ jsxDEV6("div", { className: "text-gray-700 dark:text-gray-300 font-medium", children: "Years Experience" }, void 0, !1, {
+              fileName: "app/components/TechStack.tsx",
+              lineNumber: 322,
+              columnNumber: 13
+            }, this),
+            /* @__PURE__ */ jsxDEV6("div", { className: "text-sm text-gray-500 dark:text-gray-400 mt-1", children: "Web Development" }, void 0, !1, {
+              fileName: "app/components/TechStack.tsx",
+              lineNumber: 325,
+              columnNumber: 13
+            }, this)
+          ] }, void 0, !0, {
+            fileName: "app/components/TechStack.tsx",
+            lineNumber: 318,
+            columnNumber: 11
+          }, this),
+          /* @__PURE__ */ jsxDEV6("div", { className: "text-center p-6 bg-gradient-to-br from-green-50 to-emerald-50 dark:from-gray-800 dark:to-gray-700 rounded-2xl", children: [
+            /* @__PURE__ */ jsxDEV6("div", { className: "text-3xl font-bold text-green-600 dark:text-green-400 mb-2", children: "10+" }, void 0, !1, {
+              fileName: "app/components/TechStack.tsx",
+              lineNumber: 331,
+              columnNumber: 13
+            }, this),
+            /* @__PURE__ */ jsxDEV6("div", { className: "text-gray-700 dark:text-gray-300 font-medium", children: "Projects Built" }, void 0, !1, {
+              fileName: "app/components/TechStack.tsx",
+              lineNumber: 334,
+              columnNumber: 13
+            }, this),
+            /* @__PURE__ */ jsxDEV6("div", { className: "text-sm text-gray-500 dark:text-gray-400 mt-1", children: "Web & Mobile Apps" }, void 0, !1, {
+              fileName: "app/components/TechStack.tsx",
+              lineNumber: 337,
+              columnNumber: 13
+            }, this)
+          ] }, void 0, !0, {
+            fileName: "app/components/TechStack.tsx",
+            lineNumber: 330,
+            columnNumber: 11
+          }, this)
+        ]
+      },
+      void 0,
+      !0,
+      {
+        fileName: "app/components/TechStack.tsx",
+        lineNumber: 299,
+        columnNumber: 9
+      },
+      this
+    )
+  ] }, void 0, !0, {
+    fileName: "app/components/TechStack.tsx",
+    lineNumber: 193,
+    columnNumber: 7
+  }, this) }, void 0, !1, {
+    fileName: "app/components/TechStack.tsx",
+    lineNumber: 192,
+    columnNumber: 5
+  }, this);
+}
+
+// app/components/Contact.tsx
+import { motion as motion5 } from "framer-motion";
+import { useState } from "react";
+import {
+  FaGithub as FaGithub3,
+  FaLinkedin as FaLinkedin2,
+  FaEnvelope as FaEnvelope2,
+  FaInstagram as FaInstagram2,
+  FaTwitter
+} from "react-icons/fa/index.js";
+import { jsxDEV as jsxDEV7 } from "react/jsx-dev-runtime";
+function Contact() {
+  let [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    subject: "",
+    message: ""
+  }), [status, setStatus] = useState({
+    type: "idle",
+    message: ""
+  }), handleInputChange = (e) => {
+    let { name, value } = e.target;
+    setFormData((prev) => ({
+      ...prev,
+      [name]: value
+    }));
+  }, handleSubmit = async (e) => {
+    e.preventDefault(), setStatus({ type: "loading", message: "Sending message..." });
+    try {
+      await new Promise((resolve) => setTimeout(resolve, 2e3)), setStatus({
+        type: "success",
+        message: "Message sent successfully! I'll get back to you soon."
+      }), setFormData({
+        name: "",
+        email: "",
+        subject: "",
+        message: ""
+      });
+    } catch {
+      setStatus({
+        type: "error",
+        message: "Failed to send message. Please try again or contact me directly."
+      });
+    }
+    setTimeout(() => {
+      setStatus({ type: "idle", message: "" });
+    }, 5e3);
+  }, socialLinks = [
+    {
+      name: "GitHub",
+      url: "https://github.com/fadlanzunima",
+      icon: FaGithub3,
+      color: "hover:text-gray-800 dark:hover:text-white",
+      bgColor: "hover:bg-gray-100 dark:hover:bg-gray-700"
+    },
+    {
+      name: "LinkedIn",
+      url: "https://linkedin.com/in/fadlanzunima",
+      icon: FaLinkedin2,
+      color: "hover:text-blue-600",
+      bgColor: "hover:bg-blue-50 dark:hover:bg-blue-900/30"
+    },
+    {
+      name: "Email",
+      url: "mailto:fadlanzunima@gmail.com",
+      icon: FaEnvelope2,
+      color: "hover:text-red-600",
+      bgColor: "hover:bg-red-50 dark:hover:bg-red-900/30"
+    },
+    // {
+    //   name: 'WhatsApp',
+    //   url: 'https://wa.me/6281234567890',
+    //   icon: FaWhatsapp,
+    //   color: 'hover:text-green-600',
+    //   bgColor: 'hover:bg-green-50 dark:hover:bg-green-900/30'
+    // },
+    {
+      name: "Instagram",
+      url: "https://instagram.com/fdlnzunima",
+      icon: FaInstagram2,
+      color: "hover:text-pink-600",
+      bgColor: "hover:bg-pink-50 dark:hover:bg-pink-900/30"
+    },
+    {
+      name: "Twitter",
+      url: "https://twitter.com/fadlanzunima",
+      icon: FaTwitter,
+      color: "hover:text-blue-400",
+      bgColor: "hover:bg-blue-50 dark:hover:bg-blue-900/30"
+    }
+  ], containerVariants = {
+    hidden: { opacity: 0 },
+    visible: {
+      opacity: 1,
+      transition: {
+        delayChildren: 0.3,
+        staggerChildren: 0.2
+      }
+    }
+  }, itemVariants = {
+    hidden: { y: 30, opacity: 0 },
+    visible: {
+      y: 0,
+      opacity: 1,
+      transition: {
+        duration: 0.6,
+        ease: "easeOut"
+      }
+    }
+  };
+  return /* @__PURE__ */ jsxDEV7("section", { id: "contact", className: "py-20 bg-white dark:bg-gray-900", children: /* @__PURE__ */ jsxDEV7("div", { className: "max-w-6xl mx-auto px-6", children: [
+    /* @__PURE__ */ jsxDEV7(
+      motion5.div,
+      {
+        initial: "hidden",
+        whileInView: "visible",
+        viewport: { once: !0, amount: 0.3 },
+        variants: containerVariants,
+        className: "text-center mb-16",
+        children: [
+          /* @__PURE__ */ jsxDEV7(
+            motion5.h2,
+            {
+              variants: itemVariants,
+              className: "text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent",
+              children: "Let's Work Together"
+            },
+            void 0,
+            !1,
+            {
+              fileName: "app/components/Contact.tsx",
+              lineNumber: 174,
+              columnNumber: 11
+            },
+            this
+          ),
+          /* @__PURE__ */ jsxDEV7(
+            motion5.div,
+            {
+              variants: itemVariants,
+              className: "w-24 h-1 bg-gradient-to-r from-blue-600 to-purple-600 mx-auto mb-8"
+            },
+            void 0,
+            !1,
+            {
+              fileName: "app/components/Contact.tsx",
+              lineNumber: 180,
+              columnNumber: 11
+            },
+            this
+          ),
+          /* @__PURE__ */ jsxDEV7(
+            motion5.p,
+            {
+              variants: itemVariants,
+              className: "text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto",
+              children: "Have a project in mind? Let's discuss how we can bring your ideas to life. I'm always excited to work on new challenges!"
+            },
+            void 0,
+            !1,
+            {
+              fileName: "app/components/Contact.tsx",
+              lineNumber: 184,
+              columnNumber: 11
+            },
+            this
+          )
+        ]
+      },
+      void 0,
+      !0,
+      {
+        fileName: "app/components/Contact.tsx",
+        lineNumber: 167,
+        columnNumber: 9
+      },
+      this
+    ),
+    /* @__PURE__ */ jsxDEV7("div", { className: "grid lg:grid-cols-1 gap-12", children: /* @__PURE__ */ jsxDEV7(
+      motion5.div,
+      {
+        initial: { opacity: 0, x: -50 },
+        whileInView: { opacity: 1, x: 0 },
+        viewport: { once: !0 },
+        transition: { duration: 0.8 },
+        className: "space-y-8",
+        children: [
+          /* @__PURE__ */ jsxDEV7("div", { className: "bg-gradient-to-br from-blue-50 to-indigo-50 dark:from-gray-800 dark:to-gray-700 rounded-2xl p-8", children: [
+            /* @__PURE__ */ jsxDEV7("h3", { className: "text-2xl font-bold mb-6 text-gray-800 dark:text-white", children: "Get In Touch" }, void 0, !1, {
+              fileName: "app/components/Contact.tsx",
+              lineNumber: 203,
+              columnNumber: 15
+            }, this),
+            /* @__PURE__ */ jsxDEV7("div", { className: "space-y-6", children: [
+              /* @__PURE__ */ jsxDEV7("div", { className: "flex items-start space-x-4", children: [
+                /* @__PURE__ */ jsxDEV7("div", { className: "bg-blue-600 text-white p-3 rounded-full", children: /* @__PURE__ */ jsxDEV7(FaEnvelope2, { className: "text-lg" }, void 0, !1, {
+                  fileName: "app/components/Contact.tsx",
+                  lineNumber: 210,
+                  columnNumber: 21
+                }, this) }, void 0, !1, {
+                  fileName: "app/components/Contact.tsx",
+                  lineNumber: 209,
+                  columnNumber: 19
+                }, this),
+                /* @__PURE__ */ jsxDEV7("div", { children: [
+                  /* @__PURE__ */ jsxDEV7("h4", { className: "font-semibold text-gray-800 dark:text-white", children: "Email" }, void 0, !1, {
+                    fileName: "app/components/Contact.tsx",
+                    lineNumber: 213,
+                    columnNumber: 21
+                  }, this),
+                  /* @__PURE__ */ jsxDEV7("p", { className: "text-gray-600 dark:text-gray-300", children: "fadlanzunima@gmail.com" }, void 0, !1, {
+                    fileName: "app/components/Contact.tsx",
+                    lineNumber: 216,
+                    columnNumber: 21
+                  }, this),
+                  /* @__PURE__ */ jsxDEV7("p", { className: "text-sm text-gray-500 dark:text-gray-400", children: "I'll respond within 24 hours" }, void 0, !1, {
+                    fileName: "app/components/Contact.tsx",
+                    lineNumber: 219,
+                    columnNumber: 21
+                  }, this)
+                ] }, void 0, !0, {
+                  fileName: "app/components/Contact.tsx",
+                  lineNumber: 212,
+                  columnNumber: 19
+                }, this)
+              ] }, void 0, !0, {
+                fileName: "app/components/Contact.tsx",
+                lineNumber: 208,
+                columnNumber: 17
+              }, this),
+              /* @__PURE__ */ jsxDEV7("div", { className: "flex items-start space-x-4", children: [
+                /* @__PURE__ */ jsxDEV7("div", { className: "bg-purple-600 text-white p-3 rounded-full", children: /* @__PURE__ */ jsxDEV7(FaGithub3, { className: "text-lg" }, void 0, !1, {
+                  fileName: "app/components/Contact.tsx",
+                  lineNumber: 238,
+                  columnNumber: 21
+                }, this) }, void 0, !1, {
+                  fileName: "app/components/Contact.tsx",
+                  lineNumber: 237,
+                  columnNumber: 19
+                }, this),
+                /* @__PURE__ */ jsxDEV7("div", { children: [
+                  /* @__PURE__ */ jsxDEV7("h4", { className: "font-semibold text-gray-800 dark:text-white", children: "GitHub" }, void 0, !1, {
+                    fileName: "app/components/Contact.tsx",
+                    lineNumber: 241,
+                    columnNumber: 21
+                  }, this),
+                  /* @__PURE__ */ jsxDEV7("p", { className: "text-gray-600 dark:text-gray-300", children: "@fadlanzunima" }, void 0, !1, {
+                    fileName: "app/components/Contact.tsx",
+                    lineNumber: 244,
+                    columnNumber: 21
+                  }, this),
+                  /* @__PURE__ */ jsxDEV7("p", { className: "text-sm text-gray-500 dark:text-gray-400", children: "Check out my open source work" }, void 0, !1, {
+                    fileName: "app/components/Contact.tsx",
+                    lineNumber: 247,
+                    columnNumber: 21
+                  }, this)
+                ] }, void 0, !0, {
+                  fileName: "app/components/Contact.tsx",
+                  lineNumber: 240,
+                  columnNumber: 19
+                }, this)
+              ] }, void 0, !0, {
+                fileName: "app/components/Contact.tsx",
+                lineNumber: 236,
+                columnNumber: 17
+              }, this)
+            ] }, void 0, !0, {
+              fileName: "app/components/Contact.tsx",
+              lineNumber: 207,
+              columnNumber: 15
+            }, this)
+          ] }, void 0, !0, {
+            fileName: "app/components/Contact.tsx",
+            lineNumber: 202,
+            columnNumber: 13
+          }, this),
+          /* @__PURE__ */ jsxDEV7("div", { className: "bg-gradient-to-br from-purple-50 to-pink-50 dark:from-gray-800 dark:to-gray-700 rounded-2xl p-8", children: [
+            /* @__PURE__ */ jsxDEV7("h3", { className: "text-xl font-bold mb-6 text-gray-800 dark:text-white", children: "Connect With Me" }, void 0, !1, {
+              fileName: "app/components/Contact.tsx",
+              lineNumber: 257,
+              columnNumber: 15
+            }, this),
+            /* @__PURE__ */ jsxDEV7("div", { className: "grid grid-cols-3 gap-8", children: socialLinks.map((social) => /* @__PURE__ */ jsxDEV7(
+              motion5.a,
+              {
+                href: social.url,
+                target: "_blank",
+                rel: "noopener noreferrer",
+                whileHover: { scale: 1.05, y: -2 },
+                className: `flex flex-col items-center p-4 rounded-xl bg-white dark:bg-gray-700 shadow-md transition-all duration-300 ${social.bgColor} group`,
+                children: [
+                  /* @__PURE__ */ jsxDEV7(
+                    social.icon,
+                    {
+                      className: `text-2xl text-gray-600 dark:text-gray-400 transition-colors duration-300 ${social.color} mb-2`
+                    },
+                    void 0,
+                    !1,
+                    {
+                      fileName: "app/components/Contact.tsx",
+                      lineNumber: 271,
+                      columnNumber: 21
+                    },
+                    this
+                  ),
+                  /* @__PURE__ */ jsxDEV7("span", { className: "text-xs font-medium text-gray-700 dark:text-gray-300", children: social.name }, void 0, !1, {
+                    fileName: "app/components/Contact.tsx",
+                    lineNumber: 274,
+                    columnNumber: 21
+                  }, this)
+                ]
+              },
+              social.name,
+              !0,
+              {
+                fileName: "app/components/Contact.tsx",
+                lineNumber: 263,
+                columnNumber: 19
+              },
+              this
+            )) }, void 0, !1, {
+              fileName: "app/components/Contact.tsx",
+              lineNumber: 261,
+              columnNumber: 15
+            }, this)
+          ] }, void 0, !0, {
+            fileName: "app/components/Contact.tsx",
+            lineNumber: 256,
+            columnNumber: 13
+          }, this)
+        ]
+      },
+      void 0,
+      !0,
+      {
+        fileName: "app/components/Contact.tsx",
+        lineNumber: 195,
+        columnNumber: 11
+      },
+      this
+    ) }, void 0, !1, {
+      fileName: "app/components/Contact.tsx",
+      lineNumber: 193,
+      columnNumber: 9
+    }, this)
+  ] }, void 0, !0, {
+    fileName: "app/components/Contact.tsx",
+    lineNumber: 166,
+    columnNumber: 7
+  }, this) }, void 0, !1, {
+    fileName: "app/components/Contact.tsx",
+    lineNumber: 165,
+    columnNumber: 5
+  }, this);
+}
+
+// app/components/Footer.tsx
+import { motion as motion6 } from "framer-motion";
+import { useState as useState2, useEffect } from "react";
+import {
+  FaGithub as FaGithub4,
+  FaLinkedin as FaLinkedin3,
+  FaEnvelope as FaEnvelope3,
+  FaWhatsapp as FaWhatsapp2,
+  FaInstagram as FaInstagram3,
+  FaTwitter as FaTwitter2,
+  FaHeart,
+  FaSun,
+  FaMoon,
+  FaArrowUp
+} from "react-icons/fa/index.js";
+import { Fragment, jsxDEV as jsxDEV8 } from "react/jsx-dev-runtime";
+function Footer() {
+  let [darkMode, setDarkMode] = useState2(!1), [showScrollTop, setShowScrollTop] = useState2(!1);
+  useEffect(() => {
+    let savedTheme = localStorage.getItem("theme"), prefersDark = window.matchMedia(
+      "(prefers-color-scheme: dark)"
+    ).matches;
+    savedTheme === "dark" || !savedTheme && prefersDark ? (setDarkMode(!0), document.documentElement.classList.add("dark")) : (setDarkMode(!1), document.documentElement.classList.remove("dark"));
+  }, []), useEffect(() => {
+    let handleScroll = () => {
+      setShowScrollTop(window.scrollY > 400);
+    };
+    return window.addEventListener("scroll", handleScroll), () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+  let toggleDarkMode = () => {
+    let newDarkMode = !darkMode;
+    setDarkMode(newDarkMode), newDarkMode ? (document.documentElement.classList.add("dark"), localStorage.setItem("theme", "dark")) : (document.documentElement.classList.remove("dark"), localStorage.setItem("theme", "light"));
+  }, scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth"
+    });
+  }, currentYear = (/* @__PURE__ */ new Date()).getFullYear(), socialLinks = [
+    {
+      name: "GitHub",
+      url: "https://github.com/fadlanzunima",
+      icon: FaGithub4,
+      color: "hover:text-gray-800 dark:hover:text-white"
+    },
+    {
+      name: "LinkedIn",
+      url: "https://linkedin.com/in/fadlanzunima",
+      icon: FaLinkedin3,
+      color: "hover:text-blue-600"
+    },
+    {
+      name: "Email",
+      url: "mailto:fadlanzunima@gmail.com",
+      icon: FaEnvelope3,
+      color: "hover:text-red-600"
+    },
+    {
+      name: "WhatsApp",
+      url: "https://wa.me/6281234567890",
+      icon: FaWhatsapp2,
+      color: "hover:text-green-600"
+    },
+    {
+      name: "Instagram",
+      url: "https://instagram.com/fdlnzunima",
+      icon: FaInstagram3,
+      color: "hover:text-pink-600"
+    },
+    {
+      name: "Twitter",
+      url: "https://twitter.com/fadlanzunima",
+      icon: FaTwitter2,
+      color: "hover:text-blue-400"
+    }
+  ], quickLinks = [
+    { name: "Home", href: "#hero" },
+    { name: "About", href: "#about" },
+    { name: "Projects", href: "#projects" },
+    { name: "Tech Stack", href: "#techstack" },
+    { name: "Testimonials", href: "#testimonials" },
+    { name: "Contact", href: "#contact" }
+  ], scrollToSection = (sectionId) => {
+    let element = document.getElementById(sectionId.replace("#", ""));
+    element && element.scrollIntoView({ behavior: "smooth" });
+  };
+  return /* @__PURE__ */ jsxDEV8("footer", { className: "bg-gray-900 dark:bg-black text-white relative overflow-hidden", children: [
+    /* @__PURE__ */ jsxDEV8("div", { className: "absolute inset-0", children: [
+      /* @__PURE__ */ jsxDEV8("div", { className: "absolute top-0 left-0 w-72 h-72 bg-blue-600 rounded-full mix-blend-multiply filter blur-3xl opacity-10" }, void 0, !1, {
+        fileName: "app/components/Footer.tsx",
+        lineNumber: 127,
+        columnNumber: 9
+      }, this),
+      /* @__PURE__ */ jsxDEV8("div", { className: "absolute bottom-0 right-0 w-72 h-72 bg-purple-600 rounded-full mix-blend-multiply filter blur-3xl opacity-10" }, void 0, !1, {
+        fileName: "app/components/Footer.tsx",
+        lineNumber: 128,
+        columnNumber: 9
+      }, this)
+    ] }, void 0, !0, {
+      fileName: "app/components/Footer.tsx",
+      lineNumber: 126,
+      columnNumber: 7
+    }, this),
+    /* @__PURE__ */ jsxDEV8("div", { className: "relative z-10", children: [
+      /* @__PURE__ */ jsxDEV8("div", { className: "max-w-6xl mx-auto px-6 py-16", children: /* @__PURE__ */ jsxDEV8("div", { className: "grid md:grid-cols-2 lg:grid-cols-4 gap-8", children: [
+        /* @__PURE__ */ jsxDEV8(
+          motion6.div,
+          {
+            initial: { opacity: 0, y: 30 },
+            whileInView: { opacity: 1, y: 0 },
+            viewport: { once: !0 },
+            transition: { duration: 0.6 },
+            className: "lg:col-span-2",
+            children: [
+              /* @__PURE__ */ jsxDEV8("h3", { className: "text-2xl font-bold mb-4 bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent", children: "Fadlan Zunima" }, void 0, !1, {
+                fileName: "app/components/Footer.tsx",
+                lineNumber: 143,
+                columnNumber: 15
+              }, this),
+              /* @__PURE__ */ jsxDEV8("p", { className: "text-gray-300 mb-6 leading-relaxed max-w-md", children: "Frontend Developer yang passionate dalam menciptakan pengalaman web yang modern, responsif, dan interaktif. Mari berkolaborasi untuk mewujudkan ide-ide inovatif Anda!" }, void 0, !1, {
+                fileName: "app/components/Footer.tsx",
+                lineNumber: 146,
+                columnNumber: 15
+              }, this),
+              /* @__PURE__ */ jsxDEV8("div", { className: "flex space-x-4", children: socialLinks.map((social) => /* @__PURE__ */ jsxDEV8(
+                motion6.a,
+                {
+                  href: social.url,
+                  target: "_blank",
+                  rel: "noopener noreferrer",
+                  whileHover: { scale: 1.1, y: -2 },
+                  className: `p-3 bg-gray-800 dark:bg-gray-900 rounded-full text-gray-400 transition-all duration-300 ${social.color} hover:bg-gray-700 dark:hover:bg-gray-800`,
+                  children: /* @__PURE__ */ jsxDEV8(social.icon, { className: "text-lg" }, void 0, !1, {
+                    fileName: "app/components/Footer.tsx",
+                    lineNumber: 163,
+                    columnNumber: 21
+                  }, this)
+                },
+                social.name,
+                !1,
+                {
+                  fileName: "app/components/Footer.tsx",
+                  lineNumber: 155,
+                  columnNumber: 19
+                },
+                this
+              )) }, void 0, !1, {
+                fileName: "app/components/Footer.tsx",
+                lineNumber: 153,
+                columnNumber: 15
+              }, this)
+            ]
+          },
+          void 0,
+          !0,
+          {
+            fileName: "app/components/Footer.tsx",
+            lineNumber: 136,
+            columnNumber: 13
+          },
+          this
+        ),
+        /* @__PURE__ */ jsxDEV8(
+          motion6.div,
+          {
+            initial: { opacity: 0, y: 30 },
+            whileInView: { opacity: 1, y: 0 },
+            viewport: { once: !0 },
+            transition: { duration: 0.6, delay: 0.2 },
+            children: [
+              /* @__PURE__ */ jsxDEV8("h4", { className: "text-lg font-semibold mb-6", children: "Quick Links" }, void 0, !1, {
+                fileName: "app/components/Footer.tsx",
+                lineNumber: 176,
+                columnNumber: 15
+              }, this),
+              /* @__PURE__ */ jsxDEV8("ul", { className: "space-y-3", children: quickLinks.map((link) => /* @__PURE__ */ jsxDEV8("li", { children: /* @__PURE__ */ jsxDEV8(
+                "button",
+                {
+                  onClick: () => scrollToSection(link.href),
+                  className: "text-gray-400 hover:text-white transition-colors duration-300 hover:translate-x-1 transform",
+                  children: link.name
+                },
+                void 0,
+                !1,
+                {
+                  fileName: "app/components/Footer.tsx",
+                  lineNumber: 180,
+                  columnNumber: 21
+                },
+                this
+              ) }, link.name, !1, {
+                fileName: "app/components/Footer.tsx",
+                lineNumber: 179,
+                columnNumber: 19
+              }, this)) }, void 0, !1, {
+                fileName: "app/components/Footer.tsx",
+                lineNumber: 177,
+                columnNumber: 15
+              }, this)
+            ]
+          },
+          void 0,
+          !0,
+          {
+            fileName: "app/components/Footer.tsx",
+            lineNumber: 170,
+            columnNumber: 13
+          },
+          this
+        ),
+        /* @__PURE__ */ jsxDEV8(
+          motion6.div,
+          {
+            initial: { opacity: 0, y: 30 },
+            whileInView: { opacity: 1, y: 0 },
+            viewport: { once: !0 },
+            transition: { duration: 0.6, delay: 0.4 },
+            children: [
+              /* @__PURE__ */ jsxDEV8("h4", { className: "text-lg font-semibold mb-6", children: "Get In Touch" }, void 0, !1, {
+                fileName: "app/components/Footer.tsx",
+                lineNumber: 198,
+                columnNumber: 15
+              }, this),
+              /* @__PURE__ */ jsxDEV8("div", { className: "space-y-4", children: [
+                /* @__PURE__ */ jsxDEV8("div", { className: "flex items-center space-x-3", children: [
+                  /* @__PURE__ */ jsxDEV8(FaEnvelope3, { className: "text-blue-400 flex-shrink-0" }, void 0, !1, {
+                    fileName: "app/components/Footer.tsx",
+                    lineNumber: 201,
+                    columnNumber: 19
+                  }, this),
+                  /* @__PURE__ */ jsxDEV8(
+                    "a",
+                    {
+                      href: "mailto:fadlanzunima@gmail.com",
+                      className: "text-gray-400 hover:text-white transition-colors duration-300 text-sm",
+                      children: "fadlanzunima@gmail.com"
+                    },
+                    void 0,
+                    !1,
+                    {
+                      fileName: "app/components/Footer.tsx",
+                      lineNumber: 202,
+                      columnNumber: 19
+                    },
+                    this
+                  )
+                ] }, void 0, !0, {
+                  fileName: "app/components/Footer.tsx",
+                  lineNumber: 200,
+                  columnNumber: 17
+                }, this),
+                /* @__PURE__ */ jsxDEV8("div", { className: "flex items-center space-x-3", children: [
+                  /* @__PURE__ */ jsxDEV8(FaGithub4, { className: "text-purple-400 flex-shrink-0" }, void 0, !1, {
+                    fileName: "app/components/Footer.tsx",
+                    lineNumber: 221,
+                    columnNumber: 19
+                  }, this),
+                  /* @__PURE__ */ jsxDEV8(
+                    "a",
+                    {
+                      href: "https://github.com/fadlanzunima",
+                      target: "_blank",
+                      rel: "noopener noreferrer",
+                      className: "text-gray-400 hover:text-white transition-colors duration-300 text-sm",
+                      children: "@fadlanzunima"
+                    },
+                    void 0,
+                    !1,
+                    {
+                      fileName: "app/components/Footer.tsx",
+                      lineNumber: 222,
+                      columnNumber: 19
+                    },
+                    this
+                  )
+                ] }, void 0, !0, {
+                  fileName: "app/components/Footer.tsx",
+                  lineNumber: 220,
+                  columnNumber: 17
+                }, this)
+              ] }, void 0, !0, {
+                fileName: "app/components/Footer.tsx",
+                lineNumber: 199,
+                columnNumber: 15
+              }, this),
+              /* @__PURE__ */ jsxDEV8("div", { className: "mt-6", children: /* @__PURE__ */ jsxDEV8(
+                "button",
+                {
+                  onClick: toggleDarkMode,
+                  className: "flex items-center space-x-2 p-3 bg-gray-800 dark:bg-gray-900 rounded-lg hover:bg-gray-700 dark:hover:bg-gray-800 transition-all duration-300 group",
+                  children: darkMode ? /* @__PURE__ */ jsxDEV8(Fragment, { children: [
+                    /* @__PURE__ */ jsxDEV8(FaSun, { className: "text-yellow-400 group-hover:rotate-180 transition-transform duration-300" }, void 0, !1, {
+                      fileName: "app/components/Footer.tsx",
+                      lineNumber: 241,
+                      columnNumber: 23
+                    }, this),
+                    /* @__PURE__ */ jsxDEV8("span", { className: "text-sm text-gray-300", children: "Light Mode" }, void 0, !1, {
+                      fileName: "app/components/Footer.tsx",
+                      lineNumber: 242,
+                      columnNumber: 23
+                    }, this)
+                  ] }, void 0, !0, {
+                    fileName: "app/components/Footer.tsx",
+                    lineNumber: 240,
+                    columnNumber: 21
+                  }, this) : /* @__PURE__ */ jsxDEV8(Fragment, { children: [
+                    /* @__PURE__ */ jsxDEV8(FaMoon, { className: "text-blue-400 group-hover:rotate-180 transition-transform duration-300" }, void 0, !1, {
+                      fileName: "app/components/Footer.tsx",
+                      lineNumber: 246,
+                      columnNumber: 23
+                    }, this),
+                    /* @__PURE__ */ jsxDEV8("span", { className: "text-sm text-gray-300", children: "Dark Mode" }, void 0, !1, {
+                      fileName: "app/components/Footer.tsx",
+                      lineNumber: 247,
+                      columnNumber: 23
+                    }, this)
+                  ] }, void 0, !0, {
+                    fileName: "app/components/Footer.tsx",
+                    lineNumber: 245,
+                    columnNumber: 21
+                  }, this)
+                },
+                void 0,
+                !1,
+                {
+                  fileName: "app/components/Footer.tsx",
+                  lineNumber: 235,
+                  columnNumber: 17
+                },
+                this
+              ) }, void 0, !1, {
+                fileName: "app/components/Footer.tsx",
+                lineNumber: 234,
+                columnNumber: 15
+              }, this)
+            ]
+          },
+          void 0,
+          !0,
+          {
+            fileName: "app/components/Footer.tsx",
+            lineNumber: 192,
+            columnNumber: 13
+          },
+          this
+        )
+      ] }, void 0, !0, {
+        fileName: "app/components/Footer.tsx",
+        lineNumber: 134,
+        columnNumber: 11
+      }, this) }, void 0, !1, {
+        fileName: "app/components/Footer.tsx",
+        lineNumber: 133,
+        columnNumber: 9
+      }, this),
+      /* @__PURE__ */ jsxDEV8("div", { className: "border-t border-gray-800 dark:border-gray-700", children: /* @__PURE__ */ jsxDEV8("div", { className: "max-w-6xl mx-auto px-6 py-6", children: /* @__PURE__ */ jsxDEV8(
+        motion6.div,
+        {
+          initial: { opacity: 0 },
+          whileInView: { opacity: 1 },
+          viewport: { once: !0 },
+          transition: { duration: 0.6 },
+          className: "flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0",
+          children: /* @__PURE__ */ jsxDEV8("div", { className: "flex items-center space-x-1 text-gray-400 text-sm", children: [
+            /* @__PURE__ */ jsxDEV8("span", { children: [
+              "\xA9 ",
+              currentYear,
+              " Fadlan Zunima. Made with"
+            ] }, void 0, !0, {
+              fileName: "app/components/Footer.tsx",
+              lineNumber: 267,
+              columnNumber: 17
+            }, this),
+            /* @__PURE__ */ jsxDEV8(
+              motion6.div,
+              {
+                animate: { scale: [1, 1.2, 1] },
+                transition: { duration: 1, repeat: 1 / 0, repeatDelay: 2 },
+                children: /* @__PURE__ */ jsxDEV8(FaHeart, { className: "text-red-500" }, void 0, !1, {
+                  fileName: "app/components/Footer.tsx",
+                  lineNumber: 272,
+                  columnNumber: 19
+                }, this)
+              },
+              void 0,
+              !1,
+              {
+                fileName: "app/components/Footer.tsx",
+                lineNumber: 268,
+                columnNumber: 17
+              },
+              this
+            ),
+            /* @__PURE__ */ jsxDEV8("span", { children: "using Remix & Tailwind CSS" }, void 0, !1, {
+              fileName: "app/components/Footer.tsx",
+              lineNumber: 274,
+              columnNumber: 17
+            }, this)
+          ] }, void 0, !0, {
+            fileName: "app/components/Footer.tsx",
+            lineNumber: 266,
+            columnNumber: 15
+          }, this)
+        },
+        void 0,
+        !1,
+        {
+          fileName: "app/components/Footer.tsx",
+          lineNumber: 259,
+          columnNumber: 13
+        },
+        this
+      ) }, void 0, !1, {
+        fileName: "app/components/Footer.tsx",
+        lineNumber: 258,
+        columnNumber: 11
+      }, this) }, void 0, !1, {
+        fileName: "app/components/Footer.tsx",
+        lineNumber: 257,
+        columnNumber: 9
+      }, this)
+    ] }, void 0, !0, {
+      fileName: "app/components/Footer.tsx",
+      lineNumber: 131,
+      columnNumber: 7
+    }, this),
+    /* @__PURE__ */ jsxDEV8(
+      motion6.button,
+      {
+        onClick: scrollToTop,
+        initial: { opacity: 0, scale: 0 },
+        animate: {
+          opacity: showScrollTop ? 1 : 0,
+          scale: showScrollTop ? 1 : 0
+        },
+        transition: { duration: 0.3 },
+        className: "fixed bottom-8 right-8 p-3 bg-gradient-to-r from-blue-600 to-purple-600 text-white rounded-full shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-110 z-50",
+        children: /* @__PURE__ */ jsxDEV8(FaArrowUp, { className: "text-lg" }, void 0, !1, {
+          fileName: "app/components/Footer.tsx",
+          lineNumber: 292,
+          columnNumber: 9
+        }, this)
+      },
+      void 0,
+      !1,
+      {
+        fileName: "app/components/Footer.tsx",
+        lineNumber: 282,
+        columnNumber: 7
+      },
+      this
+    )
+  ] }, void 0, !0, {
+    fileName: "app/components/Footer.tsx",
+    lineNumber: 124,
+    columnNumber: 5
+  }, this);
+}
+
+// app/routes/_index.tsx
+import { jsxDEV as jsxDEV9 } from "react/jsx-dev-runtime";
+var meta2 = () => [
+  { title: "Fadlan Zunima - Frontend Engineer Portfolio" },
+  {
+    name: "description",
+    content: "Portfolio website of Fadlan Zunima, a skilled Frontend Engineer from Bandung, Indonesia specializing in React, GraphQL, and modern web technologies. Explore my projects and get in touch for collaborations."
+  },
+  {
+    name: "keywords",
+    content: "Frontend Engineer, React, GraphQL, JavaScript, TypeScript, Web Development, UI/UX, Portfolio, Fadlan Zunima, Bandung"
+  },
+  { name: "author", content: "Fadlan Zunima" },
+  {
+    property: "og:title",
+    content: "Fadlan Zunima - Frontend Engineer Portfolio"
+  },
+  {
+    property: "og:description",
+    content: "Portfolio showcasing modern web applications and frontend engineering expertise by Fadlan Zunima from Bandung, Indonesia."
+  },
+  { property: "og:type", content: "website" },
+  { property: "og:url", content: "https://fadlanzunima.vercel.app" },
+  {
+    property: "og:image",
+    content: "https://fadlanzunima.vercel.app/og-image.jpg"
+  },
+  { name: "twitter:card", content: "summary_large_image" },
+  {
+    name: "twitter:title",
+    content: "Fadlan Zunima - Frontend Developer Portfolio"
+  },
+  {
+    name: "twitter:description",
+    content: "Portfolio showcasing modern web applications and frontend development expertise."
+  },
+  {
+    name: "twitter:image",
+    content: "https://fadlanzunima.vercel.app/og-image.jpg"
+  },
+  { name: "robots", content: "index, follow" },
+  { name: "viewport", content: "width=device-width, initial-scale=1" },
+  { name: "theme-color", content: "#3B82F6" }
+];
+function Index() {
+  return /* @__PURE__ */ jsxDEV9("main", { className: "min-h-screen", children: [
+    /* @__PURE__ */ jsxDEV9("section", { id: "hero", children: /* @__PURE__ */ jsxDEV9(Hero, {}, void 0, !1, {
+      fileName: "app/routes/_index.tsx",
+      lineNumber: 64,
+      columnNumber: 9
+    }, this) }, void 0, !1, {
+      fileName: "app/routes/_index.tsx",
+      lineNumber: 63,
+      columnNumber: 7
+    }, this),
+    /* @__PURE__ */ jsxDEV9("section", { id: "about", children: /* @__PURE__ */ jsxDEV9(About, {}, void 0, !1, {
+      fileName: "app/routes/_index.tsx",
+      lineNumber: 69,
+      columnNumber: 9
+    }, this) }, void 0, !1, {
+      fileName: "app/routes/_index.tsx",
+      lineNumber: 68,
+      columnNumber: 7
+    }, this),
+    /* @__PURE__ */ jsxDEV9("section", { id: "projects", children: /* @__PURE__ */ jsxDEV9(Projects, {}, void 0, !1, {
+      fileName: "app/routes/_index.tsx",
+      lineNumber: 74,
+      columnNumber: 9
+    }, this) }, void 0, !1, {
+      fileName: "app/routes/_index.tsx",
+      lineNumber: 73,
+      columnNumber: 7
+    }, this),
+    /* @__PURE__ */ jsxDEV9("section", { id: "techstack", children: /* @__PURE__ */ jsxDEV9(TechStack, {}, void 0, !1, {
+      fileName: "app/routes/_index.tsx",
+      lineNumber: 79,
+      columnNumber: 9
+    }, this) }, void 0, !1, {
+      fileName: "app/routes/_index.tsx",
+      lineNumber: 78,
+      columnNumber: 7
+    }, this),
+    /* @__PURE__ */ jsxDEV9("section", { id: "contact", children: /* @__PURE__ */ jsxDEV9(Contact, {}, void 0, !1, {
+      fileName: "app/routes/_index.tsx",
+      lineNumber: 89,
+      columnNumber: 9
+    }, this) }, void 0, !1, {
+      fileName: "app/routes/_index.tsx",
+      lineNumber: 88,
+      columnNumber: 7
+    }, this),
+    /* @__PURE__ */ jsxDEV9(Footer, {}, void 0, !1, {
+      fileName: "app/routes/_index.tsx",
+      lineNumber: 93,
+      columnNumber: 7
+    }, this)
+  ] }, void 0, !0, {
+    fileName: "app/routes/_index.tsx",
+    lineNumber: 61,
+    columnNumber: 5
+  }, this);
+}
+
+// app/routes/$.tsx
+var __exports = {};
+__export(__exports, {
+  default: () => WellKnown,
+  loader: () => loader
+});
+var loader = async () => new Response(null, { status: 204 });
+function WellKnown() {
+  return null;
+}
+
+// server-assets-manifest:@remix-run/dev/assets-manifest
+var assets_manifest_default = { entry: { module: "/build/entry.client-7MUXUNS2.js", imports: ["/build/_shared/chunk-XC6BC2BP.js", "/build/_shared/chunk-RJ75G2FH.js", "/build/_shared/chunk-PMI65YMG.js", "/build/_shared/chunk-MW4MOASO.js", "/build/_shared/chunk-56LDNGDG.js", "/build/_shared/chunk-2Q7FBYOG.js", "/build/_shared/chunk-4JLKO6E3.js", "/build/_shared/chunk-PNG5AS42.js"] }, routes: { root: { id: "root", parentId: void 0, path: "", index: void 0, caseSensitive: void 0, module: "/build/root-6JUQA47G.js", imports: void 0, hasAction: !1, hasLoader: !1, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 }, "routes/$": { id: "routes/$", parentId: "root", path: "*", index: void 0, caseSensitive: void 0, module: "/build/routes/$-YGVMGVTL.js", imports: void 0, hasAction: !1, hasLoader: !0, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 }, "routes/_index": { id: "routes/_index", parentId: "root", path: void 0, index: !0, caseSensitive: void 0, module: "/build/routes/_index-2PRFXEVR.js", imports: void 0, hasAction: !1, hasLoader: !1, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 } }, version: "d9ebfc25", hmr: { runtime: "/build/_shared\\chunk-MW4MOASO.js", timestamp: 1775959186398 }, url: "/build/manifest-D9EBFC25.js" };
+
+// server-entry-module:@remix-run/dev/server-build
+var mode = "development", assetsBuildDirectory = "public/build", future = { v3_fetcherPersist: !1, v3_relativeSplatPath: !1, v3_throwAbortReason: !1 }, publicPath = "/build/", entry = { module: entry_server_node_exports }, routes = {
+  root: {
+    id: "root",
+    parentId: void 0,
+    path: "",
+    index: void 0,
+    caseSensitive: void 0,
+    module: root_exports
+  },
+  "routes/_index": {
+    id: "routes/_index",
+    parentId: "root",
+    path: void 0,
+    index: !0,
+    caseSensitive: void 0,
+    module: index_exports
+  },
+  "routes/$": {
+    id: "routes/$",
+    parentId: "root",
+    path: "*",
+    index: void 0,
+    caseSensitive: void 0,
+    module: __exports
+  }
+};
+export {
+  assets_manifest_default as assets,
+  assetsBuildDirectory,
+  entry,
+  future,
+  mode,
+  publicPath,
+  routes
+};
+//# sourceMappingURL=[[path]].js.map
