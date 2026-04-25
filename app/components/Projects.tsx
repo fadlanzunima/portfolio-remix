@@ -52,7 +52,7 @@ export default function Projects() {
       description:
         "Ongoing development since 2021 - Front-end web application for darisini.com ticketing platform. Ensuring seamless user experience with integrated data management and responsive design.",
       image:
-        "https://rfmvxdtjeyjfqukgtdyc.supabase.co/storage/v1/object/public/learning-files/assets/clipboard-image-1777086596.webp",
+        "https://pntefrhsiortxoounbsn.supabase.co/storage/v1/object/sign/assets/clipboard-image-1777086596.webp?token=eyJraWQiOiJzdG9yYWdlLXVybC1zaWduaW5nLWtleV8yNzhlYzZiMS00YTFhLTQ0MDAtOGMwNi03Y2ZlMGUwM2EzMDEiLCJhbGciOiJIUzI1NiJ9.eyJ1cmwiOiJhc3NldHMvY2xpcGJvYXJkLWltYWdlLTE3NzcwODY1OTYud2VicCIsImlhdCI6MTc3NzA4NzkzNCwiZXhwIjo0ODk5MTUxOTM0fQ.q_jR8bacJYPoSUYtqLQGQllK9JXWh1K7w-lP9Oh3K_M",
       technologies: [
         {
           name: "Next.js",
