@@ -144,7 +144,7 @@ export default function Projects() {
     },
     {
       id: 6,
-      title: "Landing Page Bengkel - bengkel98teknik.vercel.app",
+      title: "Landing Page Bengkel 98 Teknik",
       description:
         "2024 - Developed a responsive landing page for an automotive workshop service. Built using React.js with a focus on clean UI, fast performance, and mobile-first design to improve customer engagement and service visibility.",
       image:
