@@ -133,7 +133,7 @@ import {
 import { Analytics } from "@vercel/analytics/remix";
 
 // app/styles/globals.css
-var globals_default = "/build/_assets/globals-6FXAHAM2.css";
+var globals_default = "/build/_assets/globals-GSAF2ITI.css";
 
 // app/root.tsx
 import { jsxDEV as jsxDEV2 } from "react/jsx-dev-runtime";
@@ -271,7 +271,7 @@ function Hero() {
           initial: { opacity: 0, y: 30 },
           animate: { opacity: 1, y: 0 },
           transition: { duration: 0.8 },
-          className: "bg-white/10 backdrop-blur-md rounded-3xl p-8 md:p-12 border border-white/20 shadow-2xl",
+          className: "bg-white/10 backdrop-blur-md rounded-3xl p-8 md:p-12 border border-white/20 shadow-xl",
           children: [
             /* @__PURE__ */ jsxDEV3(
               motion.div,
@@ -835,8 +835,24 @@ function About() {
 
 // app/components/Projects.tsx
 import { motion as motion3 } from "framer-motion";
-import { FaGithub as FaGithub2, FaExternalLinkAlt, FaReact as FaReact2, FaVuejs as FaVuejs2, FaPhp as FaPhp2, FaAngular, FaAtom } from "react-icons/fa/index.js";
-import { SiTailwindcss as SiTailwindcss2, SiTypescript as SiTypescript2, SiNextdotjs as SiNextdotjs2, SiRemix, SiMysql as SiMysql2, SiGraphql as SiGraphql2, SiLaravel, SiNuxtdotjs, SiPrisma, SiMongodb } from "react-icons/si/index.js";
+import {
+  FaGithub as FaGithub2,
+  FaExternalLinkAlt,
+  FaReact as FaReact2,
+  FaVuejs as FaVuejs2,
+  FaPhp as FaPhp2
+} from "react-icons/fa/index.js";
+import {
+  SiTailwindcss as SiTailwindcss2,
+  SiTypescript as SiTypescript2,
+  SiNextdotjs as SiNextdotjs2,
+  SiRemix,
+  SiMysql as SiMysql2,
+  SiLaravel,
+  SiNuxtdotjs,
+  SiPrisma,
+  SiJavascript
+} from "react-icons/si/index.js";
 import { jsxDEV as jsxDEV5 } from "react/jsx-dev-runtime";
 function Projects() {
   let projects = [
@@ -844,9 +860,13 @@ function Projects() {
       id: 1,
       title: "Ticketing Event Platform - darisini.com",
       description: "Ongoing development since 2021 - Front-end web application for darisini.com ticketing platform. Ensuring seamless user experience with integrated data management and responsive design.",
-      image: "https://images.unsplash.com/photo-1492684223066-81342ee5ff30?w=500&h=300&fit=crop",
+      image: "https://rfmvxdtjeyjfqukgtdyc.supabase.co/storage/v1/object/public/learning-files/assets/clipboard-image-1777086596.webp",
       technologies: [
-        { name: "Next.js", icon: SiNextdotjs2, color: "text-black dark:text-white" },
+        {
+          name: "Next.js",
+          icon: SiNextdotjs2,
+          color: "text-black dark:text-white"
+        },
         { name: "React", icon: FaReact2, color: "text-blue-500" },
         { name: "Tailwind", icon: SiTailwindcss2, color: "text-cyan-500" },
         { name: "TypeScript", icon: SiTypescript2, color: "text-blue-600" }
@@ -857,26 +877,29 @@ function Projects() {
     },
     {
       id: 2,
-      title: "Archive Document Web Application",
-      description: "2024 - Full-stack application with MySQL database for document archiving. Designed and structured database entities using Eloquent ORM for efficiency and scalability.",
-      image: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=500&h=300&fit=crop",
+      title: "Portfolio Website - Remix",
+      description: "Personal portfolio website showcasing modern web development skills with Remix, Tailwind CSS, and Framer Motion animations. Features glassmorphism design and dark mode.",
+      image: "https://pntefrhsiortxoounbsn.supabase.co/storage/v1/object/sign/assets/fz.webp?token=eyJraWQiOiJzdG9yYWdlLXVybC1zaWduaW5nLWtleV8yNzhlYzZiMS00YTFhLTQ0MDAtOGMwNi03Y2ZlMGUwM2EzMDEiLCJhbGciOiJIUzI1NiJ9.eyJ1cmwiOiJhc3NldHMvZnoud2VicCIsImlhdCI6MTc3NzA4NzMxOCwiZXhwIjoxNzg1NjQwOTE4fQ.9JlP5YxHdD7XRYtTnEzwGh5wQRszGQTQkN-IiJwoOng",
       technologies: [
-        { name: "Laravel", icon: SiLaravel, color: "text-red-500" },
-        { name: "MySQL", icon: SiMysql2, color: "text-orange-500" },
-        { name: "PHP", icon: FaPhp2, color: "text-purple-600" },
-        { name: "Prisma", icon: SiPrisma, color: "text-gray-700 dark:text-gray-300" }
+        { name: "Remix", icon: SiRemix, color: "text-blue-600" },
+        { name: "TypeScript", icon: SiTypescript2, color: "text-blue-600" },
+        { name: "Tailwind", icon: SiTailwindcss2, color: "text-cyan-500" }
       ],
-      githubUrl: "https://github.com/fadlanzunima",
-      liveUrl: "#",
-      featured: !0
+      githubUrl: "https://github.com/fadlanzunima/portfolio-remix",
+      liveUrl: "https://fadlanz-portfolio.vercel.app/",
+      featured: !1
     },
     {
       id: 3,
       title: "Landing Page Donation - donasi.darisini.com",
       description: "2023 - Built and deployed responsive front-end web application for donation platform. Designed fully responsive layout ensuring seamless user experience across all devices.",
-      image: "https://images.unsplash.com/photo-1532629345422-7515f3d16bb6?w=500&h=300&fit=crop",
+      image: "https://pntefrhsiortxoounbsn.supabase.co/storage/v1/object/sign/assets/landing.webp?token=eyJraWQiOiJzdG9yYWdlLXVybC1zaWduaW5nLWtleV8yNzhlYzZiMS00YTFhLTQ0MDAtOGMwNi03Y2ZlMGUwM2EzMDEiLCJhbGciOiJIUzI1NiJ9.eyJ1cmwiOiJhc3NldHMvbGFuZGluZy53ZWJwIiwiaWF0IjoxNzc3MDg3MzAxLCJleHAiOjE3ODU2NDA5MDF9.O9cWhN14JLX11IpNo8obSIGYQnkxG9g4Z7teN8ion7I",
       technologies: [
-        { name: "Next.js", icon: SiNextdotjs2, color: "text-black dark:text-white" },
+        {
+          name: "Next.js",
+          icon: SiNextdotjs2,
+          color: "text-black dark:text-white"
+        },
         { name: "Tailwind", icon: SiTailwindcss2, color: "text-cyan-500" },
         { name: "React", icon: FaReact2, color: "text-blue-500" },
         { name: "TypeScript", icon: SiTypescript2, color: "text-blue-600" }
@@ -902,49 +925,104 @@ function Projects() {
     },
     {
       id: 5,
-      title: "Portfolio Website - Remix",
-      description: "Personal portfolio website showcasing modern web development skills with Remix, Tailwind CSS, and Framer Motion animations. Features glassmorphism design and dark mode.",
-      image: "https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?w=500&h=300&fit=crop",
+      title: "Archive Document Web Application",
+      description: "2024 - Full-stack application with MySQL database for document archiving. Designed and structured database entities using Eloquent ORM for efficiency and scalability.",
+      image: "https://pntefrhsiortxoounbsn.supabase.co/storage/v1/object/sign/assets/rsni.webp?token=eyJraWQiOiJzdG9yYWdlLXVybC1zaWduaW5nLWtleV8yNzhlYzZiMS00YTFhLTQ0MDAtOGMwNi03Y2ZlMGUwM2EzMDEiLCJhbGciOiJIUzI1NiJ9.eyJ1cmwiOiJhc3NldHMvcnNuaS53ZWJwIiwiaWF0IjoxNzc3MDg3MjE4LCJleHAiOjQ4OTkxNTEyMTh9.3AvWsWd0r-vt_bw1KQsJ9B_bfh8gnkf0GvAPa88Qol4",
       technologies: [
-        { name: "Remix", icon: SiRemix, color: "text-blue-600" },
-        { name: "TypeScript", icon: SiTypescript2, color: "text-blue-600" },
-        { name: "Tailwind", icon: SiTailwindcss2, color: "text-cyan-500" }
+        { name: "Laravel", icon: SiLaravel, color: "text-red-500" },
+        { name: "MySQL", icon: SiMysql2, color: "text-orange-500" },
+        { name: "PHP", icon: FaPhp2, color: "text-purple-600" },
+        {
+          name: "Prisma",
+          icon: SiPrisma,
+          color: "text-gray-700 dark:text-gray-300"
+        }
       ],
-      githubUrl: "https://github.com/fadlanzunima/portfolio-remix",
-      liveUrl: "https://fadlanzunima.vercel.app",
-      featured: !1
+      githubUrl: "https://github.com/fadlanzunima",
+      liveUrl: "https://rsni.bbsdlp.com",
+      featured: !0
     },
     {
       id: 6,
-      title: "Learning Projects & Experiments",
-      description: "Collection of learning projects exploring Vue.js, Angular, React Native, state management with Jotai and Relay, and backend technologies including GraphQL and Prisma.",
-      image: "https://images.unsplash.com/photo-1504608524841-42fe6f032b4b?w=500&h=300&fit=crop",
+      title: "Landing Page Bengkel - bengkel98teknik.vercel.app",
+      description: "2024 - Developed a responsive landing page for an automotive workshop service. Built using React.js with a focus on clean UI, fast performance, and mobile-first design to improve customer engagement and service visibility.",
+      image: "https://pntefrhsiortxoounbsn.supabase.co/storage/v1/object/sign/assets/clipboard-image-1777086932.webp?token=eyJraWQiOiJzdG9yYWdlLXVybC1zaWduaW5nLWtleV8yNzhlYzZiMS00YTFhLTQ0MDAtOGMwNi03Y2ZlMGUwM2EzMDEiLCJhbGciOiJIUzI1NiJ9.eyJ1cmwiOiJhc3NldHMvY2xpcGJvYXJkLWltYWdlLTE3NzcwODY5MzIud2VicCIsImlhdCI6MTc3NzA4NzYxMywiZXhwIjoxNzg1NjQxMjEzfQ.fukoYfBXsvsy2D6Xc7-JpsZ607Hh5XrrZ6efrVIXUV8",
       technologies: [
-        { name: "Vue.js", icon: FaVuejs2, color: "text-green-500" },
-        { name: "Angular", icon: FaAngular, color: "text-red-600" },
-        { name: "GraphQL", icon: SiGraphql2, color: "text-pink-500" },
-        { name: "Jotai", icon: FaAtom, color: "text-purple-500" },
-        { name: "Prisma", icon: SiPrisma, color: "text-gray-700 dark:text-gray-300" }
+        {
+          name: "React",
+          icon: FaReact2,
+          color: "text-blue-500"
+        },
+        {
+          name: "JavaScript",
+          icon: SiJavascript,
+          color: "text-yellow-500"
+        },
+        {
+          name: "Tailwind",
+          icon: SiTailwindcss2,
+          color: "text-cyan-500"
+        }
       ],
       githubUrl: "https://github.com/fadlanzunima",
-      liveUrl: "#",
-      featured: !1
-    },
-    {
-      id: 7,
-      title: "Mobile App Development - React Native",
-      description: "Cross-platform mobile application built with React Native and TypeScript. Features real-time data synchronization, push notifications, and offline functionality with MongoDB integration.",
-      image: "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=500&h=300&fit=crop",
-      technologies: [
-        { name: "React Native", icon: FaReact2, color: "text-blue-500" },
-        { name: "TypeScript", icon: SiTypescript2, color: "text-blue-600" },
-        { name: "MongoDB", icon: SiMongodb, color: "text-green-600" },
-        { name: "GraphQL", icon: SiGraphql2, color: "text-pink-500" }
-      ],
-      githubUrl: "https://github.com/fadlanzunima",
-      liveUrl: "#",
+      liveUrl: "https://bengkel98teknik.vercel.app/",
       featured: !1
     }
+    // {
+    //   id: 6,
+    //   title: "Learning Projects & Experiments",
+    //   description:
+    //     "Collection of learning projects exploring Vue.js, Angular, React Native, state management with Jotai and Relay, and backend technologies including GraphQL and Prisma.",
+    //   image:
+    //     "https://images.unsplash.com/photo-1504608524841-42fe6f032b4b?w=500&h=300&fit=crop",
+    //   technologies: [
+    //     { name: "Vue.js", icon: FaVuejs, color: "text-green-500" },
+    //     { name: "Angular", icon: FaAngular, color: "text-red-600" },
+    //     { name: "GraphQL", icon: SiGraphql, color: "text-pink-500" },
+    //     { name: "Jotai", icon: FaAtom, color: "text-purple-500" },
+    //     {
+    //       name: "Prisma",
+    //       icon: SiPrisma,
+    //       color: "text-gray-700 dark:text-gray-300",
+    //     },
+    //   ],
+    //   githubUrl: "https://github.com/fadlanzunima",
+    //   liveUrl: "#",
+    //   featured: false,
+    // },
+    // {
+    //   id: 7,
+    //   title: "Mobile App Development - React Native",
+    //   description:
+    //     "Cross-platform mobile application built with React Native and TypeScript. Features real-time data synchronization, push notifications, and offline functionality with MongoDB integration.",
+    //   image:
+    //     "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=500&h=300&fit=crop",
+    //   technologies: [
+    //     { name: "React Native", icon: FaReact, color: "text-blue-500" },
+    //     { name: "TypeScript", icon: SiTypescript, color: "text-blue-600" },
+    //     { name: "MongoDB", icon: SiMongodb, color: "text-green-600" },
+    //     { name: "GraphQL", icon: SiGraphql, color: "text-pink-500" },
+    //   ],
+    //   githubUrl: "https://github.com/fadlanzunima",
+    //   liveUrl: "#",
+    //   featured: false,
+    // },
+    // {
+    //   id: 7,
+    //   title: "Archive Document Management System",
+    //   description:
+    //     "Designed and implemented a full-stack document archival solution with Laravel and MySQL, utilizing Eloquent ORM for scalable data architecture and role-based access.",
+    //   image:
+    //     "https://rfmvxdtjeyjfqukgtdyc.supabase.co/storage/v1/object/public/learning-files/assets/rsni.webp",
+    //   technologies: [
+    //     { name: "PHP", icon: FaPhp, color: "text-blue-500" },
+    //     { name: "Laravel", icon: SiLaravel, color: "text-blue-600" },
+    //     { name: "mySQL", icon: SiMysql, color: "text-green-600" },
+    //   ],
+    //   githubUrl: "https://github.com/fadlanzunima",
+    //   liveUrl: "https://rsni.bbsdlp.com",
+    //   featured: false,
+    // },
   ], containerVariants = {
     hidden: { opacity: 0 },
     visible: {
@@ -987,7 +1065,7 @@ function Projects() {
               !1,
               {
                 fileName: "app/components/Projects.tsx",
-                lineNumber: 158,
+                lineNumber: 263,
                 columnNumber: 11
               },
               this
@@ -1002,7 +1080,7 @@ function Projects() {
               !1,
               {
                 fileName: "app/components/Projects.tsx",
-                lineNumber: 164,
+                lineNumber: 269,
                 columnNumber: 11
               },
               this
@@ -1012,13 +1090,18 @@ function Projects() {
               {
                 variants: itemVariants,
                 className: "text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto",
-                children: "Real projects showcasing expertise in Vue.js, Nuxt.js, React.js, Next.js, Angular, Laravel, GraphQL, state management (Vuex, Relay, Jotai), and databases (MySQL, PostgreSQL, MongoDB) from 2021 to 2024."
+                children: [
+                  "Real projects showcasing expertise in Vue.js, Nuxt.js, React.js, Next.js, Angular, Laravel, GraphQL, state management (Vuex, Relay, Jotai), and databases (MySQL, PostgreSQL, MongoDB) from 2021 to",
+                  " ",
+                  (/* @__PURE__ */ new Date()).getFullYear(),
+                  "."
+                ]
               },
               void 0,
-              !1,
+              !0,
               {
                 fileName: "app/components/Projects.tsx",
-                lineNumber: 168,
+                lineNumber: 273,
                 columnNumber: 11
               },
               this
@@ -1029,7 +1112,7 @@ function Projects() {
         !0,
         {
           fileName: "app/components/Projects.tsx",
-          lineNumber: 151,
+          lineNumber: 256,
           columnNumber: 9
         },
         this
@@ -1056,23 +1139,23 @@ function Projects() {
                 !1,
                 {
                   fileName: "app/components/Projects.tsx",
-                  lineNumber: 193,
+                  lineNumber: 301,
                   columnNumber: 17
                 },
                 this
               ),
               /* @__PURE__ */ jsxDEV5("div", { className: "absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" }, void 0, !1, {
                 fileName: "app/components/Projects.tsx",
-                lineNumber: 203,
+                lineNumber: 316,
                 columnNumber: 17
               }, this),
               project.featured && /* @__PURE__ */ jsxDEV5("div", { className: "absolute top-4 left-4 z-10", children: /* @__PURE__ */ jsxDEV5("span", { className: "bg-gradient-to-r from-blue-600 to-purple-600 text-white px-3 py-1 rounded-full text-xs font-bold shadow-lg", children: "Featured Project" }, void 0, !1, {
                 fileName: "app/components/Projects.tsx",
-                lineNumber: 208,
+                lineNumber: 321,
                 columnNumber: 21
               }, this) }, void 0, !1, {
                 fileName: "app/components/Projects.tsx",
-                lineNumber: 207,
+                lineNumber: 320,
                 columnNumber: 19
               }, this),
               /* @__PURE__ */ jsxDEV5("div", { className: "absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-all duration-300", children: /* @__PURE__ */ jsxDEV5("div", { className: "flex space-x-3", children: [
@@ -1085,7 +1168,7 @@ function Projects() {
                     className: "p-3 bg-white/95 backdrop-blur-sm rounded-full hover:bg-white hover:scale-110 transition-all duration-300 shadow-lg",
                     children: /* @__PURE__ */ jsxDEV5(FaGithub2, { className: "text-lg text-gray-800" }, void 0, !1, {
                       fileName: "app/components/Projects.tsx",
-                      lineNumber: 223,
+                      lineNumber: 336,
                       columnNumber: 23
                     }, this)
                   },
@@ -1093,7 +1176,7 @@ function Projects() {
                   !1,
                   {
                     fileName: "app/components/Projects.tsx",
-                    lineNumber: 217,
+                    lineNumber: 330,
                     columnNumber: 21
                   },
                   this
@@ -1107,7 +1190,7 @@ function Projects() {
                     className: "p-3 bg-blue-600 rounded-full hover:bg-blue-700 hover:scale-110 transition-all duration-300 shadow-lg",
                     children: /* @__PURE__ */ jsxDEV5(FaExternalLinkAlt, { className: "text-lg text-white" }, void 0, !1, {
                       fileName: "app/components/Projects.tsx",
-                      lineNumber: 232,
+                      lineNumber: 345,
                       columnNumber: 25
                     }, this)
                   },
@@ -1115,58 +1198,68 @@ function Projects() {
                   !1,
                   {
                     fileName: "app/components/Projects.tsx",
-                    lineNumber: 226,
+                    lineNumber: 339,
                     columnNumber: 23
                   },
                   this
                 )
               ] }, void 0, !0, {
                 fileName: "app/components/Projects.tsx",
-                lineNumber: 216,
+                lineNumber: 329,
                 columnNumber: 19
               }, this) }, void 0, !1, {
                 fileName: "app/components/Projects.tsx",
-                lineNumber: 215,
+                lineNumber: 328,
                 columnNumber: 17
               }, this)
             ] }, void 0, !0, {
               fileName: "app/components/Projects.tsx",
-              lineNumber: 192,
+              lineNumber: 300,
               columnNumber: 15
             }, this),
             /* @__PURE__ */ jsxDEV5("div", { className: "p-6", children: [
               /* @__PURE__ */ jsxDEV5("div", { className: "mb-4", children: [
                 /* @__PURE__ */ jsxDEV5("h3", { className: "text-lg font-bold mb-2 text-gray-800 dark:text-white group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors duration-300 leading-tight", children: project.title }, void 0, !1, {
                   fileName: "app/components/Projects.tsx",
-                  lineNumber: 243,
+                  lineNumber: 356,
                   columnNumber: 19
                 }, this),
                 /* @__PURE__ */ jsxDEV5("div", { className: "flex items-center gap-2 mb-3", children: [
                   project.featured && /* @__PURE__ */ jsxDEV5("span", { className: "inline-flex items-center px-2 py-1 rounded-full text-xs font-medium bg-blue-100 text-blue-800 dark:bg-blue-900 dark:text-blue-200", children: "\u2B50 Featured" }, void 0, !1, {
                     fileName: "app/components/Projects.tsx",
-                    lineNumber: 250,
+                    lineNumber: 363,
                     columnNumber: 23
                   }, this),
                   project.liveUrl !== "#" && /* @__PURE__ */ jsxDEV5("span", { className: "inline-flex items-center px-2 py-1 rounded-full text-xs font-medium bg-green-100 text-green-800 dark:bg-green-900 dark:text-green-200", children: "\u{1F680} Live" }, void 0, !1, {
                     fileName: "app/components/Projects.tsx",
-                    lineNumber: 255,
+                    lineNumber: 368,
                     columnNumber: 23
                   }, this)
                 ] }, void 0, !0, {
                   fileName: "app/components/Projects.tsx",
-                  lineNumber: 248,
+                  lineNumber: 361,
                   columnNumber: 19
                 }, this)
               ] }, void 0, !0, {
                 fileName: "app/components/Projects.tsx",
-                lineNumber: 242,
+                lineNumber: 355,
                 columnNumber: 17
               }, this),
-              /* @__PURE__ */ jsxDEV5("p", { className: `text-gray-600 dark:text-gray-300 mb-5 leading-relaxed text-sm line-clamp-4 ${project.featured ? "text-gray-700 dark:text-gray-200" : ""}`, children: project.description }, void 0, !1, {
-                fileName: "app/components/Projects.tsx",
-                lineNumber: 263,
-                columnNumber: 17
-              }, this),
+              /* @__PURE__ */ jsxDEV5(
+                "p",
+                {
+                  className: `text-gray-600 dark:text-gray-300 mb-5 leading-relaxed text-sm line-clamp-4 ${project.featured ? "text-gray-700 dark:text-gray-200" : ""}`,
+                  children: project.description
+                },
+                void 0,
+                !1,
+                {
+                  fileName: "app/components/Projects.tsx",
+                  lineNumber: 376,
+                  columnNumber: 17
+                },
+                this
+              ),
               /* @__PURE__ */ jsxDEV5("div", { className: "flex flex-wrap gap-2 mb-5", children: project.technologies.map((tech) => /* @__PURE__ */ jsxDEV5(
                 "div",
                 {
@@ -1174,12 +1267,12 @@ function Projects() {
                   children: [
                     /* @__PURE__ */ jsxDEV5(tech.icon, { className: `text-xs ${tech.color}` }, void 0, !1, {
                       fileName: "app/components/Projects.tsx",
-                      lineNumber: 276,
+                      lineNumber: 391,
                       columnNumber: 23
                     }, this),
                     /* @__PURE__ */ jsxDEV5("span", { className: "text-xs font-medium text-gray-700 dark:text-gray-300", children: tech.name }, void 0, !1, {
                       fileName: "app/components/Projects.tsx",
-                      lineNumber: 277,
+                      lineNumber: 392,
                       columnNumber: 23
                     }, this)
                   ]
@@ -1188,13 +1281,13 @@ function Projects() {
                 !0,
                 {
                   fileName: "app/components/Projects.tsx",
-                  lineNumber: 272,
+                  lineNumber: 387,
                   columnNumber: 21
                 },
                 this
               )) }, void 0, !1, {
                 fileName: "app/components/Projects.tsx",
-                lineNumber: 270,
+                lineNumber: 385,
                 columnNumber: 17
               }, this),
               /* @__PURE__ */ jsxDEV5("div", { className: "flex gap-2", children: [
@@ -1208,12 +1301,12 @@ function Projects() {
                     children: [
                       /* @__PURE__ */ jsxDEV5(FaGithub2, { className: "text-sm" }, void 0, !1, {
                         fileName: "app/components/Projects.tsx",
-                        lineNumber: 292,
+                        lineNumber: 407,
                         columnNumber: 21
                       }, this),
                       /* @__PURE__ */ jsxDEV5("span", { className: "text-sm font-medium", children: "Code" }, void 0, !1, {
                         fileName: "app/components/Projects.tsx",
-                        lineNumber: 293,
+                        lineNumber: 408,
                         columnNumber: 21
                       }, this)
                     ]
@@ -1222,7 +1315,7 @@ function Projects() {
                   !0,
                   {
                     fileName: "app/components/Projects.tsx",
-                    lineNumber: 286,
+                    lineNumber: 401,
                     columnNumber: 19
                   },
                   this
@@ -1237,12 +1330,12 @@ function Projects() {
                     children: [
                       /* @__PURE__ */ jsxDEV5(FaExternalLinkAlt, { className: "text-sm" }, void 0, !1, {
                         fileName: "app/components/Projects.tsx",
-                        lineNumber: 302,
+                        lineNumber: 417,
                         columnNumber: 23
                       }, this),
                       /* @__PURE__ */ jsxDEV5("span", { className: "text-sm font-medium", children: "Visit" }, void 0, !1, {
                         fileName: "app/components/Projects.tsx",
-                        lineNumber: 303,
+                        lineNumber: 418,
                         columnNumber: 23
                       }, this)
                     ]
@@ -1251,19 +1344,19 @@ function Projects() {
                   !0,
                   {
                     fileName: "app/components/Projects.tsx",
-                    lineNumber: 296,
+                    lineNumber: 411,
                     columnNumber: 21
                   },
                   this
                 )
               ] }, void 0, !0, {
                 fileName: "app/components/Projects.tsx",
-                lineNumber: 285,
+                lineNumber: 400,
                 columnNumber: 17
               }, this)
             ] }, void 0, !0, {
               fileName: "app/components/Projects.tsx",
-              lineNumber: 240,
+              lineNumber: 353,
               columnNumber: 15
             }, this)
           ]
@@ -1272,13 +1365,13 @@ function Projects() {
         !0,
         {
           fileName: "app/components/Projects.tsx",
-          lineNumber: 179,
+          lineNumber: 286,
           columnNumber: 13
         },
         this
       )) }, void 0, !1, {
         fileName: "app/components/Projects.tsx",
-        lineNumber: 177,
+        lineNumber: 284,
         columnNumber: 9
       }, this),
       /* @__PURE__ */ jsxDEV5(
@@ -1299,12 +1392,12 @@ function Projects() {
               children: [
                 /* @__PURE__ */ jsxDEV5(FaGithub2, { className: "text-lg" }, void 0, !1, {
                   fileName: "app/components/Projects.tsx",
-                  lineNumber: 326,
+                  lineNumber: 441,
                   columnNumber: 13
                 }, this),
                 /* @__PURE__ */ jsxDEV5("span", { children: "View More on GitHub" }, void 0, !1, {
                   fileName: "app/components/Projects.tsx",
-                  lineNumber: 327,
+                  lineNumber: 442,
                   columnNumber: 13
                 }, this)
               ]
@@ -1313,7 +1406,7 @@ function Projects() {
             !0,
             {
               fileName: "app/components/Projects.tsx",
-              lineNumber: 320,
+              lineNumber: 435,
               columnNumber: 11
             },
             this
@@ -1323,14 +1416,14 @@ function Projects() {
         !1,
         {
           fileName: "app/components/Projects.tsx",
-          lineNumber: 313,
+          lineNumber: 428,
           columnNumber: 9
         },
         this
       )
     ] }, void 0, !0, {
       fileName: "app/components/Projects.tsx",
-      lineNumber: 150,
+      lineNumber: 255,
       columnNumber: 7
     }, this),
     /* @__PURE__ */ jsxDEV5("style", { children: `
@@ -1447,12 +1540,12 @@ function Projects() {
         }
       ` }, void 0, !1, {
       fileName: "app/components/Projects.tsx",
-      lineNumber: 332,
+      lineNumber: 447,
       columnNumber: 7
     }, this)
   ] }, void 0, !0, {
     fileName: "app/components/Projects.tsx",
-    lineNumber: 149,
+    lineNumber: 254,
     columnNumber: 5
   }, this);
 }
@@ -2857,7 +2950,7 @@ function WellKnown() {
 }
 
 // server-assets-manifest:@remix-run/dev/assets-manifest
-var assets_manifest_default = { entry: { module: "/build/entry.client-7MUXUNS2.js", imports: ["/build/_shared/chunk-XC6BC2BP.js", "/build/_shared/chunk-RJ75G2FH.js", "/build/_shared/chunk-PMI65YMG.js", "/build/_shared/chunk-MW4MOASO.js", "/build/_shared/chunk-56LDNGDG.js", "/build/_shared/chunk-2Q7FBYOG.js", "/build/_shared/chunk-4JLKO6E3.js", "/build/_shared/chunk-PNG5AS42.js"] }, routes: { root: { id: "root", parentId: void 0, path: "", index: void 0, caseSensitive: void 0, module: "/build/root-6JUQA47G.js", imports: void 0, hasAction: !1, hasLoader: !1, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 }, "routes/$": { id: "routes/$", parentId: "root", path: "*", index: void 0, caseSensitive: void 0, module: "/build/routes/$-YGVMGVTL.js", imports: void 0, hasAction: !1, hasLoader: !0, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 }, "routes/_index": { id: "routes/_index", parentId: "root", path: void 0, index: !0, caseSensitive: void 0, module: "/build/routes/_index-2PRFXEVR.js", imports: void 0, hasAction: !1, hasLoader: !1, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 } }, version: "d9ebfc25", hmr: { runtime: "/build/_shared\\chunk-MW4MOASO.js", timestamp: 1775959186398 }, url: "/build/manifest-D9EBFC25.js" };
+var assets_manifest_default = { entry: { module: "/build/entry.client-7MUXUNS2.js", imports: ["/build/_shared/chunk-XC6BC2BP.js", "/build/_shared/chunk-RJ75G2FH.js", "/build/_shared/chunk-PMI65YMG.js", "/build/_shared/chunk-MW4MOASO.js", "/build/_shared/chunk-56LDNGDG.js", "/build/_shared/chunk-2Q7FBYOG.js", "/build/_shared/chunk-4JLKO6E3.js", "/build/_shared/chunk-PNG5AS42.js"] }, routes: { root: { id: "root", parentId: void 0, path: "", index: void 0, caseSensitive: void 0, module: "/build/root-N6KXM43D.js", imports: void 0, hasAction: !1, hasLoader: !1, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 }, "routes/$": { id: "routes/$", parentId: "root", path: "*", index: void 0, caseSensitive: void 0, module: "/build/routes/$-YGVMGVTL.js", imports: void 0, hasAction: !1, hasLoader: !0, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 }, "routes/_index": { id: "routes/_index", parentId: "root", path: void 0, index: !0, caseSensitive: void 0, module: "/build/routes/_index-DRNAWOPP.js", imports: void 0, hasAction: !1, hasLoader: !1, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 } }, version: "7317b4fb", hmr: { runtime: "/build/_shared\\chunk-MW4MOASO.js", timestamp: 1777087783561 }, url: "/build/manifest-7317B4FB.js" };
 
 // server-entry-module:@remix-run/dev/server-build
 var mode = "development", assetsBuildDirectory = "public/build", future = { v3_fetcherPersist: !1, v3_relativeSplatPath: !1, v3_throwAbortReason: !1 }, publicPath = "/build/", entry = { module: entry_server_node_exports }, routes = {

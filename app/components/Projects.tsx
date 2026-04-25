@@ -1,13 +1,44 @@
 import { motion } from "framer-motion";
-import { FaGithub, FaExternalLinkAlt, FaReact, FaVuejs, FaPhp, FaBootstrap, FaAngular, FaAtom } from "react-icons/fa/index.js";
-import { SiTailwindcss, SiTypescript, SiNextdotjs, SiRemix, SiFlutter, SiMysql, SiGraphql, SiLaravel, SiNuxtdotjs, SiRelay, SiPrisma, SiVuetify, SiPostgresql, SiMongodb, SiGitlab, SiReacthookform } from "react-icons/si/index.js";
+import {
+  FaGithub,
+  FaExternalLinkAlt,
+  FaReact,
+  FaVuejs,
+  FaPhp,
+  FaBootstrap,
+  FaAngular,
+  FaAtom,
+} from "react-icons/fa/index.js";
+import {
+  SiTailwindcss,
+  SiTypescript,
+  SiNextdotjs,
+  SiRemix,
+  SiFlutter,
+  SiMysql,
+  SiGraphql,
+  SiLaravel,
+  SiNuxtdotjs,
+  SiRelay,
+  SiPrisma,
+  SiVuetify,
+  SiPostgresql,
+  SiMongodb,
+  SiGitlab,
+  SiReacthookform,
+  SiJavascript,
+} from "react-icons/si/index.js";
 
 interface Project {
   id: number;
   title: string;
   description: string;
   image: string;
-  technologies: Array<{ name: string; icon: React.ComponentType; color: string }>;
+  technologies: Array<{
+    name: string;
+    icon: React.ComponentType;
+    color: string;
+  }>;
   githubUrl: string;
   liveUrl: string;
   featured: boolean;
@@ -18,10 +49,16 @@ export default function Projects() {
     {
       id: 1,
       title: "Ticketing Event Platform - darisini.com",
-      description: "Ongoing development since 2021 - Front-end web application for darisini.com ticketing platform. Ensuring seamless user experience with integrated data management and responsive design.",
-      image: "https://images.unsplash.com/photo-1492684223066-81342ee5ff30?w=500&h=300&fit=crop",
+      description:
+        "Ongoing development since 2021 - Front-end web application for darisini.com ticketing platform. Ensuring seamless user experience with integrated data management and responsive design.",
+      image:
+        "https://rfmvxdtjeyjfqukgtdyc.supabase.co/storage/v1/object/public/learning-files/assets/clipboard-image-1777086596.webp",
       technologies: [
-        { name: "Next.js", icon: SiNextdotjs, color: "text-black dark:text-white" },
+        {
+          name: "Next.js",
+          icon: SiNextdotjs,
+          color: "text-black dark:text-white",
+        },
         { name: "React", icon: FaReact, color: "text-blue-500" },
         { name: "Tailwind", icon: SiTailwindcss, color: "text-cyan-500" },
         { name: "TypeScript", icon: SiTypescript, color: "text-blue-600" },
@@ -32,26 +69,33 @@ export default function Projects() {
     },
     {
       id: 2,
-      title: "Archive Document Web Application",
-      description: "2024 - Full-stack application with MySQL database for document archiving. Designed and structured database entities using Eloquent ORM for efficiency and scalability.",
-      image: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=500&h=300&fit=crop",
+      title: "Portfolio Website - Remix",
+      description:
+        "Personal portfolio website showcasing modern web development skills with Remix, Tailwind CSS, and Framer Motion animations. Features glassmorphism design and dark mode.",
+      image:
+        "https://pntefrhsiortxoounbsn.supabase.co/storage/v1/object/sign/assets/fz.webp?token=eyJraWQiOiJzdG9yYWdlLXVybC1zaWduaW5nLWtleV8yNzhlYzZiMS00YTFhLTQ0MDAtOGMwNi03Y2ZlMGUwM2EzMDEiLCJhbGciOiJIUzI1NiJ9.eyJ1cmwiOiJhc3NldHMvZnoud2VicCIsImlhdCI6MTc3NzA4NzMxOCwiZXhwIjoxNzg1NjQwOTE4fQ.9JlP5YxHdD7XRYtTnEzwGh5wQRszGQTQkN-IiJwoOng",
       technologies: [
-        { name: "Laravel", icon: SiLaravel, color: "text-red-500" },
-        { name: "MySQL", icon: SiMysql, color: "text-orange-500" },
-        { name: "PHP", icon: FaPhp, color: "text-purple-600" },
-        { name: "Prisma", icon: SiPrisma, color: "text-gray-700 dark:text-gray-300" },
+        { name: "Remix", icon: SiRemix, color: "text-blue-600" },
+        { name: "TypeScript", icon: SiTypescript, color: "text-blue-600" },
+        { name: "Tailwind", icon: SiTailwindcss, color: "text-cyan-500" },
       ],
-      githubUrl: "https://github.com/fadlanzunima",
-      liveUrl: "#",
-      featured: true,
+      githubUrl: "https://github.com/fadlanzunima/portfolio-remix",
+      liveUrl: "https://fadlanz-portfolio.vercel.app/",
+      featured: false,
     },
     {
       id: 3,
       title: "Landing Page Donation - donasi.darisini.com",
-      description: "2023 - Built and deployed responsive front-end web application for donation platform. Designed fully responsive layout ensuring seamless user experience across all devices.",
-      image: "https://images.unsplash.com/photo-1532629345422-7515f3d16bb6?w=500&h=300&fit=crop",
+      description:
+        "2023 - Built and deployed responsive front-end web application for donation platform. Designed fully responsive layout ensuring seamless user experience across all devices.",
+      image:
+        "https://pntefrhsiortxoounbsn.supabase.co/storage/v1/object/sign/assets/landing.webp?token=eyJraWQiOiJzdG9yYWdlLXVybC1zaWduaW5nLWtleV8yNzhlYzZiMS00YTFhLTQ0MDAtOGMwNi03Y2ZlMGUwM2EzMDEiLCJhbGciOiJIUzI1NiJ9.eyJ1cmwiOiJhc3NldHMvbGFuZGluZy53ZWJwIiwiaWF0IjoxNzc3MDg3MzAxLCJleHAiOjE3ODU2NDA5MDF9.O9cWhN14JLX11IpNo8obSIGYQnkxG9g4Z7teN8ion7I",
       technologies: [
-        { name: "Next.js", icon: SiNextdotjs, color: "text-black dark:text-white" },
+        {
+          name: "Next.js",
+          icon: SiNextdotjs,
+          color: "text-black dark:text-white",
+        },
         { name: "Tailwind", icon: SiTailwindcss, color: "text-cyan-500" },
         { name: "React", icon: FaReact, color: "text-blue-500" },
         { name: "TypeScript", icon: SiTypescript, color: "text-blue-600" },
@@ -63,8 +107,10 @@ export default function Projects() {
     {
       id: 4,
       title: "Platform Web for Banned Product - konsumenbijak.com",
-      description: "2023 - Integrated form and data management for front-end web application focused on consumer awareness. Features fully responsive layout with seamless user experience.",
-      image: "https://images.unsplash.com/photo-1563013544-824ae1b704d3?w=500&h=300&fit=crop",
+      description:
+        "2023 - Integrated form and data management for front-end web application focused on consumer awareness. Features fully responsive layout with seamless user experience.",
+      image:
+        "https://images.unsplash.com/photo-1563013544-824ae1b704d3?w=500&h=300&fit=crop",
       technologies: [
         { name: "Vue.js", icon: FaVuejs, color: "text-green-500" },
         { name: "Nuxt.js", icon: SiNuxtdotjs, color: "text-green-600" },
@@ -77,49 +123,108 @@ export default function Projects() {
     },
     {
       id: 5,
-      title: "Portfolio Website - Remix",
-      description: "Personal portfolio website showcasing modern web development skills with Remix, Tailwind CSS, and Framer Motion animations. Features glassmorphism design and dark mode.",
-      image: "https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?w=500&h=300&fit=crop",
+      title: "Archive Document Web Application",
+      description:
+        "2024 - Full-stack application with MySQL database for document archiving. Designed and structured database entities using Eloquent ORM for efficiency and scalability.",
+      image:
+        "https://pntefrhsiortxoounbsn.supabase.co/storage/v1/object/sign/assets/rsni.webp?token=eyJraWQiOiJzdG9yYWdlLXVybC1zaWduaW5nLWtleV8yNzhlYzZiMS00YTFhLTQ0MDAtOGMwNi03Y2ZlMGUwM2EzMDEiLCJhbGciOiJIUzI1NiJ9.eyJ1cmwiOiJhc3NldHMvcnNuaS53ZWJwIiwiaWF0IjoxNzc3MDg3MjE4LCJleHAiOjQ4OTkxNTEyMTh9.3AvWsWd0r-vt_bw1KQsJ9B_bfh8gnkf0GvAPa88Qol4",
       technologies: [
-        { name: "Remix", icon: SiRemix, color: "text-blue-600" },
-        { name: "TypeScript", icon: SiTypescript, color: "text-blue-600" },
-        { name: "Tailwind", icon: SiTailwindcss, color: "text-cyan-500" },
+        { name: "Laravel", icon: SiLaravel, color: "text-red-500" },
+        { name: "MySQL", icon: SiMysql, color: "text-orange-500" },
+        { name: "PHP", icon: FaPhp, color: "text-purple-600" },
+        {
+          name: "Prisma",
+          icon: SiPrisma,
+          color: "text-gray-700 dark:text-gray-300",
+        },
       ],
-      githubUrl: "https://github.com/fadlanzunima/portfolio-remix",
-      liveUrl: "https://fadlanzunima.vercel.app",
-      featured: false,
+      githubUrl: "https://github.com/fadlanzunima",
+      liveUrl: "https://rsni.bbsdlp.com",
+      featured: true,
     },
     {
       id: 6,
-      title: "Learning Projects & Experiments",
-      description: "Collection of learning projects exploring Vue.js, Angular, React Native, state management with Jotai and Relay, and backend technologies including GraphQL and Prisma.",
-      image: "https://images.unsplash.com/photo-1504608524841-42fe6f032b4b?w=500&h=300&fit=crop",
+      title: "Landing Page Bengkel - bengkel98teknik.vercel.app",
+      description:
+        "2024 - Developed a responsive landing page for an automotive workshop service. Built using React.js with a focus on clean UI, fast performance, and mobile-first design to improve customer engagement and service visibility.",
+      image:
+        "https://pntefrhsiortxoounbsn.supabase.co/storage/v1/object/sign/assets/clipboard-image-1777086932.webp?token=eyJraWQiOiJzdG9yYWdlLXVybC1zaWduaW5nLWtleV8yNzhlYzZiMS00YTFhLTQ0MDAtOGMwNi03Y2ZlMGUwM2EzMDEiLCJhbGciOiJIUzI1NiJ9.eyJ1cmwiOiJhc3NldHMvY2xpcGJvYXJkLWltYWdlLTE3NzcwODY5MzIud2VicCIsImlhdCI6MTc3NzA4NzYxMywiZXhwIjoxNzg1NjQxMjEzfQ.fukoYfBXsvsy2D6Xc7-JpsZ607Hh5XrrZ6efrVIXUV8",
       technologies: [
-        { name: "Vue.js", icon: FaVuejs, color: "text-green-500" },
-        { name: "Angular", icon: FaAngular, color: "text-red-600" },
-        { name: "GraphQL", icon: SiGraphql, color: "text-pink-500" },
-        { name: "Jotai", icon: FaAtom, color: "text-purple-500" },
-        { name: "Prisma", icon: SiPrisma, color: "text-gray-700 dark:text-gray-300" },
+        {
+          name: "React",
+          icon: FaReact,
+          color: "text-blue-500",
+        },
+        {
+          name: "JavaScript",
+          icon: SiJavascript,
+          color: "text-yellow-500",
+        },
+        {
+          name: "Tailwind",
+          icon: SiTailwindcss,
+          color: "text-cyan-500",
+        },
       ],
       githubUrl: "https://github.com/fadlanzunima",
-      liveUrl: "#",
+      liveUrl: "https://bengkel98teknik.vercel.app/",
       featured: false,
     },
-    {
-      id: 7,
-      title: "Mobile App Development - React Native",
-      description: "Cross-platform mobile application built with React Native and TypeScript. Features real-time data synchronization, push notifications, and offline functionality with MongoDB integration.",
-      image: "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=500&h=300&fit=crop",
-      technologies: [
-        { name: "React Native", icon: FaReact, color: "text-blue-500" },
-        { name: "TypeScript", icon: SiTypescript, color: "text-blue-600" },
-        { name: "MongoDB", icon: SiMongodb, color: "text-green-600" },
-        { name: "GraphQL", icon: SiGraphql, color: "text-pink-500" },
-      ],
-      githubUrl: "https://github.com/fadlanzunima",
-      liveUrl: "#",
-      featured: false,
-    },
+    // {
+    //   id: 6,
+    //   title: "Learning Projects & Experiments",
+    //   description:
+    //     "Collection of learning projects exploring Vue.js, Angular, React Native, state management with Jotai and Relay, and backend technologies including GraphQL and Prisma.",
+    //   image:
+    //     "https://images.unsplash.com/photo-1504608524841-42fe6f032b4b?w=500&h=300&fit=crop",
+    //   technologies: [
+    //     { name: "Vue.js", icon: FaVuejs, color: "text-green-500" },
+    //     { name: "Angular", icon: FaAngular, color: "text-red-600" },
+    //     { name: "GraphQL", icon: SiGraphql, color: "text-pink-500" },
+    //     { name: "Jotai", icon: FaAtom, color: "text-purple-500" },
+    //     {
+    //       name: "Prisma",
+    //       icon: SiPrisma,
+    //       color: "text-gray-700 dark:text-gray-300",
+    //     },
+    //   ],
+    //   githubUrl: "https://github.com/fadlanzunima",
+    //   liveUrl: "#",
+    //   featured: false,
+    // },
+    // {
+    //   id: 7,
+    //   title: "Mobile App Development - React Native",
+    //   description:
+    //     "Cross-platform mobile application built with React Native and TypeScript. Features real-time data synchronization, push notifications, and offline functionality with MongoDB integration.",
+    //   image:
+    //     "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=500&h=300&fit=crop",
+    //   technologies: [
+    //     { name: "React Native", icon: FaReact, color: "text-blue-500" },
+    //     { name: "TypeScript", icon: SiTypescript, color: "text-blue-600" },
+    //     { name: "MongoDB", icon: SiMongodb, color: "text-green-600" },
+    //     { name: "GraphQL", icon: SiGraphql, color: "text-pink-500" },
+    //   ],
+    //   githubUrl: "https://github.com/fadlanzunima",
+    //   liveUrl: "#",
+    //   featured: false,
+    // },
+    // {
+    //   id: 7,
+    //   title: "Archive Document Management System",
+    //   description:
+    //     "Designed and implemented a full-stack document archival solution with Laravel and MySQL, utilizing Eloquent ORM for scalable data architecture and role-based access.",
+    //   image:
+    //     "https://rfmvxdtjeyjfqukgtdyc.supabase.co/storage/v1/object/public/learning-files/assets/rsni.webp",
+    //   technologies: [
+    //     { name: "PHP", icon: FaPhp, color: "text-blue-500" },
+    //     { name: "Laravel", icon: SiLaravel, color: "text-blue-600" },
+    //     { name: "mySQL", icon: SiMysql, color: "text-green-600" },
+    //   ],
+    //   githubUrl: "https://github.com/fadlanzunima",
+    //   liveUrl: "https://rsni.bbsdlp.com",
+    //   featured: false,
+    // },
   ];
 
   const containerVariants = {
@@ -128,9 +233,9 @@ export default function Projects() {
       opacity: 1,
       transition: {
         delayChildren: 0.3,
-        staggerChildren: 0.2
-      }
-    }
+        staggerChildren: 0.2,
+      },
+    },
   };
 
   const itemVariants = {
@@ -140,9 +245,9 @@ export default function Projects() {
       opacity: 1,
       transition: {
         duration: 0.6,
-        ease: "easeOut"
-      }
-    }
+        ease: "easeOut",
+      },
+    },
   };
 
   return (
@@ -169,8 +274,10 @@ export default function Projects() {
             variants={itemVariants}
             className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto"
           >
-            Real projects showcasing expertise in Vue.js, Nuxt.js, React.js, Next.js, Angular, Laravel, GraphQL,
-            state management (Vuex, Relay, Jotai), and databases (MySQL, PostgreSQL, MongoDB) from 2021 to 2024.
+            Real projects showcasing expertise in Vue.js, Nuxt.js, React.js,
+            Next.js, Angular, Laravel, GraphQL, state management (Vuex, Relay,
+            Jotai), and databases (MySQL, PostgreSQL, MongoDB) from 2021 to{" "}
+            {new Date().getFullYear()}.
           </motion.p>
         </motion.div>
 
@@ -184,20 +291,26 @@ export default function Projects() {
               transition={{ duration: 0.6, delay: index * 0.1 }}
               whileHover={{ y: -8, scale: 1.02 }}
               className={`masonry-item group relative bg-white dark:bg-gray-900 rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 break-inside-avoid mb-6 ${
-                project.featured ? 'featured ring-2 ring-blue-500/30 bg-gradient-to-br from-blue-50/50 to-white dark:from-blue-900/20 dark:to-gray-900' : ''
+                project.featured
+                  ? "featured ring-2 ring-blue-500/30 bg-gradient-to-br from-blue-50/50 to-white dark:from-blue-900/20 dark:to-gray-900"
+                  : ""
               }`}
             >
-
               {/* Project Image */}
               <div className="relative overflow-hidden">
                 <img
                   src={project.image}
                   alt={project.title}
                   className={`w-full object-cover group-hover:scale-110 transition-transform duration-500 ${
-                    project.featured ? 'h-64' :
-                    index % 4 === 0 ? 'h-48' :
-                    index % 4 === 1 ? 'h-56' :
-                    index % 4 === 2 ? 'h-52' : 'h-60'
+                    project.featured
+                      ? "h-64"
+                      : index % 4 === 0
+                        ? "h-48"
+                        : index % 4 === 1
+                          ? "h-56"
+                          : index % 4 === 2
+                            ? "h-52"
+                            : "h-60"
                   }`}
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
@@ -260,9 +373,11 @@ export default function Projects() {
                 </div>
 
                 {/* Project Description */}
-                <p className={`text-gray-600 dark:text-gray-300 mb-5 leading-relaxed text-sm line-clamp-4 ${
-                  project.featured ? 'text-gray-700 dark:text-gray-200' : ''
-                }`}>
+                <p
+                  className={`text-gray-600 dark:text-gray-300 mb-5 leading-relaxed text-sm line-clamp-4 ${
+                    project.featured ? "text-gray-700 dark:text-gray-200" : ""
+                  }`}
+                >
                   {project.description}
                 </p>
 
