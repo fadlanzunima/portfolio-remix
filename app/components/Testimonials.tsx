@@ -23,7 +23,7 @@ export default function Testimonials() {
       name: "Sarah Johnson",
       role: "Product Manager",
       company: "TechCorp Inc.",
-      content: "Fadlan sangat cepat respon dan selalu memberikan solusi terbaik. Desainnya rapi, kode bersih, dan sangat enak diajak diskusi untuk pengembangan produk.",
+      content: "Fadlan is very responsive and always provides the best solutions. His designs are clean, code is well-structured, and he's a great person to discuss product development with.",
       rating: 5,
       color: "from-blue-500 to-purple-600",
       bgGradient: "from-blue-50 to-purple-50 dark:from-blue-900/20 dark:to-purple-900/20"
@@ -73,7 +73,7 @@ export default function Testimonials() {
       name: "Alex Thompson",
       role: "Lead Developer",
       company: "DevTeam Pro",
-      content: "Code quality Fadlan top-notch. Clean architecture, well-documented, dan mudah di-maintain. Senang bisa berkolaborasi dengan developer sekaliber ini.",
+      content: "Fadlan's code quality is top-notch. Clean architecture, well-documented, and easy to maintain. It's been a pleasure collaborating with a developer of his caliber.",
       rating: 5,
       color: "from-purple-500 to-indigo-600",
       bgGradient: "from-purple-50 to-indigo-50 dark:from-purple-900/20 dark:to-indigo-900/20"

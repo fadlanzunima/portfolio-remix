@@ -5,7 +5,10 @@ import {
   FaLinkedin,
   FaEnvelope,
   FaInstagram,
+  FaFacebook,
+  FaTwitter,
 } from "react-icons/fa/index.js";
+import { SiThreads } from "react-icons/si/index.js";
 
 export default function Hero() {
   const scrollToSection = (sectionId: string) => {
@@ -57,14 +60,14 @@ export default function Hero() {
             Fadlan Zunima
           </motion.h1>
 
-          <motion.p
+          <motion.h2
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 0.6 }}
             className="text-xl md:text-2xl mb-8 text-gray-700 dark:text-gray-300 font-medium"
           >
-            Frontend Engineer
-          </motion.p>
+            Senior Frontend Engineer
+          </motion.h2>
 
           <motion.p
             initial={{ opacity: 0 }}
@@ -101,11 +104,11 @@ export default function Hero() {
           </motion.div>
 
           {/* Social Links */}
-          {/*<motion.div
+          <motion.div
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 1.2 }}
-            className="flex justify-center space-x-6"
+            className="flex justify-center flex-wrap gap-6"
           >
             <a
               href="https://github.com/fadlanzunima"
@@ -113,7 +116,7 @@ export default function Hero() {
               rel="noopener noreferrer"
               className="text-2xl text-gray-600 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-400 transition-colors duration-300"
             >
-              <FaGithub />
+              <FaGithub title="GitHub" />
             </a>
             <a
               href="https://linkedin.com/in/fadlanzunima"
@@ -121,7 +124,15 @@ export default function Hero() {
               rel="noopener noreferrer"
               className="text-2xl text-gray-600 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-400 transition-colors duration-300"
             >
-              <FaLinkedin />
+              <FaLinkedin title="LinkedIn" />
+            </a>
+            <a
+              href="https://x.com/alnzunima"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-2xl text-gray-600 dark:text-gray-400 hover:text-blue-400 dark:hover:text-blue-300 transition-colors duration-300"
+            >
+              <FaTwitter title="X (Twitter)" />
             </a>
             <a
               href="https://instagram.com/fdlnzunima"
@@ -129,15 +140,31 @@ export default function Hero() {
               rel="noopener noreferrer"
               className="text-2xl text-gray-600 dark:text-gray-400 hover:text-pink-600 dark:hover:text-pink-400 transition-colors duration-300"
             >
-              <FaInstagram />
+              <FaInstagram title="Instagram" />
             </a>
             <a
-              href="mailto:fadlan.zunima@example.com"
+              href="https://www.threads.net/@fdlnzunima"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-2xl text-gray-600 dark:text-gray-400 hover:text-black dark:hover:text-white transition-colors duration-300"
+            >
+              <SiThreads title="Threads" />
+            </a>
+            <a
+              href="https://www.facebook.com/fadlanzunima"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-2xl text-gray-600 dark:text-gray-400 hover:text-blue-700 dark:hover:text-blue-500 transition-colors duration-300"
+            >
+              <FaFacebook title="Facebook" />
+            </a>
+            <a
+              href="mailto:fadlanzunima@gmail.com"
               className="text-2xl text-gray-600 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-400 transition-colors duration-300"
             >
-              <FaEnvelope />
+              <FaEnvelope title="Email" />
             </a>
-          </motion.div>*/}
+          </motion.div>
         </motion.div>
 
         {/* Scroll Indicator */}

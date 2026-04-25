@@ -79,30 +79,16 @@ export default function About() {
           >
             <div className="bg-gradient-to-br from-blue-50 to-indigo-50 dark:from-gray-800 dark:to-gray-700 rounded-2xl p-8 shadow-lg">
               <h3 className="text-2xl font-bold mb-4 text-gray-800 dark:text-white">
-                Frontend Engineer & GraphQL Enthusiast
+                Senior Frontend Engineer & GraphQL Enthusiast
               </h3>
               <p className="text-gray-600 dark:text-gray-300 leading-relaxed mb-4">
-                Saya adalah seorang Frontend Engineer yang berbasis di Bandung,
-                Indonesia. Dengan pengalaman dalam membangun aplikasi web modern
-                dan responsif menggunakan React, GraphQL, dan teknologi frontend
-                terkini. Saya fokus pada pengembangan antarmuka yang tidak hanya
-                indah secara visual, tetapi juga memberikan pengalaman pengguna
-                yang luar biasa.
+                I am a Senior Frontend Engineer based in Bandung, Indonesia, with a proven track record of building modern, responsive web applications using React, GraphQL, and the latest frontend technologies. I focus on developing interfaces that are not only visually stunning but also provide exceptional user experiences.
               </p>
               <p className="text-gray-600 dark:text-gray-300 leading-relaxed mb-4">
-                Saat ini saya sedang memperdalam kemampuan dalam GraphQL dan
-                React.js, dengan passion yang kuat terhadap detail desain,
-                performa aplikasi, dan implementasi best practices dalam
-                pengembangan web. Saya selalu antusias mempelajari teknologi
-                baru dan mengikuti tren terkini dalam dunia frontend
-                development.
+                Currently, I am deepening my expertise in GraphQL and advanced React patterns, with a strong passion for design details, application performance, and implementing best practices in web development. I am always enthusiastic about learning new technologies and staying ahead of the latest trends in the frontend ecosystem.
               </p>
               <p className="text-gray-600 dark:text-gray-300 leading-relaxed">
-                Sebagai remote worker, saya menikmati fleksibilitas dalam
-                bekerja sambil tetap berkolaborasi efektif dengan tim. Ketika
-                tidak sedang coding, saya gemar mengeksplorasi design patterns,
-                berkontribusi pada open source, dan berbagi pengetahuan dengan
-                komunitas developer.
+                As a seasoned remote worker, I enjoy the flexibility of working independently while maintaining effective collaboration with global teams. When I'm not coding, I explore design patterns, contribute to open-source projects, and share knowledge with the developer community.
               </p>
             </div>
 

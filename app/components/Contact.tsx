@@ -9,7 +9,9 @@ import {
   FaTwitter,
   FaPaperPlane,
   FaSpinner,
+  FaFacebookF,
 } from "react-icons/fa/index.js";
+import { SiThreads } from "react-icons/si/index.js";
 
 interface FormData {
   name: string;
@@ -109,19 +111,12 @@ export default function Contact() {
       bgColor: "hover:bg-blue-50 dark:hover:bg-blue-900/30",
     },
     {
-      name: "Email",
-      url: "mailto:fadlanzunima@gmail.com",
-      icon: FaEnvelope,
-      color: "hover:text-red-600",
-      bgColor: "hover:bg-red-50 dark:hover:bg-red-900/30",
+      name: "X",
+      url: "https://x.com/alnzunima",
+      icon: FaTwitter,
+      color: "hover:text-blue-400",
+      bgColor: "hover:bg-blue-50 dark:hover:bg-blue-900/30",
     },
-    // {
-    //   name: 'WhatsApp',
-    //   url: 'https://wa.me/6281234567890',
-    //   icon: FaWhatsapp,
-    //   color: 'hover:text-green-600',
-    //   bgColor: 'hover:bg-green-50 dark:hover:bg-green-900/30'
-    // },
     {
       name: "Instagram",
       url: "https://instagram.com/fdlnzunima",
@@ -130,11 +125,25 @@ export default function Contact() {
       bgColor: "hover:bg-pink-50 dark:hover:bg-pink-900/30",
     },
     {
-      name: "Twitter",
-      url: "https://twitter.com/fadlanzunima",
-      icon: FaTwitter,
-      color: "hover:text-blue-400",
+      name: "Threads",
+      url: "https://www.threads.net/@fdlnzunima",
+      icon: SiThreads,
+      color: "hover:text-black dark:hover:text-white",
+      bgColor: "hover:bg-gray-100 dark:hover:bg-gray-700",
+    },
+    {
+      name: "Facebook",
+      url: "https://www.facebook.com/fadlanzunima",
+      icon: FaFacebookF,
+      color: "hover:text-blue-700",
       bgColor: "hover:bg-blue-50 dark:hover:bg-blue-900/30",
+    },
+    {
+      name: "Email",
+      url: "mailto:fadlanzunima@gmail.com",
+      icon: FaEnvelope,
+      color: "hover:text-red-600",
+      bgColor: "hover:bg-red-50 dark:hover:bg-red-900/30",
     },
   ];
 

@@ -133,7 +133,7 @@ import {
 import { Analytics } from "@vercel/analytics/remix";
 
 // app/styles/globals.css
-var globals_default = "/build/_assets/globals-GSAF2ITI.css";
+var globals_default = "/build/_assets/globals-I2G4KTG5.css";
 
 // app/root.tsx
 import { jsxDEV as jsxDEV2 } from "react/jsx-dev-runtime";
@@ -153,73 +153,136 @@ var links = () => [
   { rel: "apple-touch-icon", sizes: "180x180", href: "/apple-touch-icon.png" }
 ], meta = () => [
   { charset: "utf-8" },
-  { title: "Fadlan Zunima - Frontend Engineer Portfolio" },
+  { title: "Fadlan Zunima - Senior Frontend Engineer & Freelance React Developer" },
   { viewport: "width=device-width,initial-scale=1" },
   {
     name: "description",
-    content: "Portfolio website of Fadlan Zunima, a skilled Frontend Engineer from Bandung, Indonesia specializing in React, GraphQL, and modern web technologies."
+    content: "Portfolio of Fadlan Zunima, a Senior Frontend Engineer from Bandung, Indonesia. Specializing in React, Next.js, and GraphQL. Available for freelance projects and remote collaboration."
   },
-  { name: "keywords", content: "Frontend Engineer, React, GraphQL, JavaScript, TypeScript, Web Development, UI/UX, Bandung" },
+  { name: "keywords", content: "Frontend Engineer, React Developer, Freelance Web Developer, Remote Developer, Next.js, GraphQL, TypeScript, UI/UX, Bandung, Indonesia, Hire Frontend Developer" },
   { name: "author", content: "Fadlan Zunima" },
-  { property: "og:title", content: "Fadlan Zunima - Frontend Engineer Portfolio" },
-  { property: "og:description", content: "Portfolio showcasing modern web applications and frontend engineering expertise from Bandung, Indonesia." },
+  { property: "og:title", content: "Fadlan Zunima - Senior Frontend Engineer Portfolio" },
+  { property: "og:description", content: "Expert Frontend Engineering services specializing in modern web technologies. Explore my projects and hire me for your next big idea." },
   { property: "og:type", content: "website" },
+  { property: "og:url", content: "https://fadlanz-portfolio.vercel.app" },
   { name: "twitter:card", content: "summary_large_image" },
-  { name: "twitter:title", content: "Fadlan Zunima - Frontend Engineer Portfolio" },
-  { name: "twitter:description", content: "Portfolio showcasing modern web applications and frontend engineering expertise from Bandung, Indonesia." }
+  { name: "twitter:title", content: "Fadlan Zunima - Senior Frontend Engineer" },
+  { name: "twitter:description", content: "Professional Frontend Development and UI/UX design. Delivering high-performance web solutions." }
 ];
 function App() {
+  let jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    name: "Fadlan Zunima",
+    jobTitle: "Senior Frontend Engineer",
+    url: "https://fadlanz-portfolio.vercel.app",
+    sameAs: [
+      "https://github.com/fadlanzunima",
+      "https://linkedin.com/in/fadlanzunima",
+      "https://instagram.com/fdlnzunima",
+      "https://www.facebook.com/fadlanzunima",
+      "https://www.threads.net/@fdlnzunima",
+      "https://x.com/alnzunima"
+    ],
+    knowsAbout: ["React", "Next.js", "Vue.js", "GraphQL", "TypeScript", "Tailwind CSS", "Frontend Development", "Web Design"],
+    address: {
+      "@type": "PostalAddress",
+      addressLocality: "Bandung",
+      addressCountry: "Indonesia"
+    }
+  }, websiteJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    name: "Fadlan Zunima Portfolio",
+    url: "https://fadlanz-portfolio.vercel.app",
+    description: "Professional portfolio of Fadlan Zunima, Senior Frontend Engineer."
+  };
   return /* @__PURE__ */ jsxDEV2("html", { lang: "en", className: "scroll-smooth", children: [
     /* @__PURE__ */ jsxDEV2("head", { children: [
       /* @__PURE__ */ jsxDEV2(Meta, {}, void 0, !1, {
         fileName: "app/root.tsx",
-        lineNumber: 52,
+        lineNumber: 83,
         columnNumber: 9
       }, this),
       /* @__PURE__ */ jsxDEV2(Links, {}, void 0, !1, {
         fileName: "app/root.tsx",
-        lineNumber: 53,
+        lineNumber: 84,
         columnNumber: 9
-      }, this)
+      }, this),
+      /* @__PURE__ */ jsxDEV2("link", { rel: "canonical", href: "https://fadlanz-portfolio.vercel.app" }, void 0, !1, {
+        fileName: "app/root.tsx",
+        lineNumber: 85,
+        columnNumber: 9
+      }, this),
+      /* @__PURE__ */ jsxDEV2(
+        "script",
+        {
+          type: "application/ld+json",
+          dangerouslySetInnerHTML: { __html: JSON.stringify(jsonLd) }
+        },
+        void 0,
+        !1,
+        {
+          fileName: "app/root.tsx",
+          lineNumber: 86,
+          columnNumber: 9
+        },
+        this
+      ),
+      /* @__PURE__ */ jsxDEV2(
+        "script",
+        {
+          type: "application/ld+json",
+          dangerouslySetInnerHTML: { __html: JSON.stringify(websiteJsonLd) }
+        },
+        void 0,
+        !1,
+        {
+          fileName: "app/root.tsx",
+          lineNumber: 90,
+          columnNumber: 9
+        },
+        this
+      )
     ] }, void 0, !0, {
       fileName: "app/root.tsx",
-      lineNumber: 51,
+      lineNumber: 82,
       columnNumber: 7
     }, this),
     /* @__PURE__ */ jsxDEV2("body", { className: "font-inter antialiased", children: [
       /* @__PURE__ */ jsxDEV2(Outlet, {}, void 0, !1, {
         fileName: "app/root.tsx",
-        lineNumber: 56,
+        lineNumber: 96,
         columnNumber: 9
       }, this),
       /* @__PURE__ */ jsxDEV2(Analytics, {}, void 0, !1, {
         fileName: "app/root.tsx",
-        lineNumber: 57,
+        lineNumber: 97,
         columnNumber: 9
       }, this),
       /* @__PURE__ */ jsxDEV2(ScrollRestoration, {}, void 0, !1, {
         fileName: "app/root.tsx",
-        lineNumber: 58,
+        lineNumber: 98,
         columnNumber: 9
       }, this),
       /* @__PURE__ */ jsxDEV2(Scripts, {}, void 0, !1, {
         fileName: "app/root.tsx",
-        lineNumber: 59,
+        lineNumber: 99,
         columnNumber: 9
       }, this),
       /* @__PURE__ */ jsxDEV2(LiveReload, {}, void 0, !1, {
         fileName: "app/root.tsx",
-        lineNumber: 60,
+        lineNumber: 100,
         columnNumber: 9
       }, this)
     ] }, void 0, !0, {
       fileName: "app/root.tsx",
-      lineNumber: 55,
+      lineNumber: 95,
       columnNumber: 7
     }, this)
   ] }, void 0, !0, {
     fileName: "app/root.tsx",
-    lineNumber: 50,
+    lineNumber: 81,
     columnNumber: 5
   }, this);
 }
@@ -234,8 +297,15 @@ __export(index_exports, {
 // app/components/Hero.tsx
 import { motion } from "framer-motion";
 import {
-  FaArrowDown
+  FaArrowDown,
+  FaGithub,
+  FaLinkedin,
+  FaEnvelope,
+  FaInstagram,
+  FaFacebook,
+  FaTwitter
 } from "react-icons/fa/index.js";
+import { SiThreads } from "react-icons/si/index.js";
 import { jsxDEV as jsxDEV3 } from "react/jsx-dev-runtime";
 function Hero() {
   let scrollToSection = (sectionId) => {
@@ -246,22 +316,22 @@ function Hero() {
     /* @__PURE__ */ jsxDEV3("div", { className: "absolute inset-0", children: [
       /* @__PURE__ */ jsxDEV3("div", { className: "absolute top-20 left-20 w-72 h-72 bg-blue-300 rounded-full mix-blend-multiply filter blur-xl opacity-20 animate-blob" }, void 0, !1, {
         fileName: "app/components/Hero.tsx",
-        lineNumber: 22,
+        lineNumber: 25,
         columnNumber: 9
       }, this),
       /* @__PURE__ */ jsxDEV3("div", { className: "absolute top-40 right-20 w-72 h-72 bg-yellow-300 rounded-full mix-blend-multiply filter blur-xl opacity-20 animate-blob animation-delay-2000" }, void 0, !1, {
         fileName: "app/components/Hero.tsx",
-        lineNumber: 23,
+        lineNumber: 26,
         columnNumber: 9
       }, this),
       /* @__PURE__ */ jsxDEV3("div", { className: "absolute -bottom-8 left-40 w-72 h-72 bg-pink-300 rounded-full mix-blend-multiply filter blur-xl opacity-20 animate-blob animation-delay-4000" }, void 0, !1, {
         fileName: "app/components/Hero.tsx",
-        lineNumber: 24,
+        lineNumber: 27,
         columnNumber: 9
       }, this)
     ] }, void 0, !0, {
       fileName: "app/components/Hero.tsx",
-      lineNumber: 21,
+      lineNumber: 24,
       columnNumber: 7
     }, this),
     /* @__PURE__ */ jsxDEV3("div", { className: "relative z-10 text-center px-6 max-w-4xl mx-auto", children: [
@@ -291,7 +361,7 @@ function Hero() {
                   !1,
                   {
                     fileName: "app/components/Hero.tsx",
-                    lineNumber: 43,
+                    lineNumber: 46,
                     columnNumber: 13
                   },
                   this
@@ -301,7 +371,7 @@ function Hero() {
               !1,
               {
                 fileName: "app/components/Hero.tsx",
-                lineNumber: 37,
+                lineNumber: 40,
                 columnNumber: 11
               },
               this
@@ -319,25 +389,25 @@ function Hero() {
               !1,
               {
                 fileName: "app/components/Hero.tsx",
-                lineNumber: 51,
+                lineNumber: 54,
                 columnNumber: 11
               },
               this
             ),
             /* @__PURE__ */ jsxDEV3(
-              motion.p,
+              motion.h2,
               {
                 initial: { opacity: 0 },
                 animate: { opacity: 1 },
                 transition: { delay: 0.6 },
                 className: "text-xl md:text-2xl mb-8 text-gray-700 dark:text-gray-300 font-medium",
-                children: "Frontend Engineer"
+                children: "Senior Frontend Engineer"
               },
               void 0,
               !1,
               {
                 fileName: "app/components/Hero.tsx",
-                lineNumber: 60,
+                lineNumber: 63,
                 columnNumber: 11
               },
               this
@@ -355,7 +425,7 @@ function Hero() {
               !1,
               {
                 fileName: "app/components/Hero.tsx",
-                lineNumber: 69,
+                lineNumber: 72,
                 columnNumber: 11
               },
               this
@@ -379,7 +449,7 @@ function Hero() {
                     !1,
                     {
                       fileName: "app/components/Hero.tsx",
-                      lineNumber: 89,
+                      lineNumber: 92,
                       columnNumber: 13
                     },
                     this
@@ -395,7 +465,7 @@ function Hero() {
                     !1,
                     {
                       fileName: "app/components/Hero.tsx",
-                      lineNumber: 95,
+                      lineNumber: 98,
                       columnNumber: 13
                     },
                     this
@@ -406,7 +476,178 @@ function Hero() {
               !0,
               {
                 fileName: "app/components/Hero.tsx",
-                lineNumber: 83,
+                lineNumber: 86,
+                columnNumber: 11
+              },
+              this
+            ),
+            /* @__PURE__ */ jsxDEV3(
+              motion.div,
+              {
+                initial: { opacity: 0 },
+                animate: { opacity: 1 },
+                transition: { delay: 1.2 },
+                className: "flex justify-center flex-wrap gap-6",
+                children: [
+                  /* @__PURE__ */ jsxDEV3(
+                    "a",
+                    {
+                      href: "https://github.com/fadlanzunima",
+                      target: "_blank",
+                      rel: "noopener noreferrer",
+                      className: "text-2xl text-gray-600 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-400 transition-colors duration-300",
+                      children: /* @__PURE__ */ jsxDEV3(FaGithub, { title: "GitHub" }, void 0, !1, {
+                        fileName: "app/components/Hero.tsx",
+                        lineNumber: 119,
+                        columnNumber: 15
+                      }, this)
+                    },
+                    void 0,
+                    !1,
+                    {
+                      fileName: "app/components/Hero.tsx",
+                      lineNumber: 113,
+                      columnNumber: 13
+                    },
+                    this
+                  ),
+                  /* @__PURE__ */ jsxDEV3(
+                    "a",
+                    {
+                      href: "https://linkedin.com/in/fadlanzunima",
+                      target: "_blank",
+                      rel: "noopener noreferrer",
+                      className: "text-2xl text-gray-600 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-400 transition-colors duration-300",
+                      children: /* @__PURE__ */ jsxDEV3(FaLinkedin, { title: "LinkedIn" }, void 0, !1, {
+                        fileName: "app/components/Hero.tsx",
+                        lineNumber: 127,
+                        columnNumber: 15
+                      }, this)
+                    },
+                    void 0,
+                    !1,
+                    {
+                      fileName: "app/components/Hero.tsx",
+                      lineNumber: 121,
+                      columnNumber: 13
+                    },
+                    this
+                  ),
+                  /* @__PURE__ */ jsxDEV3(
+                    "a",
+                    {
+                      href: "https://x.com/alnzunima",
+                      target: "_blank",
+                      rel: "noopener noreferrer",
+                      className: "text-2xl text-gray-600 dark:text-gray-400 hover:text-blue-400 dark:hover:text-blue-300 transition-colors duration-300",
+                      children: /* @__PURE__ */ jsxDEV3(FaTwitter, { title: "X (Twitter)" }, void 0, !1, {
+                        fileName: "app/components/Hero.tsx",
+                        lineNumber: 135,
+                        columnNumber: 15
+                      }, this)
+                    },
+                    void 0,
+                    !1,
+                    {
+                      fileName: "app/components/Hero.tsx",
+                      lineNumber: 129,
+                      columnNumber: 13
+                    },
+                    this
+                  ),
+                  /* @__PURE__ */ jsxDEV3(
+                    "a",
+                    {
+                      href: "https://instagram.com/fdlnzunima",
+                      target: "_blank",
+                      rel: "noopener noreferrer",
+                      className: "text-2xl text-gray-600 dark:text-gray-400 hover:text-pink-600 dark:hover:text-pink-400 transition-colors duration-300",
+                      children: /* @__PURE__ */ jsxDEV3(FaInstagram, { title: "Instagram" }, void 0, !1, {
+                        fileName: "app/components/Hero.tsx",
+                        lineNumber: 143,
+                        columnNumber: 15
+                      }, this)
+                    },
+                    void 0,
+                    !1,
+                    {
+                      fileName: "app/components/Hero.tsx",
+                      lineNumber: 137,
+                      columnNumber: 13
+                    },
+                    this
+                  ),
+                  /* @__PURE__ */ jsxDEV3(
+                    "a",
+                    {
+                      href: "https://www.threads.net/@fdlnzunima",
+                      target: "_blank",
+                      rel: "noopener noreferrer",
+                      className: "text-2xl text-gray-600 dark:text-gray-400 hover:text-black dark:hover:text-white transition-colors duration-300",
+                      children: /* @__PURE__ */ jsxDEV3(SiThreads, { title: "Threads" }, void 0, !1, {
+                        fileName: "app/components/Hero.tsx",
+                        lineNumber: 151,
+                        columnNumber: 15
+                      }, this)
+                    },
+                    void 0,
+                    !1,
+                    {
+                      fileName: "app/components/Hero.tsx",
+                      lineNumber: 145,
+                      columnNumber: 13
+                    },
+                    this
+                  ),
+                  /* @__PURE__ */ jsxDEV3(
+                    "a",
+                    {
+                      href: "https://www.facebook.com/fadlanzunima",
+                      target: "_blank",
+                      rel: "noopener noreferrer",
+                      className: "text-2xl text-gray-600 dark:text-gray-400 hover:text-blue-700 dark:hover:text-blue-500 transition-colors duration-300",
+                      children: /* @__PURE__ */ jsxDEV3(FaFacebook, { title: "Facebook" }, void 0, !1, {
+                        fileName: "app/components/Hero.tsx",
+                        lineNumber: 159,
+                        columnNumber: 15
+                      }, this)
+                    },
+                    void 0,
+                    !1,
+                    {
+                      fileName: "app/components/Hero.tsx",
+                      lineNumber: 153,
+                      columnNumber: 13
+                    },
+                    this
+                  ),
+                  /* @__PURE__ */ jsxDEV3(
+                    "a",
+                    {
+                      href: "mailto:fadlanzunima@gmail.com",
+                      className: "text-2xl text-gray-600 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-400 transition-colors duration-300",
+                      children: /* @__PURE__ */ jsxDEV3(FaEnvelope, { title: "Email" }, void 0, !1, {
+                        fileName: "app/components/Hero.tsx",
+                        lineNumber: 165,
+                        columnNumber: 15
+                      }, this)
+                    },
+                    void 0,
+                    !1,
+                    {
+                      fileName: "app/components/Hero.tsx",
+                      lineNumber: 161,
+                      columnNumber: 13
+                    },
+                    this
+                  )
+                ]
+              },
+              void 0,
+              !0,
+              {
+                fileName: "app/components/Hero.tsx",
+                lineNumber: 107,
                 columnNumber: 11
               },
               this
@@ -417,7 +658,7 @@ function Hero() {
         !0,
         {
           fileName: "app/components/Hero.tsx",
-          lineNumber: 30,
+          lineNumber: 33,
           columnNumber: 9
         },
         this
@@ -436,7 +677,7 @@ function Hero() {
               className: "text-gray-600 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-400 transition-colors duration-300 animate-bounce",
               children: /* @__PURE__ */ jsxDEV3(FaArrowDown, { className: "text-2xl" }, void 0, !1, {
                 fileName: "app/components/Hero.tsx",
-                lineNumber: 154,
+                lineNumber: 181,
                 columnNumber: 13
               }, this)
             },
@@ -444,7 +685,7 @@ function Hero() {
             !1,
             {
               fileName: "app/components/Hero.tsx",
-              lineNumber: 150,
+              lineNumber: 177,
               columnNumber: 11
             },
             this
@@ -454,14 +695,14 @@ function Hero() {
         !1,
         {
           fileName: "app/components/Hero.tsx",
-          lineNumber: 144,
+          lineNumber: 171,
           columnNumber: 9
         },
         this
       )
     ] }, void 0, !0, {
       fileName: "app/components/Hero.tsx",
-      lineNumber: 28,
+      lineNumber: 31,
       columnNumber: 7
     }, this),
     /* @__PURE__ */ jsxDEV3("style", { children: `
@@ -490,12 +731,12 @@ function Hero() {
         }
       ` }, void 0, !1, {
       fileName: "app/components/Hero.tsx",
-      lineNumber: 159,
+      lineNumber: 186,
       columnNumber: 7
     }, this)
   ] }, void 0, !0, {
     fileName: "app/components/Hero.tsx",
-    lineNumber: 19,
+    lineNumber: 22,
     columnNumber: 5
   }, this);
 }
@@ -606,24 +847,24 @@ function About() {
           className: "space-y-6",
           children: [
             /* @__PURE__ */ jsxDEV4("div", { className: "bg-gradient-to-br from-blue-50 to-indigo-50 dark:from-gray-800 dark:to-gray-700 rounded-2xl p-8 shadow-lg", children: [
-              /* @__PURE__ */ jsxDEV4("h3", { className: "text-2xl font-bold mb-4 text-gray-800 dark:text-white", children: "Frontend Engineer & GraphQL Enthusiast" }, void 0, !1, {
+              /* @__PURE__ */ jsxDEV4("h3", { className: "text-2xl font-bold mb-4 text-gray-800 dark:text-white", children: "Senior Frontend Engineer & GraphQL Enthusiast" }, void 0, !1, {
                 fileName: "app/components/About.tsx",
                 lineNumber: 81,
                 columnNumber: 15
               }, this),
-              /* @__PURE__ */ jsxDEV4("p", { className: "text-gray-600 dark:text-gray-300 leading-relaxed mb-4", children: "Saya adalah seorang Frontend Engineer yang berbasis di Bandung, Indonesia. Dengan pengalaman dalam membangun aplikasi web modern dan responsif menggunakan React, GraphQL, dan teknologi frontend terkini. Saya fokus pada pengembangan antarmuka yang tidak hanya indah secara visual, tetapi juga memberikan pengalaman pengguna yang luar biasa." }, void 0, !1, {
+              /* @__PURE__ */ jsxDEV4("p", { className: "text-gray-600 dark:text-gray-300 leading-relaxed mb-4", children: "I am a Senior Frontend Engineer based in Bandung, Indonesia, with a proven track record of building modern, responsive web applications using React, GraphQL, and the latest frontend technologies. I focus on developing interfaces that are not only visually stunning but also provide exceptional user experiences." }, void 0, !1, {
                 fileName: "app/components/About.tsx",
                 lineNumber: 84,
                 columnNumber: 15
               }, this),
-              /* @__PURE__ */ jsxDEV4("p", { className: "text-gray-600 dark:text-gray-300 leading-relaxed mb-4", children: "Saat ini saya sedang memperdalam kemampuan dalam GraphQL dan React.js, dengan passion yang kuat terhadap detail desain, performa aplikasi, dan implementasi best practices dalam pengembangan web. Saya selalu antusias mempelajari teknologi baru dan mengikuti tren terkini dalam dunia frontend development." }, void 0, !1, {
+              /* @__PURE__ */ jsxDEV4("p", { className: "text-gray-600 dark:text-gray-300 leading-relaxed mb-4", children: "Currently, I am deepening my expertise in GraphQL and advanced React patterns, with a strong passion for design details, application performance, and implementing best practices in web development. I am always enthusiastic about learning new technologies and staying ahead of the latest trends in the frontend ecosystem." }, void 0, !1, {
                 fileName: "app/components/About.tsx",
-                lineNumber: 92,
+                lineNumber: 87,
                 columnNumber: 15
               }, this),
-              /* @__PURE__ */ jsxDEV4("p", { className: "text-gray-600 dark:text-gray-300 leading-relaxed", children: "Sebagai remote worker, saya menikmati fleksibilitas dalam bekerja sambil tetap berkolaborasi efektif dengan tim. Ketika tidak sedang coding, saya gemar mengeksplorasi design patterns, berkontribusi pada open source, dan berbagi pengetahuan dengan komunitas developer." }, void 0, !1, {
+              /* @__PURE__ */ jsxDEV4("p", { className: "text-gray-600 dark:text-gray-300 leading-relaxed", children: "As a seasoned remote worker, I enjoy the flexibility of working independently while maintaining effective collaboration with global teams. When I'm not coding, I explore design patterns, contribute to open-source projects, and share knowledge with the developer community." }, void 0, !1, {
                 fileName: "app/components/About.tsx",
-                lineNumber: 100,
+                lineNumber: 90,
                 columnNumber: 15
               }, this)
             ] }, void 0, !0, {
@@ -640,12 +881,12 @@ function About() {
                   children: [
                     /* @__PURE__ */ jsxDEV4("div", { className: "text-2xl font-bold text-blue-600 dark:text-blue-400", children: "5+" }, void 0, !1, {
                       fileName: "app/components/About.tsx",
-                      lineNumber: 115,
+                      lineNumber: 101,
                       columnNumber: 17
                     }, this),
                     /* @__PURE__ */ jsxDEV4("div", { className: "text-sm text-gray-600 dark:text-gray-400", children: "Years Experience" }, void 0, !1, {
                       fileName: "app/components/About.tsx",
-                      lineNumber: 118,
+                      lineNumber: 104,
                       columnNumber: 17
                     }, this)
                   ]
@@ -654,7 +895,7 @@ function About() {
                 !0,
                 {
                   fileName: "app/components/About.tsx",
-                  lineNumber: 111,
+                  lineNumber: 97,
                   columnNumber: 15
                 },
                 this
@@ -667,12 +908,12 @@ function About() {
                   children: [
                     /* @__PURE__ */ jsxDEV4("div", { className: "text-2xl font-bold text-purple-600 dark:text-purple-400", children: "10+" }, void 0, !1, {
                       fileName: "app/components/About.tsx",
-                      lineNumber: 126,
+                      lineNumber: 112,
                       columnNumber: 17
                     }, this),
                     /* @__PURE__ */ jsxDEV4("div", { className: "text-sm text-gray-600 dark:text-gray-400", children: "Projects Completed" }, void 0, !1, {
                       fileName: "app/components/About.tsx",
-                      lineNumber: 129,
+                      lineNumber: 115,
                       columnNumber: 17
                     }, this)
                   ]
@@ -681,7 +922,7 @@ function About() {
                 !0,
                 {
                   fileName: "app/components/About.tsx",
-                  lineNumber: 122,
+                  lineNumber: 108,
                   columnNumber: 15
                 },
                 this
@@ -694,12 +935,12 @@ function About() {
                   children: [
                     /* @__PURE__ */ jsxDEV4("div", { className: "text-2xl font-bold text-green-600 dark:text-green-400", children: "5+" }, void 0, !1, {
                       fileName: "app/components/About.tsx",
-                      lineNumber: 137,
+                      lineNumber: 123,
                       columnNumber: 17
                     }, this),
                     /* @__PURE__ */ jsxDEV4("div", { className: "text-sm text-gray-600 dark:text-gray-400", children: "Happy Clients" }, void 0, !1, {
                       fileName: "app/components/About.tsx",
-                      lineNumber: 140,
+                      lineNumber: 126,
                       columnNumber: 17
                     }, this)
                   ]
@@ -708,14 +949,14 @@ function About() {
                 !0,
                 {
                   fileName: "app/components/About.tsx",
-                  lineNumber: 133,
+                  lineNumber: 119,
                   columnNumber: 15
                 },
                 this
               )
             ] }, void 0, !0, {
               fileName: "app/components/About.tsx",
-              lineNumber: 110,
+              lineNumber: 96,
               columnNumber: 13
             }, this)
           ]
@@ -740,7 +981,7 @@ function About() {
           children: /* @__PURE__ */ jsxDEV4("div", { className: "bg-gradient-to-br from-blue-50 to-purple-50 dark:from-gray-800 dark:to-gray-700 rounded-2xl p-8 shadow-lg", children: [
             /* @__PURE__ */ jsxDEV4("h3", { className: "text-2xl font-bold mb-8 text-center text-gray-800 dark:text-white", children: "Technologies I Work With" }, void 0, !1, {
               fileName: "app/components/About.tsx",
-              lineNumber: 156,
+              lineNumber: 142,
               columnNumber: 15
             }, this),
             /* @__PURE__ */ jsxDEV4("div", { className: "grid grid-cols-3 gap-6", children: techIcons.map(({ Icon, name, color }, index) => /* @__PURE__ */ jsxDEV4(
@@ -767,14 +1008,14 @@ function About() {
                     !1,
                     {
                       fileName: "app/components/About.tsx",
-                      lineNumber: 176,
+                      lineNumber: 162,
                       columnNumber: 21
                     },
                     this
                   ),
                   /* @__PURE__ */ jsxDEV4("span", { className: "text-sm font-medium text-gray-700 dark:text-gray-300 text-center", children: name }, void 0, !1, {
                     fileName: "app/components/About.tsx",
-                    lineNumber: 179,
+                    lineNumber: 165,
                     columnNumber: 21
                   }, this)
                 ]
@@ -783,28 +1024,28 @@ function About() {
               !0,
               {
                 fileName: "app/components/About.tsx",
-                lineNumber: 162,
+                lineNumber: 148,
                 columnNumber: 19
               },
               this
             )) }, void 0, !1, {
               fileName: "app/components/About.tsx",
-              lineNumber: 160,
+              lineNumber: 146,
               columnNumber: 15
             }, this),
             /* @__PURE__ */ jsxDEV4("div", { className: "absolute -top-4 -right-4 w-20 h-20 bg-gradient-to-r from-blue-500 to-purple-500 rounded-full opacity-20 blur-xl" }, void 0, !1, {
               fileName: "app/components/About.tsx",
-              lineNumber: 187,
+              lineNumber: 173,
               columnNumber: 15
             }, this),
             /* @__PURE__ */ jsxDEV4("div", { className: "absolute -bottom-4 -left-4 w-16 h-16 bg-gradient-to-r from-pink-500 to-yellow-500 rounded-full opacity-20 blur-xl" }, void 0, !1, {
               fileName: "app/components/About.tsx",
-              lineNumber: 188,
+              lineNumber: 174,
               columnNumber: 15
             }, this)
           ] }, void 0, !0, {
             fileName: "app/components/About.tsx",
-            lineNumber: 155,
+            lineNumber: 141,
             columnNumber: 13
           }, this)
         },
@@ -812,7 +1053,7 @@ function About() {
         !1,
         {
           fileName: "app/components/About.tsx",
-          lineNumber: 148,
+          lineNumber: 134,
           columnNumber: 11
         },
         this
@@ -2029,8 +2270,10 @@ import {
   FaLinkedin as FaLinkedin2,
   FaEnvelope as FaEnvelope2,
   FaInstagram as FaInstagram2,
-  FaTwitter
+  FaTwitter as FaTwitter2,
+  FaFacebookF
 } from "react-icons/fa/index.js";
+import { SiThreads as SiThreads2 } from "react-icons/si/index.js";
 import { jsxDEV as jsxDEV7 } from "react/jsx-dev-runtime";
 function Contact() {
   let [formData, setFormData] = useState({
@@ -2084,19 +2327,12 @@ function Contact() {
       bgColor: "hover:bg-blue-50 dark:hover:bg-blue-900/30"
     },
     {
-      name: "Email",
-      url: "mailto:fadlanzunima@gmail.com",
-      icon: FaEnvelope2,
-      color: "hover:text-red-600",
-      bgColor: "hover:bg-red-50 dark:hover:bg-red-900/30"
+      name: "X",
+      url: "https://x.com/alnzunima",
+      icon: FaTwitter2,
+      color: "hover:text-blue-400",
+      bgColor: "hover:bg-blue-50 dark:hover:bg-blue-900/30"
     },
-    // {
-    //   name: 'WhatsApp',
-    //   url: 'https://wa.me/6281234567890',
-    //   icon: FaWhatsapp,
-    //   color: 'hover:text-green-600',
-    //   bgColor: 'hover:bg-green-50 dark:hover:bg-green-900/30'
-    // },
     {
       name: "Instagram",
       url: "https://instagram.com/fdlnzunima",
@@ -2105,11 +2341,25 @@ function Contact() {
       bgColor: "hover:bg-pink-50 dark:hover:bg-pink-900/30"
     },
     {
-      name: "Twitter",
-      url: "https://twitter.com/fadlanzunima",
-      icon: FaTwitter,
-      color: "hover:text-blue-400",
+      name: "Threads",
+      url: "https://www.threads.net/@fdlnzunima",
+      icon: SiThreads2,
+      color: "hover:text-black dark:hover:text-white",
+      bgColor: "hover:bg-gray-100 dark:hover:bg-gray-700"
+    },
+    {
+      name: "Facebook",
+      url: "https://www.facebook.com/fadlanzunima",
+      icon: FaFacebookF,
+      color: "hover:text-blue-700",
       bgColor: "hover:bg-blue-50 dark:hover:bg-blue-900/30"
+    },
+    {
+      name: "Email",
+      url: "mailto:fadlanzunima@gmail.com",
+      icon: FaEnvelope2,
+      color: "hover:text-red-600",
+      bgColor: "hover:bg-red-50 dark:hover:bg-red-900/30"
     }
   ], containerVariants = {
     hidden: { opacity: 0 },
@@ -2152,7 +2402,7 @@ function Contact() {
             !1,
             {
               fileName: "app/components/Contact.tsx",
-              lineNumber: 174,
+              lineNumber: 183,
               columnNumber: 11
             },
             this
@@ -2167,7 +2417,7 @@ function Contact() {
             !1,
             {
               fileName: "app/components/Contact.tsx",
-              lineNumber: 180,
+              lineNumber: 189,
               columnNumber: 11
             },
             this
@@ -2183,7 +2433,7 @@ function Contact() {
             !1,
             {
               fileName: "app/components/Contact.tsx",
-              lineNumber: 184,
+              lineNumber: 193,
               columnNumber: 11
             },
             this
@@ -2194,7 +2444,7 @@ function Contact() {
       !0,
       {
         fileName: "app/components/Contact.tsx",
-        lineNumber: 167,
+        lineNumber: 176,
         columnNumber: 9
       },
       this
@@ -2211,96 +2461,96 @@ function Contact() {
           /* @__PURE__ */ jsxDEV7("div", { className: "bg-gradient-to-br from-blue-50 to-indigo-50 dark:from-gray-800 dark:to-gray-700 rounded-2xl p-8", children: [
             /* @__PURE__ */ jsxDEV7("h3", { className: "text-2xl font-bold mb-6 text-gray-800 dark:text-white", children: "Get In Touch" }, void 0, !1, {
               fileName: "app/components/Contact.tsx",
-              lineNumber: 203,
+              lineNumber: 212,
               columnNumber: 15
             }, this),
             /* @__PURE__ */ jsxDEV7("div", { className: "space-y-6", children: [
               /* @__PURE__ */ jsxDEV7("div", { className: "flex items-start space-x-4", children: [
                 /* @__PURE__ */ jsxDEV7("div", { className: "bg-blue-600 text-white p-3 rounded-full", children: /* @__PURE__ */ jsxDEV7(FaEnvelope2, { className: "text-lg" }, void 0, !1, {
                   fileName: "app/components/Contact.tsx",
-                  lineNumber: 210,
+                  lineNumber: 219,
                   columnNumber: 21
                 }, this) }, void 0, !1, {
                   fileName: "app/components/Contact.tsx",
-                  lineNumber: 209,
+                  lineNumber: 218,
                   columnNumber: 19
                 }, this),
                 /* @__PURE__ */ jsxDEV7("div", { children: [
                   /* @__PURE__ */ jsxDEV7("h4", { className: "font-semibold text-gray-800 dark:text-white", children: "Email" }, void 0, !1, {
                     fileName: "app/components/Contact.tsx",
-                    lineNumber: 213,
+                    lineNumber: 222,
                     columnNumber: 21
                   }, this),
                   /* @__PURE__ */ jsxDEV7("p", { className: "text-gray-600 dark:text-gray-300", children: "fadlanzunima@gmail.com" }, void 0, !1, {
                     fileName: "app/components/Contact.tsx",
-                    lineNumber: 216,
+                    lineNumber: 225,
                     columnNumber: 21
                   }, this),
                   /* @__PURE__ */ jsxDEV7("p", { className: "text-sm text-gray-500 dark:text-gray-400", children: "I'll respond within 24 hours" }, void 0, !1, {
                     fileName: "app/components/Contact.tsx",
-                    lineNumber: 219,
+                    lineNumber: 228,
                     columnNumber: 21
                   }, this)
                 ] }, void 0, !0, {
                   fileName: "app/components/Contact.tsx",
-                  lineNumber: 212,
+                  lineNumber: 221,
                   columnNumber: 19
                 }, this)
               ] }, void 0, !0, {
                 fileName: "app/components/Contact.tsx",
-                lineNumber: 208,
+                lineNumber: 217,
                 columnNumber: 17
               }, this),
               /* @__PURE__ */ jsxDEV7("div", { className: "flex items-start space-x-4", children: [
                 /* @__PURE__ */ jsxDEV7("div", { className: "bg-purple-600 text-white p-3 rounded-full", children: /* @__PURE__ */ jsxDEV7(FaGithub3, { className: "text-lg" }, void 0, !1, {
                   fileName: "app/components/Contact.tsx",
-                  lineNumber: 238,
+                  lineNumber: 247,
                   columnNumber: 21
                 }, this) }, void 0, !1, {
                   fileName: "app/components/Contact.tsx",
-                  lineNumber: 237,
+                  lineNumber: 246,
                   columnNumber: 19
                 }, this),
                 /* @__PURE__ */ jsxDEV7("div", { children: [
                   /* @__PURE__ */ jsxDEV7("h4", { className: "font-semibold text-gray-800 dark:text-white", children: "GitHub" }, void 0, !1, {
                     fileName: "app/components/Contact.tsx",
-                    lineNumber: 241,
+                    lineNumber: 250,
                     columnNumber: 21
                   }, this),
                   /* @__PURE__ */ jsxDEV7("p", { className: "text-gray-600 dark:text-gray-300", children: "@fadlanzunima" }, void 0, !1, {
                     fileName: "app/components/Contact.tsx",
-                    lineNumber: 244,
+                    lineNumber: 253,
                     columnNumber: 21
                   }, this),
                   /* @__PURE__ */ jsxDEV7("p", { className: "text-sm text-gray-500 dark:text-gray-400", children: "Check out my open source work" }, void 0, !1, {
                     fileName: "app/components/Contact.tsx",
-                    lineNumber: 247,
+                    lineNumber: 256,
                     columnNumber: 21
                   }, this)
                 ] }, void 0, !0, {
                   fileName: "app/components/Contact.tsx",
-                  lineNumber: 240,
+                  lineNumber: 249,
                   columnNumber: 19
                 }, this)
               ] }, void 0, !0, {
                 fileName: "app/components/Contact.tsx",
-                lineNumber: 236,
+                lineNumber: 245,
                 columnNumber: 17
               }, this)
             ] }, void 0, !0, {
               fileName: "app/components/Contact.tsx",
-              lineNumber: 207,
+              lineNumber: 216,
               columnNumber: 15
             }, this)
           ] }, void 0, !0, {
             fileName: "app/components/Contact.tsx",
-            lineNumber: 202,
+            lineNumber: 211,
             columnNumber: 13
           }, this),
           /* @__PURE__ */ jsxDEV7("div", { className: "bg-gradient-to-br from-purple-50 to-pink-50 dark:from-gray-800 dark:to-gray-700 rounded-2xl p-8", children: [
             /* @__PURE__ */ jsxDEV7("h3", { className: "text-xl font-bold mb-6 text-gray-800 dark:text-white", children: "Connect With Me" }, void 0, !1, {
               fileName: "app/components/Contact.tsx",
-              lineNumber: 257,
+              lineNumber: 266,
               columnNumber: 15
             }, this),
             /* @__PURE__ */ jsxDEV7("div", { className: "grid grid-cols-3 gap-8", children: socialLinks.map((social) => /* @__PURE__ */ jsxDEV7(
@@ -2321,14 +2571,14 @@ function Contact() {
                     !1,
                     {
                       fileName: "app/components/Contact.tsx",
-                      lineNumber: 271,
+                      lineNumber: 280,
                       columnNumber: 21
                     },
                     this
                   ),
                   /* @__PURE__ */ jsxDEV7("span", { className: "text-xs font-medium text-gray-700 dark:text-gray-300", children: social.name }, void 0, !1, {
                     fileName: "app/components/Contact.tsx",
-                    lineNumber: 274,
+                    lineNumber: 283,
                     columnNumber: 21
                   }, this)
                 ]
@@ -2337,18 +2587,18 @@ function Contact() {
               !0,
               {
                 fileName: "app/components/Contact.tsx",
-                lineNumber: 263,
+                lineNumber: 272,
                 columnNumber: 19
               },
               this
             )) }, void 0, !1, {
               fileName: "app/components/Contact.tsx",
-              lineNumber: 261,
+              lineNumber: 270,
               columnNumber: 15
             }, this)
           ] }, void 0, !0, {
             fileName: "app/components/Contact.tsx",
-            lineNumber: 256,
+            lineNumber: 265,
             columnNumber: 13
           }, this)
         ]
@@ -2357,22 +2607,22 @@ function Contact() {
       !0,
       {
         fileName: "app/components/Contact.tsx",
-        lineNumber: 195,
+        lineNumber: 204,
         columnNumber: 11
       },
       this
     ) }, void 0, !1, {
       fileName: "app/components/Contact.tsx",
-      lineNumber: 193,
+      lineNumber: 202,
       columnNumber: 9
     }, this)
   ] }, void 0, !0, {
     fileName: "app/components/Contact.tsx",
-    lineNumber: 166,
+    lineNumber: 175,
     columnNumber: 7
   }, this) }, void 0, !1, {
     fileName: "app/components/Contact.tsx",
-    lineNumber: 165,
+    lineNumber: 174,
     columnNumber: 5
   }, this);
 }
@@ -2384,14 +2634,15 @@ import {
   FaGithub as FaGithub4,
   FaLinkedin as FaLinkedin3,
   FaEnvelope as FaEnvelope3,
-  FaWhatsapp as FaWhatsapp2,
   FaInstagram as FaInstagram3,
-  FaTwitter as FaTwitter2,
+  FaTwitter as FaTwitter3,
+  FaFacebook as FaFacebook2,
   FaHeart,
   FaSun,
   FaMoon,
   FaArrowUp
 } from "react-icons/fa/index.js";
+import { SiThreads as SiThreads3 } from "react-icons/si/index.js";
 import { Fragment, jsxDEV as jsxDEV8 } from "react/jsx-dev-runtime";
 function Footer() {
   let [darkMode, setDarkMode] = useState2(!1), [showScrollTop, setShowScrollTop] = useState2(!1);
@@ -2428,16 +2679,10 @@ function Footer() {
       color: "hover:text-blue-600"
     },
     {
-      name: "Email",
-      url: "mailto:fadlanzunima@gmail.com",
-      icon: FaEnvelope3,
-      color: "hover:text-red-600"
-    },
-    {
-      name: "WhatsApp",
-      url: "https://wa.me/6281234567890",
-      icon: FaWhatsapp2,
-      color: "hover:text-green-600"
+      name: "X",
+      url: "https://x.com/alnzunima",
+      icon: FaTwitter3,
+      color: "hover:text-blue-400"
     },
     {
       name: "Instagram",
@@ -2446,10 +2691,22 @@ function Footer() {
       color: "hover:text-pink-600"
     },
     {
-      name: "Twitter",
-      url: "https://twitter.com/fadlanzunima",
-      icon: FaTwitter2,
-      color: "hover:text-blue-400"
+      name: "Threads",
+      url: "https://www.threads.net/@fdlnzunima",
+      icon: SiThreads3,
+      color: "hover:text-black dark:hover:text-white"
+    },
+    {
+      name: "Facebook",
+      url: "https://www.facebook.com/fadlanzunima",
+      icon: FaFacebook2,
+      color: "hover:text-blue-700"
+    },
+    {
+      name: "Email",
+      url: "mailto:fadlanzunima@gmail.com",
+      icon: FaEnvelope3,
+      color: "hover:text-red-600"
     }
   ], quickLinks = [
     { name: "Home", href: "#hero" },
@@ -2466,17 +2723,17 @@ function Footer() {
     /* @__PURE__ */ jsxDEV8("div", { className: "absolute inset-0", children: [
       /* @__PURE__ */ jsxDEV8("div", { className: "absolute top-0 left-0 w-72 h-72 bg-blue-600 rounded-full mix-blend-multiply filter blur-3xl opacity-10" }, void 0, !1, {
         fileName: "app/components/Footer.tsx",
-        lineNumber: 127,
+        lineNumber: 134,
         columnNumber: 9
       }, this),
       /* @__PURE__ */ jsxDEV8("div", { className: "absolute bottom-0 right-0 w-72 h-72 bg-purple-600 rounded-full mix-blend-multiply filter blur-3xl opacity-10" }, void 0, !1, {
         fileName: "app/components/Footer.tsx",
-        lineNumber: 128,
+        lineNumber: 135,
         columnNumber: 9
       }, this)
     ] }, void 0, !0, {
       fileName: "app/components/Footer.tsx",
-      lineNumber: 126,
+      lineNumber: 133,
       columnNumber: 7
     }, this),
     /* @__PURE__ */ jsxDEV8("div", { className: "relative z-10", children: [
@@ -2492,12 +2749,12 @@ function Footer() {
             children: [
               /* @__PURE__ */ jsxDEV8("h3", { className: "text-2xl font-bold mb-4 bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent", children: "Fadlan Zunima" }, void 0, !1, {
                 fileName: "app/components/Footer.tsx",
-                lineNumber: 143,
+                lineNumber: 150,
                 columnNumber: 15
               }, this),
               /* @__PURE__ */ jsxDEV8("p", { className: "text-gray-300 mb-6 leading-relaxed max-w-md", children: "Frontend Developer yang passionate dalam menciptakan pengalaman web yang modern, responsif, dan interaktif. Mari berkolaborasi untuk mewujudkan ide-ide inovatif Anda!" }, void 0, !1, {
                 fileName: "app/components/Footer.tsx",
-                lineNumber: 146,
+                lineNumber: 153,
                 columnNumber: 15
               }, this),
               /* @__PURE__ */ jsxDEV8("div", { className: "flex space-x-4", children: socialLinks.map((social) => /* @__PURE__ */ jsxDEV8(
@@ -2510,7 +2767,7 @@ function Footer() {
                   className: `p-3 bg-gray-800 dark:bg-gray-900 rounded-full text-gray-400 transition-all duration-300 ${social.color} hover:bg-gray-700 dark:hover:bg-gray-800`,
                   children: /* @__PURE__ */ jsxDEV8(social.icon, { className: "text-lg" }, void 0, !1, {
                     fileName: "app/components/Footer.tsx",
-                    lineNumber: 163,
+                    lineNumber: 170,
                     columnNumber: 21
                   }, this)
                 },
@@ -2518,13 +2775,13 @@ function Footer() {
                 !1,
                 {
                   fileName: "app/components/Footer.tsx",
-                  lineNumber: 155,
+                  lineNumber: 162,
                   columnNumber: 19
                 },
                 this
               )) }, void 0, !1, {
                 fileName: "app/components/Footer.tsx",
-                lineNumber: 153,
+                lineNumber: 160,
                 columnNumber: 15
               }, this)
             ]
@@ -2533,7 +2790,7 @@ function Footer() {
           !0,
           {
             fileName: "app/components/Footer.tsx",
-            lineNumber: 136,
+            lineNumber: 143,
             columnNumber: 13
           },
           this
@@ -2548,7 +2805,7 @@ function Footer() {
             children: [
               /* @__PURE__ */ jsxDEV8("h4", { className: "text-lg font-semibold mb-6", children: "Quick Links" }, void 0, !1, {
                 fileName: "app/components/Footer.tsx",
-                lineNumber: 176,
+                lineNumber: 183,
                 columnNumber: 15
               }, this),
               /* @__PURE__ */ jsxDEV8("ul", { className: "space-y-3", children: quickLinks.map((link) => /* @__PURE__ */ jsxDEV8("li", { children: /* @__PURE__ */ jsxDEV8(
@@ -2562,17 +2819,17 @@ function Footer() {
                 !1,
                 {
                   fileName: "app/components/Footer.tsx",
-                  lineNumber: 180,
+                  lineNumber: 187,
                   columnNumber: 21
                 },
                 this
               ) }, link.name, !1, {
                 fileName: "app/components/Footer.tsx",
-                lineNumber: 179,
+                lineNumber: 186,
                 columnNumber: 19
               }, this)) }, void 0, !1, {
                 fileName: "app/components/Footer.tsx",
-                lineNumber: 177,
+                lineNumber: 184,
                 columnNumber: 15
               }, this)
             ]
@@ -2581,7 +2838,7 @@ function Footer() {
           !0,
           {
             fileName: "app/components/Footer.tsx",
-            lineNumber: 170,
+            lineNumber: 177,
             columnNumber: 13
           },
           this
@@ -2596,14 +2853,14 @@ function Footer() {
             children: [
               /* @__PURE__ */ jsxDEV8("h4", { className: "text-lg font-semibold mb-6", children: "Get In Touch" }, void 0, !1, {
                 fileName: "app/components/Footer.tsx",
-                lineNumber: 198,
+                lineNumber: 205,
                 columnNumber: 15
               }, this),
               /* @__PURE__ */ jsxDEV8("div", { className: "space-y-4", children: [
                 /* @__PURE__ */ jsxDEV8("div", { className: "flex items-center space-x-3", children: [
                   /* @__PURE__ */ jsxDEV8(FaEnvelope3, { className: "text-blue-400 flex-shrink-0" }, void 0, !1, {
                     fileName: "app/components/Footer.tsx",
-                    lineNumber: 201,
+                    lineNumber: 208,
                     columnNumber: 19
                   }, this),
                   /* @__PURE__ */ jsxDEV8(
@@ -2617,20 +2874,20 @@ function Footer() {
                     !1,
                     {
                       fileName: "app/components/Footer.tsx",
-                      lineNumber: 202,
+                      lineNumber: 209,
                       columnNumber: 19
                     },
                     this
                   )
                 ] }, void 0, !0, {
                   fileName: "app/components/Footer.tsx",
-                  lineNumber: 200,
+                  lineNumber: 207,
                   columnNumber: 17
                 }, this),
                 /* @__PURE__ */ jsxDEV8("div", { className: "flex items-center space-x-3", children: [
                   /* @__PURE__ */ jsxDEV8(FaGithub4, { className: "text-purple-400 flex-shrink-0" }, void 0, !1, {
                     fileName: "app/components/Footer.tsx",
-                    lineNumber: 221,
+                    lineNumber: 228,
                     columnNumber: 19
                   }, this),
                   /* @__PURE__ */ jsxDEV8(
@@ -2646,19 +2903,19 @@ function Footer() {
                     !1,
                     {
                       fileName: "app/components/Footer.tsx",
-                      lineNumber: 222,
+                      lineNumber: 229,
                       columnNumber: 19
                     },
                     this
                   )
                 ] }, void 0, !0, {
                   fileName: "app/components/Footer.tsx",
-                  lineNumber: 220,
+                  lineNumber: 227,
                   columnNumber: 17
                 }, this)
               ] }, void 0, !0, {
                 fileName: "app/components/Footer.tsx",
-                lineNumber: 199,
+                lineNumber: 206,
                 columnNumber: 15
               }, this),
               /* @__PURE__ */ jsxDEV8("div", { className: "mt-6", children: /* @__PURE__ */ jsxDEV8(
@@ -2669,32 +2926,32 @@ function Footer() {
                   children: darkMode ? /* @__PURE__ */ jsxDEV8(Fragment, { children: [
                     /* @__PURE__ */ jsxDEV8(FaSun, { className: "text-yellow-400 group-hover:rotate-180 transition-transform duration-300" }, void 0, !1, {
                       fileName: "app/components/Footer.tsx",
-                      lineNumber: 241,
+                      lineNumber: 248,
                       columnNumber: 23
                     }, this),
                     /* @__PURE__ */ jsxDEV8("span", { className: "text-sm text-gray-300", children: "Light Mode" }, void 0, !1, {
                       fileName: "app/components/Footer.tsx",
-                      lineNumber: 242,
+                      lineNumber: 249,
                       columnNumber: 23
                     }, this)
                   ] }, void 0, !0, {
                     fileName: "app/components/Footer.tsx",
-                    lineNumber: 240,
+                    lineNumber: 247,
                     columnNumber: 21
                   }, this) : /* @__PURE__ */ jsxDEV8(Fragment, { children: [
                     /* @__PURE__ */ jsxDEV8(FaMoon, { className: "text-blue-400 group-hover:rotate-180 transition-transform duration-300" }, void 0, !1, {
                       fileName: "app/components/Footer.tsx",
-                      lineNumber: 246,
+                      lineNumber: 253,
                       columnNumber: 23
                     }, this),
                     /* @__PURE__ */ jsxDEV8("span", { className: "text-sm text-gray-300", children: "Dark Mode" }, void 0, !1, {
                       fileName: "app/components/Footer.tsx",
-                      lineNumber: 247,
+                      lineNumber: 254,
                       columnNumber: 23
                     }, this)
                   ] }, void 0, !0, {
                     fileName: "app/components/Footer.tsx",
-                    lineNumber: 245,
+                    lineNumber: 252,
                     columnNumber: 21
                   }, this)
                 },
@@ -2702,13 +2959,13 @@ function Footer() {
                 !1,
                 {
                   fileName: "app/components/Footer.tsx",
-                  lineNumber: 235,
+                  lineNumber: 242,
                   columnNumber: 17
                 },
                 this
               ) }, void 0, !1, {
                 fileName: "app/components/Footer.tsx",
-                lineNumber: 234,
+                lineNumber: 241,
                 columnNumber: 15
               }, this)
             ]
@@ -2717,18 +2974,18 @@ function Footer() {
           !0,
           {
             fileName: "app/components/Footer.tsx",
-            lineNumber: 192,
+            lineNumber: 199,
             columnNumber: 13
           },
           this
         )
       ] }, void 0, !0, {
         fileName: "app/components/Footer.tsx",
-        lineNumber: 134,
+        lineNumber: 141,
         columnNumber: 11
       }, this) }, void 0, !1, {
         fileName: "app/components/Footer.tsx",
-        lineNumber: 133,
+        lineNumber: 140,
         columnNumber: 9
       }, this),
       /* @__PURE__ */ jsxDEV8("div", { className: "border-t border-gray-800 dark:border-gray-700", children: /* @__PURE__ */ jsxDEV8("div", { className: "max-w-6xl mx-auto px-6 py-6", children: /* @__PURE__ */ jsxDEV8(
@@ -2746,7 +3003,7 @@ function Footer() {
               " Fadlan Zunima. Made with"
             ] }, void 0, !0, {
               fileName: "app/components/Footer.tsx",
-              lineNumber: 267,
+              lineNumber: 274,
               columnNumber: 17
             }, this),
             /* @__PURE__ */ jsxDEV8(
@@ -2756,7 +3013,7 @@ function Footer() {
                 transition: { duration: 1, repeat: 1 / 0, repeatDelay: 2 },
                 children: /* @__PURE__ */ jsxDEV8(FaHeart, { className: "text-red-500" }, void 0, !1, {
                   fileName: "app/components/Footer.tsx",
-                  lineNumber: 272,
+                  lineNumber: 279,
                   columnNumber: 19
                 }, this)
               },
@@ -2764,19 +3021,19 @@ function Footer() {
               !1,
               {
                 fileName: "app/components/Footer.tsx",
-                lineNumber: 268,
+                lineNumber: 275,
                 columnNumber: 17
               },
               this
             ),
             /* @__PURE__ */ jsxDEV8("span", { children: "using Remix & Tailwind CSS" }, void 0, !1, {
               fileName: "app/components/Footer.tsx",
-              lineNumber: 274,
+              lineNumber: 281,
               columnNumber: 17
             }, this)
           ] }, void 0, !0, {
             fileName: "app/components/Footer.tsx",
-            lineNumber: 266,
+            lineNumber: 273,
             columnNumber: 15
           }, this)
         },
@@ -2784,22 +3041,22 @@ function Footer() {
         !1,
         {
           fileName: "app/components/Footer.tsx",
-          lineNumber: 259,
+          lineNumber: 266,
           columnNumber: 13
         },
         this
       ) }, void 0, !1, {
         fileName: "app/components/Footer.tsx",
-        lineNumber: 258,
+        lineNumber: 265,
         columnNumber: 11
       }, this) }, void 0, !1, {
         fileName: "app/components/Footer.tsx",
-        lineNumber: 257,
+        lineNumber: 264,
         columnNumber: 9
       }, this)
     ] }, void 0, !0, {
       fileName: "app/components/Footer.tsx",
-      lineNumber: 131,
+      lineNumber: 138,
       columnNumber: 7
     }, this),
     /* @__PURE__ */ jsxDEV8(
@@ -2815,7 +3072,7 @@ function Footer() {
         className: "fixed bottom-8 right-8 p-3 bg-gradient-to-r from-blue-600 to-purple-600 text-white rounded-full shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-110 z-50",
         children: /* @__PURE__ */ jsxDEV8(FaArrowUp, { className: "text-lg" }, void 0, !1, {
           fileName: "app/components/Footer.tsx",
-          lineNumber: 292,
+          lineNumber: 299,
           columnNumber: 9
         }, this)
       },
@@ -2823,14 +3080,14 @@ function Footer() {
       !1,
       {
         fileName: "app/components/Footer.tsx",
-        lineNumber: 282,
+        lineNumber: 289,
         columnNumber: 7
       },
       this
     )
   ] }, void 0, !0, {
     fileName: "app/components/Footer.tsx",
-    lineNumber: 124,
+    lineNumber: 131,
     columnNumber: 5
   }, this);
 }
@@ -2838,42 +3095,42 @@ function Footer() {
 // app/routes/_index.tsx
 import { jsxDEV as jsxDEV9 } from "react/jsx-dev-runtime";
 var meta2 = () => [
-  { title: "Fadlan Zunima - Frontend Engineer Portfolio" },
+  { title: "Fadlan Zunima - Senior Frontend Engineer & Freelance React Developer" },
   {
     name: "description",
-    content: "Portfolio website of Fadlan Zunima, a skilled Frontend Engineer from Bandung, Indonesia specializing in React, GraphQL, and modern web technologies. Explore my projects and get in touch for collaborations."
+    content: "Senior Frontend Engineer from Bandung, Indonesia. Expertise in React, Next.js, and GraphQL. Delivering high-quality web applications for startups and enterprises worldwide. Available for freelance and remote roles."
   },
   {
     name: "keywords",
-    content: "Frontend Engineer, React, GraphQL, JavaScript, TypeScript, Web Development, UI/UX, Portfolio, Fadlan Zunima, Bandung"
+    content: "Senior Frontend Engineer, React Developer, Freelance Web Developer, Remote Developer, Next.js Expert, GraphQL, TypeScript, UI/UX, Portfolio, Fadlan Zunima, Bandung, Hire Web Developer Indonesia"
   },
   { name: "author", content: "Fadlan Zunima" },
   {
     property: "og:title",
-    content: "Fadlan Zunima - Frontend Engineer Portfolio"
+    content: "Fadlan Zunima - Senior Frontend Engineer Portfolio"
   },
   {
     property: "og:description",
-    content: "Portfolio showcasing modern web applications and frontend engineering expertise by Fadlan Zunima from Bandung, Indonesia."
+    content: "High-performance web applications built with React, Next.js, and GraphQL. Explore the portfolio of Fadlan Zunima, Senior Frontend Engineer."
   },
   { property: "og:type", content: "website" },
-  { property: "og:url", content: "https://fadlanzunima.vercel.app" },
+  { property: "og:url", content: "https://fadlanz-portfolio.vercel.app" },
   {
     property: "og:image",
-    content: "https://fadlanzunima.vercel.app/og-image.jpg"
+    content: "https://fadlanz-portfolio.vercel.app/og-image.jpg"
   },
   { name: "twitter:card", content: "summary_large_image" },
   {
     name: "twitter:title",
-    content: "Fadlan Zunima - Frontend Developer Portfolio"
+    content: "Fadlan Zunima - Senior Frontend Developer Portfolio"
   },
   {
     name: "twitter:description",
-    content: "Portfolio showcasing modern web applications and frontend development expertise."
+    content: "Professional portfolio showcasing modern web applications and frontend engineering expertise."
   },
   {
     name: "twitter:image",
-    content: "https://fadlanzunima.vercel.app/og-image.jpg"
+    content: "https://fadlanz-portfolio.vercel.app/og-image.jpg"
   },
   { name: "robots", content: "index, follow" },
   { name: "viewport", content: "width=device-width, initial-scale=1" },
@@ -2950,7 +3207,7 @@ function WellKnown() {
 }
 
 // server-assets-manifest:@remix-run/dev/assets-manifest
-var assets_manifest_default = { entry: { module: "/build/entry.client-7MUXUNS2.js", imports: ["/build/_shared/chunk-XC6BC2BP.js", "/build/_shared/chunk-RJ75G2FH.js", "/build/_shared/chunk-PMI65YMG.js", "/build/_shared/chunk-MW4MOASO.js", "/build/_shared/chunk-56LDNGDG.js", "/build/_shared/chunk-2Q7FBYOG.js", "/build/_shared/chunk-4JLKO6E3.js", "/build/_shared/chunk-PNG5AS42.js"] }, routes: { root: { id: "root", parentId: void 0, path: "", index: void 0, caseSensitive: void 0, module: "/build/root-N6KXM43D.js", imports: void 0, hasAction: !1, hasLoader: !1, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 }, "routes/$": { id: "routes/$", parentId: "root", path: "*", index: void 0, caseSensitive: void 0, module: "/build/routes/$-YGVMGVTL.js", imports: void 0, hasAction: !1, hasLoader: !0, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 }, "routes/_index": { id: "routes/_index", parentId: "root", path: void 0, index: !0, caseSensitive: void 0, module: "/build/routes/_index-OAV2IWWC.js", imports: void 0, hasAction: !1, hasLoader: !1, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 } }, version: "ad7b7f09", hmr: { runtime: "/build/_shared\\chunk-MW4MOASO.js", timestamp: 1777087946556 }, url: "/build/manifest-AD7B7F09.js" };
+var assets_manifest_default = { entry: { module: "/build/entry.client-7MUXUNS2.js", imports: ["/build/_shared/chunk-XC6BC2BP.js", "/build/_shared/chunk-RJ75G2FH.js", "/build/_shared/chunk-PMI65YMG.js", "/build/_shared/chunk-MW4MOASO.js", "/build/_shared/chunk-56LDNGDG.js", "/build/_shared/chunk-2Q7FBYOG.js", "/build/_shared/chunk-4JLKO6E3.js", "/build/_shared/chunk-PNG5AS42.js"] }, routes: { root: { id: "root", parentId: void 0, path: "", index: void 0, caseSensitive: void 0, module: "/build/root-ZGEVJT7H.js", imports: void 0, hasAction: !1, hasLoader: !1, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 }, "routes/$": { id: "routes/$", parentId: "root", path: "*", index: void 0, caseSensitive: void 0, module: "/build/routes/$-YGVMGVTL.js", imports: void 0, hasAction: !1, hasLoader: !0, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 }, "routes/_index": { id: "routes/_index", parentId: "root", path: void 0, index: !0, caseSensitive: void 0, module: "/build/routes/_index-MEBZEVEA.js", imports: void 0, hasAction: !1, hasLoader: !1, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 } }, version: "c2fecdaf", hmr: { runtime: "/build/_shared\\chunk-MW4MOASO.js", timestamp: 1777090187820 }, url: "/build/manifest-C2FECDAF.js" };
 
 // server-entry-module:@remix-run/dev/server-build
 var mode = "development", assetsBuildDirectory = "public/build", future = { v3_fetcherPersist: !1, v3_relativeSplatPath: !1, v3_throwAbortReason: !1 }, publicPath = "/build/", entry = { module: entry_server_node_exports }, routes = {

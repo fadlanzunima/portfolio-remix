@@ -4,14 +4,15 @@ import {
   FaGithub,
   FaLinkedin,
   FaEnvelope,
-  FaWhatsapp,
   FaInstagram,
   FaTwitter,
+  FaFacebook,
   FaHeart,
   FaSun,
   FaMoon,
   FaArrowUp,
 } from "react-icons/fa/index.js";
+import { SiThreads } from "react-icons/si/index.js";
 
 export default function Footer() {
   const [darkMode, setDarkMode] = useState(false);
@@ -79,16 +80,10 @@ export default function Footer() {
       color: "hover:text-blue-600",
     },
     {
-      name: "Email",
-      url: "mailto:fadlanzunima@gmail.com",
-      icon: FaEnvelope,
-      color: "hover:text-red-600",
-    },
-    {
-      name: "WhatsApp",
-      url: "https://wa.me/6281234567890",
-      icon: FaWhatsapp,
-      color: "hover:text-green-600",
+      name: "X",
+      url: "https://x.com/alnzunima",
+      icon: FaTwitter,
+      color: "hover:text-blue-400",
     },
     {
       name: "Instagram",
@@ -97,10 +92,22 @@ export default function Footer() {
       color: "hover:text-pink-600",
     },
     {
-      name: "Twitter",
-      url: "https://twitter.com/fadlanzunima",
-      icon: FaTwitter,
-      color: "hover:text-blue-400",
+      name: "Threads",
+      url: "https://www.threads.net/@fdlnzunima",
+      icon: SiThreads,
+      color: "hover:text-black dark:hover:text-white",
+    },
+    {
+      name: "Facebook",
+      url: "https://www.facebook.com/fadlanzunima",
+      icon: FaFacebook,
+      color: "hover:text-blue-700",
+    },
+    {
+      name: "Email",
+      url: "mailto:fadlanzunima@gmail.com",
+      icon: FaEnvelope,
+      color: "hover:text-red-600",
     },
   ];
 

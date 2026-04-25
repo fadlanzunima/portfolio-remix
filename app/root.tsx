@@ -29,28 +29,68 @@ export const links: LinksFunction = () => [
 
 export const meta: MetaFunction = () => [
   { charset: "utf-8" },
-  { title: "Fadlan Zunima - Frontend Engineer Portfolio" },
+  { title: "Fadlan Zunima - Senior Frontend Engineer & Freelance React Developer" },
   { viewport: "width=device-width,initial-scale=1" },
   {
     name: "description",
-    content: "Portfolio website of Fadlan Zunima, a skilled Frontend Engineer from Bandung, Indonesia specializing in React, GraphQL, and modern web technologies."
+    content: "Portfolio of Fadlan Zunima, a Senior Frontend Engineer from Bandung, Indonesia. Specializing in React, Next.js, and GraphQL. Available for freelance projects and remote collaboration."
   },
-  { name: "keywords", content: "Frontend Engineer, React, GraphQL, JavaScript, TypeScript, Web Development, UI/UX, Bandung" },
+  { name: "keywords", content: "Frontend Engineer, React Developer, Freelance Web Developer, Remote Developer, Next.js, GraphQL, TypeScript, UI/UX, Bandung, Indonesia, Hire Frontend Developer" },
   { name: "author", content: "Fadlan Zunima" },
-  { property: "og:title", content: "Fadlan Zunima - Frontend Engineer Portfolio" },
-  { property: "og:description", content: "Portfolio showcasing modern web applications and frontend engineering expertise from Bandung, Indonesia." },
+  { property: "og:title", content: "Fadlan Zunima - Senior Frontend Engineer Portfolio" },
+  { property: "og:description", content: "Expert Frontend Engineering services specializing in modern web technologies. Explore my projects and hire me for your next big idea." },
   { property: "og:type", content: "website" },
+  { property: "og:url", content: "https://fadlanz-portfolio.vercel.app" },
   { name: "twitter:card", content: "summary_large_image" },
-  { name: "twitter:title", content: "Fadlan Zunima - Frontend Engineer Portfolio" },
-  { name: "twitter:description", content: "Portfolio showcasing modern web applications and frontend engineering expertise from Bandung, Indonesia." },
+  { name: "twitter:title", content: "Fadlan Zunima - Senior Frontend Engineer" },
+  { name: "twitter:description", content: "Professional Frontend Development and UI/UX design. Delivering high-performance web solutions." },
 ];
 
 export default function App() {
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Fadlan Zunima",
+    "jobTitle": "Senior Frontend Engineer",
+    "url": "https://fadlanz-portfolio.vercel.app",
+    "sameAs": [
+      "https://github.com/fadlanzunima",
+      "https://linkedin.com/in/fadlanzunima",
+      "https://instagram.com/fdlnzunima",
+      "https://www.facebook.com/fadlanzunima",
+      "https://www.threads.net/@fdlnzunima",
+      "https://x.com/alnzunima"
+    ],
+    "knowsAbout": ["React", "Next.js", "Vue.js", "GraphQL", "TypeScript", "Tailwind CSS", "Frontend Development", "Web Design"],
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Bandung",
+      "addressCountry": "Indonesia"
+    }
+  };
+
+  const websiteJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "Fadlan Zunima Portfolio",
+    "url": "https://fadlanz-portfolio.vercel.app",
+    "description": "Professional portfolio of Fadlan Zunima, Senior Frontend Engineer."
+  };
+
   return (
     <html lang="en" className="scroll-smooth">
       <head>
         <Meta />
         <Links />
+        <link rel="canonical" href="https://fadlanz-portfolio.vercel.app" />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteJsonLd) }}
+        />
       </head>
       <body className="font-inter antialiased">
         <Outlet />
