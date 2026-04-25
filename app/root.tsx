@@ -33,9 +33,9 @@ export const meta: MetaFunction = () => [
   { viewport: "width=device-width,initial-scale=1" },
   {
     name: "description",
-    content: "Portfolio of Fadlan Zunima, a Senior Frontend Engineer from Bandung, Indonesia. Specializing in React, Next.js, and GraphQL. Available for freelance projects and remote collaboration."
+    content: "Portfolio of Fadlan Zunima (fadlanz), a Senior Frontend Engineer from Bandung, Indonesia. Specializing in React, Next.js, and GraphQL. Available for freelance projects and remote collaboration."
   },
-  { name: "keywords", content: "Frontend Engineer, React Developer, Freelance Web Developer, Remote Developer, Next.js, GraphQL, TypeScript, UI/UX, Bandung, Indonesia, Hire Frontend Developer" },
+  { name: "keywords", content: "Fadlan Zunima, fadlanz, alanzunima, alanz, fadlan, Frontend Engineer, React Developer, Freelance Web Developer, Remote Developer, Next.js, GraphQL, TypeScript, UI/UX, Bandung, Indonesia, Hire Frontend Developer" },
   { name: "author", content: "Fadlan Zunima" },
   { property: "og:title", content: "Fadlan Zunima - Senior Frontend Engineer Portfolio" },
   { property: "og:description", content: "Expert Frontend Engineering services specializing in modern web technologies. Explore my projects and hire me for your next big idea." },
@@ -51,6 +51,7 @@ export default function App() {
     "@context": "https://schema.org",
     "@type": "Person",
     "name": "Fadlan Zunima",
+    "alternateName": ["fadlanz", "alanzunima", "alanz", "fadlan"],
     "jobTitle": "Senior Frontend Engineer",
     "url": "https://fadlanz-portfolio.vercel.app",
     "sameAs": [

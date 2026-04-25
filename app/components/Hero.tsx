@@ -45,7 +45,7 @@ export default function Hero() {
           >
             <img
               src="https://avatars.githubusercontent.com/u/22295679?v=4"
-              alt="Fadlan Zunima Profile"
+              alt="Fadlan Zunima (fadlanz / alanzunima) - Senior Frontend Engineer Profile"
               className="w-full h-full rounded-full object-cover"
             />
           </motion.div>
@@ -57,7 +57,7 @@ export default function Hero() {
             transition={{ delay: 0.4 }}
             className="text-4xl md:text-6xl font-bold mb-4 bg-gradient-to-r from-gray-900 to-gray-600 dark:from-white dark:to-gray-300 bg-clip-text text-transparent"
           >
-            Fadlan Zunima
+            Fadlan Zunima <span className="sr-only">(fadlanz, alanzunima)</span>
           </motion.h1>
 
           <motion.h2

@@ -133,7 +133,7 @@ import {
 import { Analytics } from "@vercel/analytics/remix";
 
 // app/styles/globals.css
-var globals_default = "/build/_assets/globals-I2G4KTG5.css";
+var globals_default = "/build/_assets/globals-LCGND6N2.css";
 
 // app/root.tsx
 import { jsxDEV as jsxDEV2 } from "react/jsx-dev-runtime";
@@ -157,9 +157,9 @@ var links = () => [
   { viewport: "width=device-width,initial-scale=1" },
   {
     name: "description",
-    content: "Portfolio of Fadlan Zunima, a Senior Frontend Engineer from Bandung, Indonesia. Specializing in React, Next.js, and GraphQL. Available for freelance projects and remote collaboration."
+    content: "Portfolio of Fadlan Zunima (fadlanz), a Senior Frontend Engineer from Bandung, Indonesia. Specializing in React, Next.js, and GraphQL. Available for freelance projects and remote collaboration."
   },
-  { name: "keywords", content: "Frontend Engineer, React Developer, Freelance Web Developer, Remote Developer, Next.js, GraphQL, TypeScript, UI/UX, Bandung, Indonesia, Hire Frontend Developer" },
+  { name: "keywords", content: "Fadlan Zunima, fadlanz, alanzunima, alanz, fadlan, Frontend Engineer, React Developer, Freelance Web Developer, Remote Developer, Next.js, GraphQL, TypeScript, UI/UX, Bandung, Indonesia, Hire Frontend Developer" },
   { name: "author", content: "Fadlan Zunima" },
   { property: "og:title", content: "Fadlan Zunima - Senior Frontend Engineer Portfolio" },
   { property: "og:description", content: "Expert Frontend Engineering services specializing in modern web technologies. Explore my projects and hire me for your next big idea." },
@@ -174,6 +174,7 @@ function App() {
     "@context": "https://schema.org",
     "@type": "Person",
     name: "Fadlan Zunima",
+    alternateName: ["fadlanz", "alanzunima", "alanz", "fadlan"],
     jobTitle: "Senior Frontend Engineer",
     url: "https://fadlanz-portfolio.vercel.app",
     sameAs: [
@@ -201,17 +202,17 @@ function App() {
     /* @__PURE__ */ jsxDEV2("head", { children: [
       /* @__PURE__ */ jsxDEV2(Meta, {}, void 0, !1, {
         fileName: "app/root.tsx",
-        lineNumber: 83,
+        lineNumber: 84,
         columnNumber: 9
       }, this),
       /* @__PURE__ */ jsxDEV2(Links, {}, void 0, !1, {
         fileName: "app/root.tsx",
-        lineNumber: 84,
+        lineNumber: 85,
         columnNumber: 9
       }, this),
       /* @__PURE__ */ jsxDEV2("link", { rel: "canonical", href: "https://fadlanz-portfolio.vercel.app" }, void 0, !1, {
         fileName: "app/root.tsx",
-        lineNumber: 85,
+        lineNumber: 86,
         columnNumber: 9
       }, this),
       /* @__PURE__ */ jsxDEV2(
@@ -224,7 +225,7 @@ function App() {
         !1,
         {
           fileName: "app/root.tsx",
-          lineNumber: 86,
+          lineNumber: 87,
           columnNumber: 9
         },
         this
@@ -239,50 +240,50 @@ function App() {
         !1,
         {
           fileName: "app/root.tsx",
-          lineNumber: 90,
+          lineNumber: 91,
           columnNumber: 9
         },
         this
       )
     ] }, void 0, !0, {
       fileName: "app/root.tsx",
-      lineNumber: 82,
+      lineNumber: 83,
       columnNumber: 7
     }, this),
     /* @__PURE__ */ jsxDEV2("body", { className: "font-inter antialiased", children: [
       /* @__PURE__ */ jsxDEV2(Outlet, {}, void 0, !1, {
         fileName: "app/root.tsx",
-        lineNumber: 96,
+        lineNumber: 97,
         columnNumber: 9
       }, this),
       /* @__PURE__ */ jsxDEV2(Analytics, {}, void 0, !1, {
         fileName: "app/root.tsx",
-        lineNumber: 97,
+        lineNumber: 98,
         columnNumber: 9
       }, this),
       /* @__PURE__ */ jsxDEV2(ScrollRestoration, {}, void 0, !1, {
         fileName: "app/root.tsx",
-        lineNumber: 98,
+        lineNumber: 99,
         columnNumber: 9
       }, this),
       /* @__PURE__ */ jsxDEV2(Scripts, {}, void 0, !1, {
         fileName: "app/root.tsx",
-        lineNumber: 99,
+        lineNumber: 100,
         columnNumber: 9
       }, this),
       /* @__PURE__ */ jsxDEV2(LiveReload, {}, void 0, !1, {
         fileName: "app/root.tsx",
-        lineNumber: 100,
+        lineNumber: 101,
         columnNumber: 9
       }, this)
     ] }, void 0, !0, {
       fileName: "app/root.tsx",
-      lineNumber: 95,
+      lineNumber: 96,
       columnNumber: 7
     }, this)
   ] }, void 0, !0, {
     fileName: "app/root.tsx",
-    lineNumber: 81,
+    lineNumber: 82,
     columnNumber: 5
   }, this);
 }
@@ -354,7 +355,7 @@ function Hero() {
                   "img",
                   {
                     src: "https://avatars.githubusercontent.com/u/22295679?v=4",
-                    alt: "Fadlan Zunima Profile",
+                    alt: "Fadlan Zunima (fadlanz / alanzunima) - Senior Frontend Engineer Profile",
                     className: "w-full h-full rounded-full object-cover"
                   },
                   void 0,
@@ -383,10 +384,17 @@ function Hero() {
                 animate: { opacity: 1 },
                 transition: { delay: 0.4 },
                 className: "text-4xl md:text-6xl font-bold mb-4 bg-gradient-to-r from-gray-900 to-gray-600 dark:from-white dark:to-gray-300 bg-clip-text text-transparent",
-                children: "Fadlan Zunima"
+                children: [
+                  "Fadlan Zunima ",
+                  /* @__PURE__ */ jsxDEV3("span", { className: "sr-only", children: "(fadlanz, alanzunima)" }, void 0, !1, {
+                    fileName: "app/components/Hero.tsx",
+                    lineNumber: 60,
+                    columnNumber: 27
+                  }, this)
+                ]
               },
               void 0,
-              !1,
+              !0,
               {
                 fileName: "app/components/Hero.tsx",
                 lineNumber: 54,
@@ -760,7 +768,11 @@ function About() {
     { Icon: FaVuejs, name: "Vue.js", color: "text-green-500" },
     { Icon: SiTailwindcss, name: "Tailwind CSS", color: "text-cyan-500" },
     { Icon: SiGraphql, name: "GraphQL", color: "text-pink-500" },
-    { Icon: SiNextdotjs, name: "Next.js", color: "text-gray-900 dark:text-white" },
+    {
+      Icon: SiNextdotjs,
+      name: "Next.js",
+      color: "text-gray-900 dark:text-white"
+    },
     // { Icon: SiFlutter, name: "Flutter", color: "text-blue-400" },
     { Icon: SiVercel, name: "Vercel", color: "text-black dark:text-white" },
     { Icon: FaPhp, name: "PHP", color: "text-purple-600" },
@@ -805,7 +817,7 @@ function About() {
             !1,
             {
               fileName: "app/components/About.tsx",
-              lineNumber: 59,
+              lineNumber: 63,
               columnNumber: 11
             },
             this
@@ -820,7 +832,7 @@ function About() {
             !1,
             {
               fileName: "app/components/About.tsx",
-              lineNumber: 65,
+              lineNumber: 69,
               columnNumber: 11
             },
             this
@@ -831,7 +843,7 @@ function About() {
       !0,
       {
         fileName: "app/components/About.tsx",
-        lineNumber: 52,
+        lineNumber: 56,
         columnNumber: 9
       },
       this
@@ -849,27 +861,27 @@ function About() {
             /* @__PURE__ */ jsxDEV4("div", { className: "bg-gradient-to-br from-blue-50 to-indigo-50 dark:from-gray-800 dark:to-gray-700 rounded-2xl p-8 shadow-lg", children: [
               /* @__PURE__ */ jsxDEV4("h3", { className: "text-2xl font-bold mb-4 text-gray-800 dark:text-white", children: "Senior Frontend Engineer & GraphQL Enthusiast" }, void 0, !1, {
                 fileName: "app/components/About.tsx",
-                lineNumber: 81,
+                lineNumber: 85,
                 columnNumber: 15
               }, this),
               /* @__PURE__ */ jsxDEV4("p", { className: "text-gray-600 dark:text-gray-300 leading-relaxed mb-4", children: "I am a Senior Frontend Engineer based in Bandung, Indonesia, with a proven track record of building modern, responsive web applications using React, GraphQL, and the latest frontend technologies. I focus on developing interfaces that are not only visually stunning but also provide exceptional user experiences." }, void 0, !1, {
                 fileName: "app/components/About.tsx",
-                lineNumber: 84,
+                lineNumber: 88,
                 columnNumber: 15
               }, this),
               /* @__PURE__ */ jsxDEV4("p", { className: "text-gray-600 dark:text-gray-300 leading-relaxed mb-4", children: "Currently, I am deepening my expertise in GraphQL and advanced React patterns, with a strong passion for design details, application performance, and implementing best practices in web development. I am always enthusiastic about learning new technologies and staying ahead of the latest trends in the frontend ecosystem." }, void 0, !1, {
                 fileName: "app/components/About.tsx",
-                lineNumber: 87,
+                lineNumber: 95,
                 columnNumber: 15
               }, this),
               /* @__PURE__ */ jsxDEV4("p", { className: "text-gray-600 dark:text-gray-300 leading-relaxed", children: "As a seasoned remote worker, I enjoy the flexibility of working independently while maintaining effective collaboration with global teams. When I'm not coding, I explore design patterns, contribute to open-source projects, and share knowledge with the developer community." }, void 0, !1, {
                 fileName: "app/components/About.tsx",
-                lineNumber: 90,
+                lineNumber: 103,
                 columnNumber: 15
               }, this)
             ] }, void 0, !0, {
               fileName: "app/components/About.tsx",
-              lineNumber: 80,
+              lineNumber: 84,
               columnNumber: 13
             }, this),
             /* @__PURE__ */ jsxDEV4("div", { className: "grid grid-cols-3 gap-4", children: [
@@ -881,12 +893,12 @@ function About() {
                   children: [
                     /* @__PURE__ */ jsxDEV4("div", { className: "text-2xl font-bold text-blue-600 dark:text-blue-400", children: "5+" }, void 0, !1, {
                       fileName: "app/components/About.tsx",
-                      lineNumber: 101,
+                      lineNumber: 118,
                       columnNumber: 17
                     }, this),
                     /* @__PURE__ */ jsxDEV4("div", { className: "text-sm text-gray-600 dark:text-gray-400", children: "Years Experience" }, void 0, !1, {
                       fileName: "app/components/About.tsx",
-                      lineNumber: 104,
+                      lineNumber: 121,
                       columnNumber: 17
                     }, this)
                   ]
@@ -895,7 +907,7 @@ function About() {
                 !0,
                 {
                   fileName: "app/components/About.tsx",
-                  lineNumber: 97,
+                  lineNumber: 114,
                   columnNumber: 15
                 },
                 this
@@ -908,12 +920,12 @@ function About() {
                   children: [
                     /* @__PURE__ */ jsxDEV4("div", { className: "text-2xl font-bold text-purple-600 dark:text-purple-400", children: "10+" }, void 0, !1, {
                       fileName: "app/components/About.tsx",
-                      lineNumber: 112,
+                      lineNumber: 129,
                       columnNumber: 17
                     }, this),
                     /* @__PURE__ */ jsxDEV4("div", { className: "text-sm text-gray-600 dark:text-gray-400", children: "Projects Completed" }, void 0, !1, {
                       fileName: "app/components/About.tsx",
-                      lineNumber: 115,
+                      lineNumber: 132,
                       columnNumber: 17
                     }, this)
                   ]
@@ -922,7 +934,7 @@ function About() {
                 !0,
                 {
                   fileName: "app/components/About.tsx",
-                  lineNumber: 108,
+                  lineNumber: 125,
                   columnNumber: 15
                 },
                 this
@@ -935,12 +947,12 @@ function About() {
                   children: [
                     /* @__PURE__ */ jsxDEV4("div", { className: "text-2xl font-bold text-green-600 dark:text-green-400", children: "5+" }, void 0, !1, {
                       fileName: "app/components/About.tsx",
-                      lineNumber: 123,
+                      lineNumber: 140,
                       columnNumber: 17
                     }, this),
                     /* @__PURE__ */ jsxDEV4("div", { className: "text-sm text-gray-600 dark:text-gray-400", children: "Happy Clients" }, void 0, !1, {
                       fileName: "app/components/About.tsx",
-                      lineNumber: 126,
+                      lineNumber: 143,
                       columnNumber: 17
                     }, this)
                   ]
@@ -949,14 +961,14 @@ function About() {
                 !0,
                 {
                   fileName: "app/components/About.tsx",
-                  lineNumber: 119,
+                  lineNumber: 136,
                   columnNumber: 15
                 },
                 this
               )
             ] }, void 0, !0, {
               fileName: "app/components/About.tsx",
-              lineNumber: 96,
+              lineNumber: 113,
               columnNumber: 13
             }, this)
           ]
@@ -965,7 +977,7 @@ function About() {
         !0,
         {
           fileName: "app/components/About.tsx",
-          lineNumber: 73,
+          lineNumber: 77,
           columnNumber: 11
         },
         this
@@ -981,7 +993,7 @@ function About() {
           children: /* @__PURE__ */ jsxDEV4("div", { className: "bg-gradient-to-br from-blue-50 to-purple-50 dark:from-gray-800 dark:to-gray-700 rounded-2xl p-8 shadow-lg", children: [
             /* @__PURE__ */ jsxDEV4("h3", { className: "text-2xl font-bold mb-8 text-center text-gray-800 dark:text-white", children: "Technologies I Work With" }, void 0, !1, {
               fileName: "app/components/About.tsx",
-              lineNumber: 142,
+              lineNumber: 159,
               columnNumber: 15
             }, this),
             /* @__PURE__ */ jsxDEV4("div", { className: "grid grid-cols-3 gap-6", children: techIcons.map(({ Icon, name, color }, index) => /* @__PURE__ */ jsxDEV4(
@@ -1008,14 +1020,14 @@ function About() {
                     !1,
                     {
                       fileName: "app/components/About.tsx",
-                      lineNumber: 162,
+                      lineNumber: 179,
                       columnNumber: 21
                     },
                     this
                   ),
                   /* @__PURE__ */ jsxDEV4("span", { className: "text-sm font-medium text-gray-700 dark:text-gray-300 text-center", children: name }, void 0, !1, {
                     fileName: "app/components/About.tsx",
-                    lineNumber: 165,
+                    lineNumber: 182,
                     columnNumber: 21
                   }, this)
                 ]
@@ -1024,28 +1036,28 @@ function About() {
               !0,
               {
                 fileName: "app/components/About.tsx",
-                lineNumber: 148,
+                lineNumber: 165,
                 columnNumber: 19
               },
               this
             )) }, void 0, !1, {
               fileName: "app/components/About.tsx",
-              lineNumber: 146,
+              lineNumber: 163,
               columnNumber: 15
             }, this),
             /* @__PURE__ */ jsxDEV4("div", { className: "absolute -top-4 -right-4 w-20 h-20 bg-gradient-to-r from-blue-500 to-purple-500 rounded-full opacity-20 blur-xl" }, void 0, !1, {
               fileName: "app/components/About.tsx",
-              lineNumber: 173,
+              lineNumber: 190,
               columnNumber: 15
             }, this),
             /* @__PURE__ */ jsxDEV4("div", { className: "absolute -bottom-4 -left-4 w-16 h-16 bg-gradient-to-r from-pink-500 to-yellow-500 rounded-full opacity-20 blur-xl" }, void 0, !1, {
               fileName: "app/components/About.tsx",
-              lineNumber: 174,
+              lineNumber: 191,
               columnNumber: 15
             }, this)
           ] }, void 0, !0, {
             fileName: "app/components/About.tsx",
-            lineNumber: 141,
+            lineNumber: 158,
             columnNumber: 13
           }, this)
         },
@@ -1053,23 +1065,23 @@ function About() {
         !1,
         {
           fileName: "app/components/About.tsx",
-          lineNumber: 134,
+          lineNumber: 151,
           columnNumber: 11
         },
         this
       )
     ] }, void 0, !0, {
       fileName: "app/components/About.tsx",
-      lineNumber: 71,
+      lineNumber: 75,
       columnNumber: 9
     }, this)
   ] }, void 0, !0, {
     fileName: "app/components/About.tsx",
-    lineNumber: 51,
+    lineNumber: 55,
     columnNumber: 7
   }, this) }, void 0, !1, {
     fileName: "app/components/About.tsx",
-    lineNumber: 50,
+    lineNumber: 54,
     columnNumber: 5
   }, this);
 }
@@ -3098,16 +3110,16 @@ var meta2 = () => [
   { title: "Fadlan Zunima - Senior Frontend Engineer & Freelance React Developer" },
   {
     name: "description",
-    content: "Senior Frontend Engineer from Bandung, Indonesia. Expertise in React, Next.js, and GraphQL. Delivering high-quality web applications for startups and enterprises worldwide. Available for freelance and remote roles."
+    content: "Senior Frontend Engineer from Bandung, Indonesia. Expertise in React, Next.js, and GraphQL. Known as fadlanz or alanzunima online. Delivering high-quality web applications for startups and enterprises worldwide."
   },
   {
     name: "keywords",
-    content: "Senior Frontend Engineer, React Developer, Freelance Web Developer, Remote Developer, Next.js Expert, GraphQL, TypeScript, UI/UX, Portfolio, Fadlan Zunima, Bandung, Hire Web Developer Indonesia"
+    content: "Fadlan Zunima, fadlanz, alanzunima, alanz, fadlan, Senior Frontend Engineer, React Developer, Freelance Web Developer, Remote Developer, Next.js Expert, GraphQL, TypeScript, UI/UX, Portfolio, Bandung, Hire Web Developer Indonesia"
   },
   { name: "author", content: "Fadlan Zunima" },
   {
     property: "og:title",
-    content: "Fadlan Zunima - Senior Frontend Engineer Portfolio"
+    content: "Fadlan Zunima (fadlanz) - Senior Frontend Engineer Portfolio"
   },
   {
     property: "og:description",
@@ -3207,7 +3219,7 @@ function WellKnown() {
 }
 
 // server-assets-manifest:@remix-run/dev/assets-manifest
-var assets_manifest_default = { entry: { module: "/build/entry.client-7MUXUNS2.js", imports: ["/build/_shared/chunk-XC6BC2BP.js", "/build/_shared/chunk-RJ75G2FH.js", "/build/_shared/chunk-PMI65YMG.js", "/build/_shared/chunk-MW4MOASO.js", "/build/_shared/chunk-56LDNGDG.js", "/build/_shared/chunk-2Q7FBYOG.js", "/build/_shared/chunk-4JLKO6E3.js", "/build/_shared/chunk-PNG5AS42.js"] }, routes: { root: { id: "root", parentId: void 0, path: "", index: void 0, caseSensitive: void 0, module: "/build/root-ZGEVJT7H.js", imports: void 0, hasAction: !1, hasLoader: !1, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 }, "routes/$": { id: "routes/$", parentId: "root", path: "*", index: void 0, caseSensitive: void 0, module: "/build/routes/$-YGVMGVTL.js", imports: void 0, hasAction: !1, hasLoader: !0, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 }, "routes/_index": { id: "routes/_index", parentId: "root", path: void 0, index: !0, caseSensitive: void 0, module: "/build/routes/_index-AWD7WYL7.js", imports: void 0, hasAction: !1, hasLoader: !1, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 } }, version: "e3ce6022", hmr: { runtime: "/build/_shared\\chunk-MW4MOASO.js", timestamp: 1777090418147 }, url: "/build/manifest-E3CE6022.js" };
+var assets_manifest_default = { entry: { module: "/build/entry.client-7MUXUNS2.js", imports: ["/build/_shared/chunk-XC6BC2BP.js", "/build/_shared/chunk-RJ75G2FH.js", "/build/_shared/chunk-PMI65YMG.js", "/build/_shared/chunk-MW4MOASO.js", "/build/_shared/chunk-56LDNGDG.js", "/build/_shared/chunk-2Q7FBYOG.js", "/build/_shared/chunk-4JLKO6E3.js", "/build/_shared/chunk-PNG5AS42.js"] }, routes: { root: { id: "root", parentId: void 0, path: "", index: void 0, caseSensitive: void 0, module: "/build/root-7LL42KKX.js", imports: void 0, hasAction: !1, hasLoader: !1, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 }, "routes/$": { id: "routes/$", parentId: "root", path: "*", index: void 0, caseSensitive: void 0, module: "/build/routes/$-YGVMGVTL.js", imports: void 0, hasAction: !1, hasLoader: !0, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 }, "routes/_index": { id: "routes/_index", parentId: "root", path: void 0, index: !0, caseSensitive: void 0, module: "/build/routes/_index-34BINUSF.js", imports: void 0, hasAction: !1, hasLoader: !1, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 } }, version: "e7fdcf48", hmr: { runtime: "/build/_shared\\chunk-MW4MOASO.js", timestamp: 1777096667416 }, url: "/build/manifest-E7FDCF48.js" };
 
 // server-entry-module:@remix-run/dev/server-build
 var mode = "development", assetsBuildDirectory = "public/build", future = { v3_fetcherPersist: !1, v3_relativeSplatPath: !1, v3_throwAbortReason: !1 }, publicPath = "/build/", entry = { module: entry_server_node_exports }, routes = {

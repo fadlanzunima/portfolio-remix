@@ -13,17 +13,17 @@ export const meta: MetaFunction = () => {
     {
       name: "description",
       content:
-        "Senior Frontend Engineer from Bandung, Indonesia. Expertise in React, Next.js, and GraphQL. Delivering high-quality web applications for startups and enterprises worldwide. Available for freelance and remote roles.",
+        "Senior Frontend Engineer from Bandung, Indonesia. Expertise in React, Next.js, and GraphQL. Known as fadlanz or alanzunima online. Delivering high-quality web applications for startups and enterprises worldwide.",
     },
     {
       name: "keywords",
       content:
-        "Senior Frontend Engineer, React Developer, Freelance Web Developer, Remote Developer, Next.js Expert, GraphQL, TypeScript, UI/UX, Portfolio, Fadlan Zunima, Bandung, Hire Web Developer Indonesia",
+        "Fadlan Zunima, fadlanz, alanzunima, alanz, fadlan, Senior Frontend Engineer, React Developer, Freelance Web Developer, Remote Developer, Next.js Expert, GraphQL, TypeScript, UI/UX, Portfolio, Bandung, Hire Web Developer Indonesia",
     },
     { name: "author", content: "Fadlan Zunima" },
     {
       property: "og:title",
-      content: "Fadlan Zunima - Senior Frontend Engineer Portfolio",
+      content: "Fadlan Zunima (fadlanz) - Senior Frontend Engineer Portfolio",
     },
     {
       property: "og:description",

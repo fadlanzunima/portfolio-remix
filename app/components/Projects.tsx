@@ -36,7 +36,7 @@ interface Project {
   image: string;
   technologies: Array<{
     name: string;
-    icon: React.ComponentType;
+    icon: React.ComponentType<{ className?: string }>;
     color: string;
   }>;
   githubUrl: string;

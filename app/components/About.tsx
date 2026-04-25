@@ -17,7 +17,11 @@ export default function About() {
     { Icon: FaVuejs, name: "Vue.js", color: "text-green-500" },
     { Icon: SiTailwindcss, name: "Tailwind CSS", color: "text-cyan-500" },
     { Icon: SiGraphql, name: "GraphQL", color: "text-pink-500" },
-    { Icon: SiNextdotjs, name: "Next.js", color: "text-gray-900 dark:text-white" },
+    {
+      Icon: SiNextdotjs,
+      name: "Next.js",
+      color: "text-gray-900 dark:text-white",
+    },
     // { Icon: SiFlutter, name: "Flutter", color: "text-blue-400" },
     { Icon: SiVercel, name: "Vercel", color: "text-black dark:text-white" },
     { Icon: FaPhp, name: "PHP", color: "text-purple-600" },
@@ -82,13 +86,26 @@ export default function About() {
                 Senior Frontend Engineer & GraphQL Enthusiast
               </h3>
               <p className="text-gray-600 dark:text-gray-300 leading-relaxed mb-4">
-                I am a Senior Frontend Engineer based in Bandung, Indonesia, with a proven track record of building modern, responsive web applications using React, GraphQL, and the latest frontend technologies. I focus on developing interfaces that are not only visually stunning but also provide exceptional user experiences.
+                I am a Senior Frontend Engineer based in Bandung, Indonesia,
+                with a proven track record of building modern, responsive web
+                applications using React, GraphQL, and the latest frontend
+                technologies. I focus on developing interfaces that are not only
+                visually stunning but also provide exceptional user experiences.
               </p>
               <p className="text-gray-600 dark:text-gray-300 leading-relaxed mb-4">
-                Currently, I am deepening my expertise in GraphQL and advanced React patterns, with a strong passion for design details, application performance, and implementing best practices in web development. I am always enthusiastic about learning new technologies and staying ahead of the latest trends in the frontend ecosystem.
+                Currently, I am deepening my expertise in GraphQL and advanced
+                React patterns, with a strong passion for design details,
+                application performance, and implementing best practices in web
+                development. I am always enthusiastic about learning new
+                technologies and staying ahead of the latest trends in the
+                frontend ecosystem.
               </p>
               <p className="text-gray-600 dark:text-gray-300 leading-relaxed">
-                As a seasoned remote worker, I enjoy the flexibility of working independently while maintaining effective collaboration with global teams. When I'm not coding, I explore design patterns, contribute to open-source projects, and share knowledge with the developer community.
+                As a seasoned remote worker, I enjoy the flexibility of working
+                independently while maintaining effective collaboration with
+                global teams. When I'm not coding, I explore design patterns,
+                contribute to open-source projects, and share knowledge with the
+                developer community.
               </p>
             </div>
 
